@@ -1,0 +1,325 @@
+{
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": {
+      "de": "Das Land Vorarlberg stellt auf data.gv.at allen Interessierten Regierungs- und Verwaltungsdaten zur Verfügung. In unterschiedlichen Formaten stehen diese Daten zur freien Wiederverwendung und Weiterverwertung zur Verfügung. Die Daten werden in maschinenlesbarer, offen lizenzierter, nicht proprietärer Form dauerhaft und kostenlos zur Verfügung gestellt. Personenbezogene Daten werden dabei keine veröffentlicht.\r\nWir wünschen Ihnen viel Spaß beim Durchstöbern der Daten und freuen uns über jedes Feedback.\r\nWenn Sie neue Anwendungen entwickelt oder neue Erkenntnisse gewonnen haben, informieren Sie uns unter land@vorarlberg.at"
+    },
+    "has_part": null,
+    "homepage": null,
+    "id": "l8",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2026-02-12T08:23:26Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2026-02-12T08:23:26Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "Land Vorarlberg"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-12-19T08:43:36Z",
+    "modified": "2026-08-08T06:02:56Z"
+  },
+  "categories": [
+    {
+      "id": "TRAN",
+      "label": {
+        "bg": "Транспорт",
+        "cs": "Doprava",
+        "da": "Transport",
+        "de": "Verkehr",
+        "el": "Μεταφορές",
+        "en": "Transport",
+        "es": "Transporte",
+        "et": "Transport",
+        "fi": "Liikenne",
+        "fr": "Transports",
+        "ga": "Iompar",
+        "hr": "Promet",
+        "hu": "Közlekedés",
+        "it": "Trasporti",
+        "lt": "Transportas",
+        "lv": "Transports",
+        "mt": "Trasport",
+        "nb": "Transport",
+        "nl": "Vervoer",
+        "nn": "Transport",
+        "no": "Transport",
+        "pl": "Transport",
+        "pt": "Transportes",
+        "ro": "Transport",
+        "sk": "Doprava",
+        "sl": "Transport",
+        "sv": "Transport"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/TRAN"
+    }
+  ],
+  "conforms_to": [],
+  "contact_point": [
+    {
+      "email": "mailto:landesvermessungsamt@vorarlberg.at",
+      "name": "Vorarlberg, Landesamt für Vermessung und Geoinformation, Abteilung Geoinformation, t: +43 (0) 5522 / 75482, f: +43 (0) 5522 / 754826,  Johannitergasse 6 6800 Feldkirch Austria",
+      "type": "Organization"
+    }
+  ],
+  "country": null,
+  "description": {
+    "de": "Punkthafte Detailaufnahmen zu den historischen Verkehrswegen in Vorarlberg.  a_nr\t\t(string, 15)\t\tunique value, jeder Punkt hat einen Wert streckennr\t(string, 15)\t\tZuordnung der Detailaufnahme zu einem historischen Wegabschnitt a_datum\t\t(date)\t\t\tAufnahmedatum wegname\t\t(string, 50)\t\tWegname auf dem die Detailaufnahme erfolgte flurname\t(string, 50)\t\tFlurname im Bereich der Detailaufnahme wegform\t\t(string, 80)\t\tspezifische Form des Weges im Bereich der Detailaufnahme datierung\t(string, 6)\t\tDatierung der Detailaufnahme standort\t(string, 254)\t\tBeschreibung des Standortes der Detailaufnahme (Höhenmeter, Lokalität, Nutzung) breite\t\t(string, 40)\t\tBreite des Weges im Bereich der Detailaufnahme (in Metern) prj_gem\t\t(string, 30)\t\tProjektgemeinde laenge_m\t(long integer, 6)\tLänge des Weges (in Metern) laengsgef\t(string, 20)\t\tBeschreibung des Längsgefälles (flach, mittel, steil) weg_fkt\t\t(string, 100)\t\tFunktion des Weges (Fahrweg, Fußweg, Kunststraße)   Datenquelle: historische_wege_detail.shp"
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege_detail&outputFormat=csv"
+      ],
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "1b848c65-c220-4cbf-9cc4-f1a04951b41e",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "CSV-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege_detail&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "6728f2d3-c1c8-48c9-9ca6-1a75780e3dec",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WFS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/vogis/historische_wege_detail/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+      ],
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "63c6924e-c686-4e51-b70d-8e83d0671f21",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WMS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/d77014c6-2e69-4d84-ba26-88721bf8ddee"
+      ],
+      "format": {
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+      },
+      "id": "98f47ba3-f665-421d-b968-7e6055ff16a7",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Metadaten-Katalog"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege_detail&outputFormat=shape-zip"
+      ],
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "77e98ad3-db29-42b3-b2a8-47dcc3d1ec90",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "SHP-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege_detail&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "8ae996a0-4ee8-440e-96eb-3c79dacf4150",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "GPKG-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege_detail&outputFormat=application/json&maxFeatures=1000000"
+      ],
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "8c1f992e-f03b-401d-8f23-972b9d5d46ea",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "JSON-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:historische_wege_detail&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "74956e3d-8430-4908-83b5-27f65fffce6e",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "KML-Download"
+      }
+    }
+  ],
+  "id": "d76b9a11-0f7b-4c4b-8b42-440064bbbea5",
+  "identifier": [
+    "d76b9a11-0f7b-4c4b-8b42-440064bbbea5"
+  ],
+  "is_hvd": false,
+  "keywords": [
+    {
+      "id": "verkehr",
+      "label": "verkehr",
+      "language": "de"
+    },
+    {
+      "id": "weg",
+      "label": "weg",
+      "language": "de"
+    }
+  ],
+  "publisher": {
+    "name": "Land Vorarlberg",
+    "type": "Organization"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/d76b9a11-0f7b-4c4b-8b42-440064bbbea5",
+  "spatial": [],
+  "title": {
+    "de": "Detailaufnahmen zu den historischen Wegen in Vorarlberg"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

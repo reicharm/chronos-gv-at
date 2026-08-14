@@ -1,0 +1,325 @@
+{
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": {
+      "de": "Das Land Vorarlberg stellt auf data.gv.at allen Interessierten Regierungs- und Verwaltungsdaten zur Verfügung. In unterschiedlichen Formaten stehen diese Daten zur freien Wiederverwendung und Weiterverwertung zur Verfügung. Die Daten werden in maschinenlesbarer, offen lizenzierter, nicht proprietärer Form dauerhaft und kostenlos zur Verfügung gestellt. Personenbezogene Daten werden dabei keine veröffentlicht.\r\nWir wünschen Ihnen viel Spaß beim Durchstöbern der Daten und freuen uns über jedes Feedback.\r\nWenn Sie neue Anwendungen entwickelt oder neue Erkenntnisse gewonnen haben, informieren Sie uns unter land@vorarlberg.at"
+    },
+    "has_part": null,
+    "homepage": null,
+    "id": "l8",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2026-02-12T08:23:26Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2026-02-12T08:23:26Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "Land Vorarlberg"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-12-19T08:43:41Z",
+    "modified": "2026-08-08T06:03:23Z"
+  },
+  "categories": [
+    {
+      "id": "TRAN",
+      "label": {
+        "bg": "Транспорт",
+        "cs": "Doprava",
+        "da": "Transport",
+        "de": "Verkehr",
+        "el": "Μεταφορές",
+        "en": "Transport",
+        "es": "Transporte",
+        "et": "Transport",
+        "fi": "Liikenne",
+        "fr": "Transports",
+        "ga": "Iompar",
+        "hr": "Promet",
+        "hu": "Közlekedés",
+        "it": "Trasporti",
+        "lt": "Transportas",
+        "lv": "Transports",
+        "mt": "Trasport",
+        "nb": "Transport",
+        "nl": "Vervoer",
+        "nn": "Transport",
+        "no": "Transport",
+        "pl": "Transport",
+        "pt": "Transportes",
+        "ro": "Transport",
+        "sk": "Doprava",
+        "sl": "Transport",
+        "sv": "Transport"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/TRAN"
+    }
+  ],
+  "conforms_to": [],
+  "contact_point": [
+    {
+      "email": "mailto:landesvermessungsamt@vorarlberg.at",
+      "name": "Vorarlberg, Landesamt für Vermessung und Geoinformation, Abteilung Geoinformation, t: +43 (0) 5522 / 75482, f: +43 (0) 5522 / 754826,  Johannitergasse 6 6800 Feldkirch Austria",
+      "type": "Organization"
+    }
+  ],
+  "country": null,
+  "description": {
+    "de": "Gibt die über 6000 Standorte der Wanderwegweiser wieder. Punkt-Layer. Die Tafelnummer setzt sich aus einer Zahl für die Gemeinde (nach dem Alphabet gereiht), einem Punkt und einer fortlaufenden Nummer zusammen (z.B. 61.080). Weitere Informationen über Tafelhöhe und Verzeichnis des zugehörigen Standortblattes sind ebenfalls gespeichert.  Wichtige Felder und Datentypen der Attributtabelle: TAFEL_NR\t(string)\tTafel-Nummer TAFEL_HOEH\t(integer)\tSeehöhe der Tafel DOK_PFAD\t(string)\tlokaler Speicherplatz des Standortblattes OR_KARTE\t(integer\tOrientierungskarte am Standort der Tafel bzw. Nähe des Standortes  Datenquelle: wander_tafeln.shp"
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:wander_tafeln&outputFormat=csv"
+      ],
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "03e91f22-d938-4602-b19c-4823ec9c5bba",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "CSV-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:wander_tafeln&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "3b33f593-cbfc-4bea-9cee-6ac3aebb0b56",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "KML-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/vogis/wander_tafeln/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+      ],
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "1989289e-0acd-4656-8bdf-d79965a97823",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WMS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:wander_tafeln&outputFormat=application/json&maxFeatures=1000000"
+      ],
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "aaaa3891-7b74-49c5-98d0-2c9906839fb2",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "JSON-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/3961891c-be9b-4614-9cc2-a869e903492c"
+      ],
+      "format": {
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+      },
+      "id": "35ab713a-fe30-4604-9c98-f3530155aec6",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Metadaten-Katalog"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:wander_tafeln&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "c9e38061-5f87-4edc-b0aa-3840b69647d5",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WFS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:wander_tafeln&outputFormat=shape-zip"
+      ],
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "ac2618ed-48e1-4290-a901-119580c0ac31",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "SHP-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:wander_tafeln&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "26a2439d-f103-48e0-adfa-3fb164791717",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "GPKG-Download"
+      }
+    }
+  ],
+  "id": "6e0f332e-d21c-40d4-8a74-9b59876768ff",
+  "identifier": [
+    "6e0f332e-d21c-40d4-8a74-9b59876768ff"
+  ],
+  "is_hvd": false,
+  "keywords": [
+    {
+      "id": "weg",
+      "label": "weg",
+      "language": "de"
+    },
+    {
+      "id": "verkehr",
+      "label": "verkehr",
+      "language": "de"
+    }
+  ],
+  "publisher": {
+    "name": "Land Vorarlberg",
+    "type": "Organization"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/6e0f332e-d21c-40d4-8a74-9b59876768ff",
+  "spatial": [],
+  "title": {
+    "de": "Wanderwegweiser Vorarlberg"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

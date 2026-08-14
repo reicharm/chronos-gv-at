@@ -1,0 +1,75 @@
+name: CHRONOS daily archive
+
+on:
+  schedule:
+    # taeglich 03:17 UTC. Bewusst nicht :00 -> geplante Laeufe werden unter Last
+    # von GitHub verzoegert/geskippt; ein "krummer" Zeitpunkt reduziert das.
+    - cron: "17 3 * * *"
+  workflow_dispatch:        # erlaubt manuelles Ausloesen ueber die Actions-UI
+
+permissions:
+  contents: write           # noetig fuer Commit, Push und Tag
+
+concurrency:
+  group: daily-archive      # nie zwei Laeufe gleichzeitig
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        # flacher Clone reicht; wir committen nur obendrauf.
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Dump datasets
+        run: python dump_data_gv_at_perfile.py
+        # Fuer interne Instanz / MITM-Proxy hier Secrets durchreichen:
+        # env:
+        #   DUMP_PROXY: ${{ secrets.DUMP_PROXY }}
+        #   REQUESTS_CA_BUNDLE: ${{ secrets.CA_BUNDLE_PATH }}
+
+      - name: Commit snapshot (immer - Empty-Commit dient als Keepalive)
+        id: commit
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          DATE=$(date -u +%Y-%m-%d)
+          git add -A datasets
+
+          if git diff --cached --quiet; then
+            # Keine Aenderung: leerer Commit haelt gleichzeitig den Cron am Leben
+            STATS="+0 ~0 -0"
+            git commit --allow-empty -m "data.gv.at snapshot $DATE (keine Aenderungen)"
+          else
+            A=$(git diff --cached --name-status | grep -c '^A' || true)
+            M=$(git diff --cached --name-status | grep -c '^M' || true)
+            D=$(git diff --cached --name-status | grep -c '^D' || true)
+            STATS="+$A ~$M -$D"
+            git commit -m "data.gv.at snapshot $DATE ($STATS)"
+          fi
+
+          echo "date=$DATE"   >> "$GITHUB_OUTPUT"
+          echo "stats=$STATS" >> "$GITHUB_OUTPUT"
+          git push
+
+      - name: Tag snapshot (jeden Tag)
+        run: |
+          set -euo pipefail
+          DATE="${{ steps.commit.outputs.date }}"
+          STATS="${{ steps.commit.outputs.stats }}"
+          TAG="snapshot-$DATE"
+          # -f: bei mehrfachem Lauf am selben Tag zeigt der Tag auf den neuesten Stand
+          git tag -fa "$TAG" -m "data.gv.at $STATS ($DATE)"
+          git push -f origin "refs/tags/$TAG"

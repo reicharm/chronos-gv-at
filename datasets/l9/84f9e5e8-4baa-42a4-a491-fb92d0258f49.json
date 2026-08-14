@@ -1,0 +1,550 @@
+{
+  "accrual_periodicity": {
+    "label": "irregular",
+    "resource": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+  },
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": {
+      "de": "Open Government Data (OGD) in Wien bedeutet, dass die Stadt Zahlen, Daten und Dokumente der Verwaltung öffentlich für jegliche Nutzung zur Verfügung stellt. Dabei gelten die Leitprinzipien „open by default“ und „open by design“. \r\n&nbsp;\r\nMehrere hundert Datensätze liefern detaillierte Auskunft über Einbahnen, Echtzeitinformationen der Wiener Linien, historische Luftbildaufnahmen, Messdaten von Luftschadstoffen oder WLAN-Standorte, um nur einige wenige Bereiche zu nennen. \r\n&nbsp;\r\nMit diesen verifizierten Daten können Privatpersonen oder Unternehmen beispielsweise Apps programmieren, die das Leben einfacher machen. Die Wissenschaft und Forschung kann diese Daten einfach nutzen. \r\n\r\n\r\n&nbsp;\r\nNeue Daten werden zu folgenden Terminen publiziert:  \r\n\r\n\r\n&nbsp;\r\n* OGD-Phase 58: 7. März 2025 (Open Data MeetUp am 6.März 2025 Wien & Wein im Rahmen der Open Data Days 2025)\r\n* OGD-Phase 59: 27. Juni 2025\r\n* OGD-Phase 60: 26. September 2025 (Open Data MeetUp am 25. September 2025 Wien & Wien)\r\n* OGD-Phase 61: 19. Dezember 2025\r\n\r\n\r\n&nbsp;\r\nDetailinformationen dazu finden Sie jeweils im Changelog oder abonnieren Sie unseren Digitales Wien Newsletter.\r\n\r\n\r\n&nbsp;\r\nStudien, Gutachten und Umfragen, die die Stadt Wien seit dem 1. Jänner 2023 in Auftrag gibt, müssen nach Artikel 20 des Bundes-Verfassungsgesetzes samt Kosten veröffentlicht werden. Ausnahmen von der Veröffentlichung können sich etwa aus dem Datenschutz, der Amtsverschwiegenheit, dem Urheberrecht oder aus Geschäfts- und Betriebsgeheimnissen ergeben.\r\n\r\n\r\n&nbsp;\r\nOpen Data Beauftragter der Stadt Wien: Gerhard Hartmann gerhard.hartmann@wien.gv.at"
+    },
+    "has_part": null,
+    "homepage": null,
+    "id": "l9",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2026-02-12T07:58:10Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2026-02-12T07:58:10Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "Stadt Wien"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-12-17T10:13:47Z",
+    "modified": "2025-12-17T10:13:47Z"
+  },
+  "categories": [
+    {
+      "id": "TRAN",
+      "label": {
+        "bg": "Транспорт",
+        "cs": "Doprava",
+        "da": "Transport",
+        "de": "Verkehr",
+        "el": "Μεταφορές",
+        "en": "Transport",
+        "es": "Transporte",
+        "et": "Transport",
+        "fi": "Liikenne",
+        "fr": "Transports",
+        "ga": "Iompar",
+        "hr": "Promet",
+        "hu": "Közlekedés",
+        "it": "Trasporti",
+        "lt": "Transportas",
+        "lv": "Transports",
+        "mt": "Trasport",
+        "nb": "Transport",
+        "nl": "Vervoer",
+        "nn": "Transport",
+        "no": "Transport",
+        "pl": "Transport",
+        "pt": "Transportes",
+        "ro": "Transport",
+        "sk": "Doprava",
+        "sl": "Transport",
+        "sv": "Transport"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/TRAN"
+    }
+  ],
+  "contact_point": [],
+  "country": null,
+  "description": {
+    "de": "Schiffanlegestellen der DDSG, Twin City Liner"
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:SCHIFFANLEGESTOGD&srsName=EPSG:4326&outputFormat=csv"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "951e22ae-837b-479c-87c4-7cf3eb90b843",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (CSV)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:SCHIFFANLEGESTOGD&styles=&format=image/svg"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "id": "14bb35ee-be37-4cfb-9d8c-15d5636cdbff",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (SVG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:SCHIFFANLEGESTOGD&styles=&format=image/png8"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "3d4146da-c7c3-477a-996b-66a92929d08a",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG/8bit)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:SCHIFFANLEGESTOGD&srsName=EPSG:4326"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "GML",
+        "label": "GML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
+      },
+      "id": "700fca16-8809-4e6a-ae95-5f811c7c0fd7",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (GML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:SCHIFFANLEGESTOGD&styles=&format=application/vnd.google-earth.kmz"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "KMZ",
+        "label": "KMZ",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KMZ"
+      },
+      "id": "7f77a035-6111-4e89-b8a9-4e63a24c38e1",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KMZ)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:SCHIFFANLEGESTOGD&srsName=EPSG:4326&outputFormat=shape-zip"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "a0e24591-b1db-469b-8673-5e68b9424cc1",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (SHP)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:SCHIFFANLEGESTOGD&srsName=EPSG:4326&outputFormat=json"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "0258a318-187c-407d-8ec2-2f8895a9ce93",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (JSON)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:SCHIFFANLEGESTOGD&styles=&format=image/png"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "3113c3ec-090e-49c8-bb4c-aafc04f50001",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.1.0&service=WFS&request=GetCapabilities"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "a819a7f6-26d3-49b4-87d1-5a1a1e4d69d6",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:SCHIFFANLEGESTOGD&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "cd025056-bc6b-4c41-8fa5-aa66d5e2569d",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:SCHIFFANLEGESTOGD&styles=&format=image/gif"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "fd7e0c7b-210d-428b-85b4-fb4bf01c0631",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GIF)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?service=WMS&request=GetCapabilities&version=1.1.1"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "3cf2c988-08c8-4eeb-8cd8-28d6238162b5",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=SCHIFFANLEGESTOGD&styles=&format=image/png&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "1e41f373-cbc7-4bb7-a848-f398fbf19b42",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (PNG/8bit)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=SCHIFFANLEGESTOGD&styles=&format=image/jpeg&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "8a09ac94-d776-41fd-8a5e-6620ecf20f5e",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (JPEG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:SCHIFFANLEGESTOGD&styles=&format=application/rss+xml"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "id": "f85cc720-a172-46e4-be2f-25b9a648ab09",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GeoRSS)"
+      }
+    },
+    {
+      "access_url": [
+        "https://digitales.wien.gv.at/site/icons/"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+      },
+      "id": "85d01ff4-3ad5-4d8f-8ee4-0d5a082f6392",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "Icons"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:SCHIFFANLEGESTOGD&styles=&format=image/jpeg"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "5d1628c3-ee0b-4078-930e-e3169a76a6bd",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (JPEG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetCapabilities"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "aa6c8105-803c-4f8f-925e-d90d46fe5dd4",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/katalog/images/schiffanlegestogd.png"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "549ac2f4-151e-419f-b669-21d47989cfd9",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "Icon"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=SCHIFFANLEGESTOGD&styles=&format=image/gif&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "OBJECTID: eindeutiger Schlüssel  \nNAME: Bezeichnung der Anlegestelle  \nADRESSE: Bezirk, Straßenname und Orientierungsnummer  \nWEBLINK1: Internet-Adresse  \nBEZIRK: Bezirksangabe"
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "e5d6caf8-03de-483c-91b4-01213cdd4320",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (GIF)"
+      }
+    }
+  ],
+  "id": "84f9e5e8-4baa-42a4-a491-fb92d0258f49",
+  "identifier": [
+    "84f9e5e8-4baa-42a4-a491-fb92d0258f49"
+  ],
+  "is_hvd": false,
+  "keywords": [
+    {
+      "id": "schifffahrt",
+      "label": "Schifffahrt",
+      "language": "de"
+    },
+    {
+      "id": "viennagis",
+      "label": "ViennaGIS",
+      "language": "de"
+    },
+    {
+      "id": "anlegestelle",
+      "label": "Anlegestelle",
+      "language": "de"
+    }
+  ],
+  "landing_page": [
+    {
+      "resource": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/"
+    }
+  ],
+  "language": [
+    {
+      "id": "de",
+      "label": "German",
+      "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+    }
+  ],
+  "modified": "2025-11-20",
+  "provenance": [
+    {
+      "label": "Die Daten wurden einmalig im Mai 2007 nach Angaben der Firma Central Danube Region Marketing & Development GmbH erfasst. Weitere Aktualisierungen, oder Ergänzungen werden aufgrund von Internetrecherche durchgeführt."
+    }
+  ],
+  "publisher": {
+    "email": "mailto:open@post.wien.gv.at",
+    "homepage": "https://digitales.wien.gv.at",
+    "name": "Stadt Wien",
+    "type": "Agent"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/84f9e5e8-4baa-42a4-a491-fb92d0258f49",
+  "spatial": [],
+  "temporal": [
+    {
+      "gte": "2013-03-29"
+    }
+  ],
+  "title": {
+    "de": "Schiffanlegestellen Standorte Wien"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": {
+      "de": "Das Land Vorarlberg stellt auf data.gv.at allen Interessierten Regierungs- und Verwaltungsdaten zur Verfügung. In unterschiedlichen Formaten stehen diese Daten zur freien Wiederverwendung und Weiterverwertung zur Verfügung. Die Daten werden in maschinenlesbarer, offen lizenzierter, nicht proprietärer Form dauerhaft und kostenlos zur Verfügung gestellt. Personenbezogene Daten werden dabei keine veröffentlicht.\r\nWir wünschen Ihnen viel Spaß beim Durchstöbern der Daten und freuen uns über jedes Feedback.\r\nWenn Sie neue Anwendungen entwickelt oder neue Erkenntnisse gewonnen haben, informieren Sie uns unter land@vorarlberg.at"
+    },
+    "has_part": null,
+    "homepage": null,
+    "id": "l8",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2026-02-12T08:23:26Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2026-02-12T08:23:26Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "Land Vorarlberg"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-12-19T10:28:31Z",
+    "modified": "2026-08-08T06:03:05Z"
+  },
+  "categories": [
+    {
+      "id": "ENVI",
+      "label": {
+        "bg": "Околна среда",
+        "cs": "Životní prostředí",
+        "da": "Miljø",
+        "de": "Umwelt",
+        "el": "Περιβάλλον",
+        "en": "Environment",
+        "es": "Medio ambiente",
+        "et": "Keskkond",
+        "fi": "Ympäristö",
+        "fr": "Environnement",
+        "ga": "Comhshaol",
+        "hr": "Okoliš",
+        "hu": "Környezet",
+        "it": "Ambiente",
+        "lt": "Aplinka",
+        "lv": "Vide",
+        "mt": "Ambjent",
+        "nb": "Miljø",
+        "nl": "Milieu",
+        "nn": "Miljø",
+        "no": "Miljø",
+        "pl": "Środowisko",
+        "pt": "Ambiente",
+        "ro": "Mediu",
+        "sk": "Životné prostredie",
+        "sl": "Okolje",
+        "sv": "Miljö"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/ENVI"
+    }
+  ],
+  "conforms_to": [],
+  "contact_point": [
+    {
+      "email": "mailto:landesvermessungsamt@vorarlberg.at",
+      "name": "Vorarlberg, Landesamt für Vermessung und Geoinformation, Abteilung Geoinformation, t: +43 (0) 5522 / 75482, f: +43 (0) 5522 / 754826,  Johannitergasse 6 6800 Feldkirch Austria",
+      "type": "Organization"
+    }
+  ],
+  "country": null,
+  "description": {
+    "de": "Dieser Datensatz beinhaltet fast alle Einzugsgebiete aller in unserem digitalen Fließgewässernetz vorhandenen Flüsse, Bäche, Gräben und Töbel. Als Einzugsgebiet am Mündungspunkt eines Fließgewässers gilt dasjenige Gebiet, das bei kompletter Versiegelung der Geländeoberfläche nach dem Auffüllen aller bestehenden Senken durch diesen Punkt entwässert. So gehören zu diesem Einzugsgebiet insbesondere auch all jene Gebiete, die in der Realität aufgrund von unterirdischen Fließprozessen oder aufgrund von technischen Einrichtungen aus dem Einzugsgebiet heraus entwässern würden. Mit anderen Worten handelt es sich hierbei um rein topographisch definierte Einzugsgebiete.    Wichtige Felder und Datentypen der Attributtabelle (jene, die inhaltliche Informationen enthalten): fgw_id\t\teindeutige Kennung der Gewässerroute (z.B.: 812260) Ordnung\t\tOrdnung (Rhein … 1, Ill … 2, Garnerabach … 3, …) Flaeche_m2\tEinzugsgebietsgröße [m²] Flaechekm2\tEinzugsgebietsgröße [km²] Ordnung\t\tOrdnung (Rhein … 1, Ill … 2, Garnerabach … 3, …) Z_Max\t\tmax. Höhe im Einzugsgebiet [m] Z_Mean\t\tmittlere Höhe im Einzugsgebiet [m] (Median) Z_Min\t\tmin. Höhe im Einzugsgebiet [m] – Höhe des Pour Points FGW_ID_LON\teindeutige Kennung der Gewässerroute (z.B.: 81 22 60) NAME_MUEND\tGewässername an der Mündung  Datenquelle: ezg_gesamt_vbg_umg.shp  Datenaktualität: Die Einzugsgebiete der Fließgewässer basieren innerhalb von Vorarlberg auf dem 'digitalen Höhenmodell aus dem Jahr 2011“, und dem 'Gewässernetz 2017“. Wenn es gröbere Änderungen an der Fließgewässergeometrie gibt oder Fehler entdeckt werden, werden die betroffenen Einzugsgebiete neu berechnet."
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ezg_gesamt_vbg_umg&outputFormat=shape-zip"
+      ],
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "a1b6666f-7345-4e6c-a913-38ebc4397c76",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "SHP-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ezg_gesamt_vbg_umg&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "3be64a65-3796-46b4-9732-b784817fc530",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "GPKG-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ezg_gesamt_vbg_umg&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "0e595eff-7a51-4e6f-932d-45adbbaf6e65",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WFS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ezg_gesamt_vbg_umg&outputFormat=csv"
+      ],
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "f309ca38-29db-481b-b613-72c94a23347d",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "CSV-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ezg_gesamt_vbg_umg&outputFormat=application/json&maxFeatures=1000000"
+      ],
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "f6234335-a506-4b24-bbf4-96c62b6489d2",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "JSON-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:ezg_gesamt_vbg_umg&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "c139b9fd-ca54-488f-8e76-a92d8bce76b5",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "KML-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/vogis/ezg_gesamt_vbg_umg/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+      ],
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "317954b3-77bc-40c3-8e4e-a5d1a7fd20bf",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WMS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/d65390e0-0a96-47a5-9069-094dc04d3b44"
+      ],
+      "format": {
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+      },
+      "id": "fd6c227d-fc01-4b33-b9e4-8a11e8d2e6a9",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Metadaten-Katalog"
+      }
+    }
+  ],
+  "id": "c427420e-3168-4583-9f71-5f361dcc56ee",
+  "identifier": [
+    "c427420e-3168-4583-9f71-5f361dcc56ee"
+  ],
+  "is_hvd": false,
+  "keywords": [
+    {
+      "id": "einzugsgebiete",
+      "label": "einzugsgebiete",
+      "language": "de"
+    },
+    {
+      "id": "wasser",
+      "label": "wasser",
+      "language": "de"
+    }
+  ],
+  "publisher": {
+    "name": "Land Vorarlberg",
+    "type": "Organization"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/c427420e-3168-4583-9f71-5f361dcc56ee",
+  "spatial": [],
+  "title": {
+    "de": "Einzugsgebiete der Vorarlberger Fliessgewässer"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

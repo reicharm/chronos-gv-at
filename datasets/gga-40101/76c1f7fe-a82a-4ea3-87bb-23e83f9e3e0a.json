@@ -1,0 +1,256 @@
+{
+  "accrual_periodicity": {},
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": {
+      "de": "Open Commons Linz. Digitale Gemeingüter, die frei und offen zugänglich sind."
+    },
+    "has_part": null,
+    "homepage": null,
+    "id": "gga-40101",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2026-02-12T08:01:38Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2026-02-12T08:01:38Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "Stadt Linz"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-08-26T20:46:19Z",
+    "modified": "2025-09-16T11:55:03Z"
+  },
+  "categories": [
+    {
+      "id": "ENVI",
+      "label": {
+        "bg": "Околна среда",
+        "cs": "Životní prostředí",
+        "da": "Miljø",
+        "de": "Umwelt",
+        "el": "Περιβάλλον",
+        "en": "Environment",
+        "es": "Medio ambiente",
+        "et": "Keskkond",
+        "fi": "Ympäristö",
+        "fr": "Environnement",
+        "ga": "Comhshaol",
+        "hr": "Okoliš",
+        "hu": "Környezet",
+        "it": "Ambiente",
+        "lt": "Aplinka",
+        "lv": "Vide",
+        "mt": "Ambjent",
+        "nb": "Miljø",
+        "nl": "Milieu",
+        "nn": "Miljø",
+        "no": "Miljø",
+        "pl": "Środowisko",
+        "pt": "Ambiente",
+        "ro": "Mediu",
+        "sk": "Životné prostredie",
+        "sl": "Okolje",
+        "sv": "Miljö"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/ENVI"
+    }
+  ],
+  "conforms_to": [],
+  "contact_point": [
+    {
+      "email": "mailto:ptu@mag.linz.at",
+      "name": "Magistrat der Landeshauptstadt Linz, Planung, Technik und Umwelt (PTU) / Vermessung und Geoinformation",
+      "type": "Organization"
+    }
+  ],
+  "country": null,
+  "description": {
+    "de": "Der Gründachpotential-Kataster zeigt, ob aufgrund der Sonneneinstrahlung und Dachneigung das eigene Dach für die Installation einer Photovoltaik- bzw. Solaranlage geeignet ist oder bepflanzt und begrünt werden kann. Darüber hinaus ist der Photovoltaik-/Solarpotentialkataster auch mit einem neuen Wirtschaftlichkeitsrechner verbunden.\r\n\r\nDie dargestellten Pläne haben ausschließlich Informationscharakter und stellen Erfahrungswerte der Stadt Linz kombiniert mit der ÖNORM L1131 über Bauwerksbegrünung dar. Sie ersetzen nicht die Konsultation eines/einer Sachverständigen!\r\n\r\nDie Datengrundlage der Höhendaten stammt vom Land OÖ (Datenquelle: Land Oberösterreich - data.ooe.gv.at)."
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://data.linz.gv.at/katalog/geodata/daecher/sdk_linz_daecher.shp"
+      ],
+      "description": {
+        "de": "* Area,N,24,15: Dachfläche in Quadratmeter\r\n* Power,N,24,15: Installierbare Leistung auf der Dachseite in Kilowatt peak (kWp). Bei den Dachseiten ist die-ser Wert leer, da die Leistung im Wirtschaftlichkeitsrechner modulgenau berechnet wird. Die installierbare Leistung kann jedoch über ErtKwha_K / ErtKwP_K = Power berechnet werden.  \r\n* Slope,N,24,15: Neigung der Dachseite in Grad (°)\r\n* Aspect,N,24,15: Ausrichtung der Dachseite in Grad (°)  \r\n* Aufstd,N,1,0: Gibt an, ob eine Aufständerung empfohlen wird (false = nein / true = ja)\r\n* PvArea,N,24,15: Dachfläche in Quadratmetern, die sich für die Installation einer Photovoltaikanlage eignet (m²).\r\n* RoofID,N,9,0: Eindeutige ID je Dachseite innerhalb eines Gebäudes\r\n* gdkurl,C,134: Link zum Gründachrechner\r\n* Eignung,N,9,0: Gesamteignungskategorie Photovoltaik. 1,'sehr gut geeignet'),2,'gut geeignet'),3,'geeignet'),6,'nicht geeignet'),8,'keine Zuordnung' Die Eignung eines Daches für eine Dachbegründung wird insbesondere durch Neigung und Statik limitiert. In jedem Fall sollte eine statische Beurteilung durch Profis erfolgen.\r\n* PvAreaT,N,24,15: Dachfläche in Quadratmetern, die sich für die Installation einer solarthermischen Anlage eignet (m²)\r\n* ErtKwP_K,N,24,15: Ertrag der Anlage in Kilowattstunden pro Jahr pro installiertem Kilowatt peak Leistung (kWh/kWp/a) (diesen Wert verwenden, wenn Aufstd = false)\r\n* ErtKwha_K,N,24,15: Gesamtertrag der Anlage in Kilowattstunden pro Jahr ohne Nutzung einer Aufständerung (diesen Wert verwenden, wenn Aufstd = false)\r\n* RoofType,C,80: Interne Zuordnung der Dachseite zu einem Dachtyp (Flachdach, Spitzdach, unbekannt)\r\n* Schatten,N,24,15: Reduzierung der auf die Dachfläche einfallenden Einstrahlung durch Verschattung in Prozent pro Jahr (diesen Wert verwenden, wenn Aufstd = false)\r\n* Eignung_G,N,9,0: Gesamteignungskategorie Gründach. Eignung 1: 0 - <=9° (sehr gut geeignet)\r\nEignung 2: >9 - <=15° (gut geeignet), Eignung 3: >15 - <=20° (geeignet), Eignung 6: >20° (nicht geeignet), Eignung 8: dem Gebäude konnte keine Dachseite zugeordnet werden\r\n* Eignung_T,N,9,0: Gesamteignungskategorie Solarthermie 1,'sehr gut geeignet'),2,'gut geeignet'),3,'geeignet'),6,'nicht geeignet'),8,'keine Zuordnung'\r\n* ErtKwP_KA,N,24,15: Ertrag der Anlage in Kilowattstunden pro Jahr pro installiertem Kilowatt peak Leistung (kWh/kWp/a) (diesen Wert verwenden, wenn Aufstd = true)\r\n* ErtKwha_KA,N,24,15: Gesamtertrag der Anlage in Kilowattstunden pro Jahr bei Nutzung einer Aufstände-rung (diesen Wert verwenden, wenn Aufstd = true)\r\n* GreenArea,N,24,15: Gründach-Fläche. Dieser Wert gibt an, welche Fläche des Gesamtdaches für eine Dachbegrünung geeignet ist. So werden z.B. Schornsteine und Giebel aus der Fläche herausgerechnet.\r\n* PercentMs,N,24,15. Auf diese Dachseite durchschnittlich eintreffende Einstrahlung in Prozent vom lokal maximal möglichen Wert (diesen Wert verwenden, wenn Aufstd = false)\r\n* SchattenA,N,24,15 Reduzierung der auf die Dachfläche einfallenden Einstrahlung durch Verschattung in Prozent pro Jahr (diesen Wert verwenden, wenn Aufstd = true)\r\n* SchattenT,N,24,15: Interner Wert, der für Berechnungen genutzt wird\r\n* BuildingID,N,9,0: Eindeutige ID je Gebäude\r\n* PercentMsA,N,24,15: Auf diese Dachseite durchschnittlich eintreffende Einstrahlung in Prozent vom lokal maximal möglichen Wert (diesen Wert verwenden, wenn Aufstd = true)\r\n* calcurl_pv,C,127 Link zum Photovoltaik-Rechner\r\n* calcurl_st,C,137: Link zum Solarthermie-Rechner"
+      },
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "fd00ed96-64a4-4849-8285-991cad2097e5",
+      "issued": "2022-05-17T00:00:00Z",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "modified": "2023-03-28T15:32:09.245826Z",
+      "title": {
+        "de": "sdk_linz_daecher.shp"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.linz.gv.at/katalog/geodata/daecher/sdk_linz_daecher.shx"
+      ],
+      "description": {
+        "de": "* Area,N,24,15: Dachfläche in Quadratmeter\r\n* Power,N,24,15: Installierbare Leistung auf der Dachseite in Kilowatt peak (kWp). Bei den Dachseiten ist die-ser Wert leer, da die Leistung im Wirtschaftlichkeitsrechner modulgenau berechnet wird. Die installierbare Leistung kann jedoch über ErtKwha_K / ErtKwP_K = Power berechnet werden.  \r\n* Slope,N,24,15: Neigung der Dachseite in Grad (°)\r\n* Aspect,N,24,15: Ausrichtung der Dachseite in Grad (°)  \r\n* Aufstd,N,1,0: Gibt an, ob eine Aufständerung empfohlen wird (false = nein / true = ja)\r\n* PvArea,N,24,15: Dachfläche in Quadratmetern, die sich für die Installation einer Photovoltaikanlage eignet (m²).\r\n* RoofID,N,9,0: Eindeutige ID je Dachseite innerhalb eines Gebäudes\r\n* gdkurl,C,134: Link zum Gründachrechner\r\n* Eignung,N,9,0: Gesamteignungskategorie Photovoltaik. 1,'sehr gut geeignet'),2,'gut geeignet'),3,'geeignet'),6,'nicht geeignet'),8,'keine Zuordnung' Die Eignung eines Daches für eine Dachbegründung wird insbesondere durch Neigung und Statik limitiert. In jedem Fall sollte eine statische Beurteilung durch Profis erfolgen.\r\n* PvAreaT,N,24,15: Dachfläche in Quadratmetern, die sich für die Installation einer solarthermischen Anlage eignet (m²)\r\n* ErtKwP_K,N,24,15: Ertrag der Anlage in Kilowattstunden pro Jahr pro installiertem Kilowatt peak Leistung (kWh/kWp/a) (diesen Wert verwenden, wenn Aufstd = false)\r\n* ErtKwha_K,N,24,15: Gesamtertrag der Anlage in Kilowattstunden pro Jahr ohne Nutzung einer Aufständerung (diesen Wert verwenden, wenn Aufstd = false)\r\n* RoofType,C,80: Interne Zuordnung der Dachseite zu einem Dachtyp (Flachdach, Spitzdach, unbekannt)\r\n* Schatten,N,24,15: Reduzierung der auf die Dachfläche einfallenden Einstrahlung durch Verschattung in Prozent pro Jahr (diesen Wert verwenden, wenn Aufstd = false)\r\n* Eignung_G,N,9,0: Gesamteignungskategorie Gründach. Eignung 1: 0 - <=9° (sehr gut geeignet)\r\nEignung 2: >9 - <=15° (gut geeignet), Eignung 3: >15 - <=20° (geeignet), Eignung 6: >20° (nicht geeignet), Eignung 8: dem Gebäude konnte keine Dachseite zugeordnet werden\r\n* Eignung_T,N,9,0: Gesamteignungskategorie Solarthermie 1,'sehr gut geeignet'),2,'gut geeignet'),3,'geeignet'),6,'nicht geeignet'),8,'keine Zuordnung'\r\n* ErtKwP_KA,N,24,15: Ertrag der Anlage in Kilowattstunden pro Jahr pro installiertem Kilowatt peak Leistung (kWh/kWp/a) (diesen Wert verwenden, wenn Aufstd = true)\r\n* ErtKwha_KA,N,24,15: Gesamtertrag der Anlage in Kilowattstunden pro Jahr bei Nutzung einer Aufstände-rung (diesen Wert verwenden, wenn Aufstd = true)\r\n* GreenArea,N,24,15: Gründach-Fläche. Dieser Wert gibt an, welche Fläche des Gesamtdaches für eine Dachbegrünung geeignet ist. So werden z.B. Schornsteine und Giebel aus der Fläche herausgerechnet.\r\n* PercentMs,N,24,15. Auf diese Dachseite durchschnittlich eintreffende Einstrahlung in Prozent vom lokal maximal möglichen Wert (diesen Wert verwenden, wenn Aufstd = false)\r\n* SchattenA,N,24,15 Reduzierung der auf die Dachfläche einfallenden Einstrahlung durch Verschattung in Prozent pro Jahr (diesen Wert verwenden, wenn Aufstd = true)\r\n* SchattenT,N,24,15: Interner Wert, der für Berechnungen genutzt wird\r\n* BuildingID,N,9,0: Eindeutige ID je Gebäude\r\n* PercentMsA,N,24,15: Auf diese Dachseite durchschnittlich eintreffende Einstrahlung in Prozent vom lokal maximal möglichen Wert (diesen Wert verwenden, wenn Aufstd = true)\r\n* calcurl_pv,C,127 Link zum Photovoltaik-Rechner\r\n* calcurl_st,C,137: Link zum Solarthermie-Rechner"
+      },
+      "id": "126bd2a9-5157-4203-a095-f8e7e05cd86a",
+      "issued": "2022-05-17T00:00:00Z",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "modified": "2023-03-28T15:32:09.245943Z",
+      "title": {
+        "de": "sdk_linz_daecher.shx"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.linz.gv.at/katalog/geodata/daecher/sdk_linz_daecher.dbf"
+      ],
+      "description": {
+        "de": "* Area,N,24,15: Dachfläche in Quadratmeter\r\n* Power,N,24,15: Installierbare Leistung auf der Dachseite in Kilowatt peak (kWp). Bei den Dachseiten ist die-ser Wert leer, da die Leistung im Wirtschaftlichkeitsrechner modulgenau berechnet wird. Die installierbare Leistung kann jedoch über ErtKwha_K / ErtKwP_K = Power berechnet werden.  \r\n* Slope,N,24,15: Neigung der Dachseite in Grad (°)\r\n* Aspect,N,24,15: Ausrichtung der Dachseite in Grad (°)  \r\n* Aufstd,N,1,0: Gibt an, ob eine Aufständerung empfohlen wird (false = nein / true = ja)\r\n* PvArea,N,24,15: Dachfläche in Quadratmetern, die sich für die Installation einer Photovoltaikanlage eignet (m²).\r\n* RoofID,N,9,0: Eindeutige ID je Dachseite innerhalb eines Gebäudes\r\n* gdkurl,C,134: Link zum Gründachrechner\r\n* Eignung,N,9,0: Gesamteignungskategorie Photovoltaik. 1,'sehr gut geeignet'),2,'gut geeignet'),3,'geeignet'),6,'nicht geeignet'),8,'keine Zuordnung' Die Eignung eines Daches für eine Dachbegründung wird insbesondere durch Neigung und Statik limitiert. In jedem Fall sollte eine statische Beurteilung durch Profis erfolgen.\r\n* PvAreaT,N,24,15: Dachfläche in Quadratmetern, die sich für die Installation einer solarthermischen Anlage eignet (m²)\r\n* ErtKwP_K,N,24,15: Ertrag der Anlage in Kilowattstunden pro Jahr pro installiertem Kilowatt peak Leistung (kWh/kWp/a) (diesen Wert verwenden, wenn Aufstd = false)\r\n* ErtKwha_K,N,24,15: Gesamtertrag der Anlage in Kilowattstunden pro Jahr ohne Nutzung einer Aufständerung (diesen Wert verwenden, wenn Aufstd = false)\r\n* RoofType,C,80: Interne Zuordnung der Dachseite zu einem Dachtyp (Flachdach, Spitzdach, unbekannt)\r\n* Schatten,N,24,15: Reduzierung der auf die Dachfläche einfallenden Einstrahlung durch Verschattung in Prozent pro Jahr (diesen Wert verwenden, wenn Aufstd = false)\r\n* Eignung_G,N,9,0: Gesamteignungskategorie Gründach. Eignung 1: 0 - <=9° (sehr gut geeignet)\r\nEignung 2: >9 - <=15° (gut geeignet), Eignung 3: >15 - <=20° (geeignet), Eignung 6: >20° (nicht geeignet), Eignung 8: dem Gebäude konnte keine Dachseite zugeordnet werden\r\n* Eignung_T,N,9,0: Gesamteignungskategorie Solarthermie 1,'sehr gut geeignet'),2,'gut geeignet'),3,'geeignet'),6,'nicht geeignet'),8,'keine Zuordnung'\r\n* ErtKwP_KA,N,24,15: Ertrag der Anlage in Kilowattstunden pro Jahr pro installiertem Kilowatt peak Leistung (kWh/kWp/a) (diesen Wert verwenden, wenn Aufstd = true)\r\n* ErtKwha_KA,N,24,15: Gesamtertrag der Anlage in Kilowattstunden pro Jahr bei Nutzung einer Aufstände-rung (diesen Wert verwenden, wenn Aufstd = true)\r\n* GreenArea,N,24,15: Gründach-Fläche. Dieser Wert gibt an, welche Fläche des Gesamtdaches für eine Dachbegrünung geeignet ist. So werden z.B. Schornsteine und Giebel aus der Fläche herausgerechnet.\r\n* PercentMs,N,24,15. Auf diese Dachseite durchschnittlich eintreffende Einstrahlung in Prozent vom lokal maximal möglichen Wert (diesen Wert verwenden, wenn Aufstd = false)\r\n* SchattenA,N,24,15 Reduzierung der auf die Dachfläche einfallenden Einstrahlung durch Verschattung in Prozent pro Jahr (diesen Wert verwenden, wenn Aufstd = true)\r\n* SchattenT,N,24,15: Interner Wert, der für Berechnungen genutzt wird\r\n* BuildingID,N,9,0: Eindeutige ID je Gebäude\r\n* PercentMsA,N,24,15: Auf diese Dachseite durchschnittlich eintreffende Einstrahlung in Prozent vom lokal maximal möglichen Wert (diesen Wert verwenden, wenn Aufstd = true)\r\n* calcurl_pv,C,127 Link zum Photovoltaik-Rechner\r\n* calcurl_st,C,137: Link zum Solarthermie-Rechner"
+      },
+      "id": "b4bf5261-fbc3-40b5-a60f-33101ef1ca97",
+      "issued": "2022-05-17T00:00:00Z",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "modified": "2023-03-28T15:32:09.245559Z",
+      "title": {
+        "de": "sdk_linz_daecher.dbf"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.linz.gv.at/katalog/geodata/daecher/sdk_linz_daecher.prj"
+      ],
+      "description": {
+        "de": "* Area,N,24,15: Dachfläche in Quadratmeter\r\n* Power,N,24,15: Installierbare Leistung auf der Dachseite in Kilowatt peak (kWp). Bei den Dachseiten ist die-ser Wert leer, da die Leistung im Wirtschaftlichkeitsrechner modulgenau berechnet wird. Die installierbare Leistung kann jedoch über ErtKwha_K / ErtKwP_K = Power berechnet werden.  \r\n* Slope,N,24,15: Neigung der Dachseite in Grad (°)\r\n* Aspect,N,24,15: Ausrichtung der Dachseite in Grad (°)  \r\n* Aufstd,N,1,0: Gibt an, ob eine Aufständerung empfohlen wird (false = nein / true = ja)\r\n* PvArea,N,24,15: Dachfläche in Quadratmetern, die sich für die Installation einer Photovoltaikanlage eignet (m²).\r\n* RoofID,N,9,0: Eindeutige ID je Dachseite innerhalb eines Gebäudes\r\n* gdkurl,C,134: Link zum Gründachrechner\r\n* Eignung,N,9,0: Gesamteignungskategorie Photovoltaik. 1,'sehr gut geeignet'),2,'gut geeignet'),3,'geeignet'),6,'nicht geeignet'),8,'keine Zuordnung' Die Eignung eines Daches für eine Dachbegründung wird insbesondere durch Neigung und Statik limitiert. In jedem Fall sollte eine statische Beurteilung durch Profis erfolgen.\r\n* PvAreaT,N,24,15: Dachfläche in Quadratmetern, die sich für die Installation einer solarthermischen Anlage eignet (m²)\r\n* ErtKwP_K,N,24,15: Ertrag der Anlage in Kilowattstunden pro Jahr pro installiertem Kilowatt peak Leistung (kWh/kWp/a) (diesen Wert verwenden, wenn Aufstd = false)\r\n* ErtKwha_K,N,24,15: Gesamtertrag der Anlage in Kilowattstunden pro Jahr ohne Nutzung einer Aufständerung (diesen Wert verwenden, wenn Aufstd = false)\r\n* RoofType,C,80: Interne Zuordnung der Dachseite zu einem Dachtyp (Flachdach, Spitzdach, unbekannt)\r\n* Schatten,N,24,15: Reduzierung der auf die Dachfläche einfallenden Einstrahlung durch Verschattung in Prozent pro Jahr (diesen Wert verwenden, wenn Aufstd = false)\r\n* Eignung_G,N,9,0: Gesamteignungskategorie Gründach. Eignung 1: 0 - <=9° (sehr gut geeignet)\r\nEignung 2: >9 - <=15° (gut geeignet), Eignung 3: >15 - <=20° (geeignet), Eignung 6: >20° (nicht geeignet), Eignung 8: dem Gebäude konnte keine Dachseite zugeordnet werden\r\n* Eignung_T,N,9,0: Gesamteignungskategorie Solarthermie 1,'sehr gut geeignet'),2,'gut geeignet'),3,'geeignet'),6,'nicht geeignet'),8,'keine Zuordnung'\r\n* ErtKwP_KA,N,24,15: Ertrag der Anlage in Kilowattstunden pro Jahr pro installiertem Kilowatt peak Leistung (kWh/kWp/a) (diesen Wert verwenden, wenn Aufstd = true)\r\n* ErtKwha_KA,N,24,15: Gesamtertrag der Anlage in Kilowattstunden pro Jahr bei Nutzung einer Aufstände-rung (diesen Wert verwenden, wenn Aufstd = true)\r\n* GreenArea,N,24,15: Gründach-Fläche. Dieser Wert gibt an, welche Fläche des Gesamtdaches für eine Dachbegrünung geeignet ist. So werden z.B. Schornsteine und Giebel aus der Fläche herausgerechnet.\r\n* PercentMs,N,24,15. Auf diese Dachseite durchschnittlich eintreffende Einstrahlung in Prozent vom lokal maximal möglichen Wert (diesen Wert verwenden, wenn Aufstd = false)\r\n* SchattenA,N,24,15 Reduzierung der auf die Dachfläche einfallenden Einstrahlung durch Verschattung in Prozent pro Jahr (diesen Wert verwenden, wenn Aufstd = true)\r\n* SchattenT,N,24,15: Interner Wert, der für Berechnungen genutzt wird\r\n* BuildingID,N,9,0: Eindeutige ID je Gebäude\r\n* PercentMsA,N,24,15: Auf diese Dachseite durchschnittlich eintreffende Einstrahlung in Prozent vom lokal maximal möglichen Wert (diesen Wert verwenden, wenn Aufstd = true)\r\n* calcurl_pv,C,127 Link zum Photovoltaik-Rechner\r\n* calcurl_st,C,137: Link zum Solarthermie-Rechner"
+      },
+      "id": "15eac3d1-b1d3-42ee-9c0a-f5a4f8b82ae6",
+      "issued": "2022-05-17T00:00:00Z",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "modified": "2023-03-28T15:32:09.245706Z",
+      "title": {
+        "de": "sdk_linz_daecher.prj"
+      }
+    }
+  ],
+  "id": "76c1f7fe-a82a-4ea3-87bb-23e83f9e3e0a",
+  "identifier": [
+    "76c1f7fe-a82a-4ea3-87bb-23e83f9e3e0a"
+  ],
+  "is_hvd": false,
+  "issued": "2022-05-17T13:08:29.761064Z",
+  "keywords": [
+    {
+      "id": "gründach",
+      "label": "Gründach",
+      "language": "de"
+    },
+    {
+      "id": "kataster",
+      "label": "Kataster",
+      "language": "de"
+    },
+    {
+      "id": "stadtplan",
+      "label": "Stadtplan",
+      "language": "de"
+    },
+    {
+      "id": "dächer",
+      "label": "Dächer",
+      "language": "de"
+    },
+    {
+      "id": "sonneneinstrahlung",
+      "label": "Sonneneinstrahlung",
+      "language": "de"
+    },
+    {
+      "id": "klimawandel",
+      "label": "Klimawandel",
+      "language": "de"
+    },
+    {
+      "id": "solarthermie",
+      "label": "Solarthermie",
+      "language": "de"
+    },
+    {
+      "id": "geodaten",
+      "label": "Geodaten",
+      "language": "de"
+    },
+    {
+      "id": "photovoltaik",
+      "label": "Photovoltaik",
+      "language": "de"
+    },
+    {
+      "id": "ptu",
+      "label": "PTU",
+      "language": "de"
+    },
+    {
+      "id": "solarpotential",
+      "label": "Solarpotential",
+      "language": "de"
+    }
+  ],
+  "modified": "2022-06-03T00:00:00Z",
+  "publisher": {
+    "email": "open.commons@linz.at",
+    "name": "Stadt Linz",
+    "type": "Organization"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/76c1f7fe-a82a-4ea3-87bb-23e83f9e3e0a",
+  "spatial": [],
+  "temporal": [],
+  "title": {
+    "de": "Solar- und Gründachpotential-Kataster (Linz)"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

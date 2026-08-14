@@ -1,0 +1,325 @@
+{
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": {
+      "de": "Das Land Vorarlberg stellt auf data.gv.at allen Interessierten Regierungs- und Verwaltungsdaten zur Verfügung. In unterschiedlichen Formaten stehen diese Daten zur freien Wiederverwendung und Weiterverwertung zur Verfügung. Die Daten werden in maschinenlesbarer, offen lizenzierter, nicht proprietärer Form dauerhaft und kostenlos zur Verfügung gestellt. Personenbezogene Daten werden dabei keine veröffentlicht.\r\nWir wünschen Ihnen viel Spaß beim Durchstöbern der Daten und freuen uns über jedes Feedback.\r\nWenn Sie neue Anwendungen entwickelt oder neue Erkenntnisse gewonnen haben, informieren Sie uns unter land@vorarlberg.at"
+    },
+    "has_part": null,
+    "homepage": null,
+    "id": "l8",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2026-02-12T08:23:26Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2026-02-12T08:23:26Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "Land Vorarlberg"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-12-19T08:43:42Z",
+    "modified": "2026-08-08T06:03:43Z"
+  },
+  "categories": [
+    {
+      "id": "TRAN",
+      "label": {
+        "bg": "Транспорт",
+        "cs": "Doprava",
+        "da": "Transport",
+        "de": "Verkehr",
+        "el": "Μεταφορές",
+        "en": "Transport",
+        "es": "Transporte",
+        "et": "Transport",
+        "fi": "Liikenne",
+        "fr": "Transports",
+        "ga": "Iompar",
+        "hr": "Promet",
+        "hu": "Közlekedés",
+        "it": "Trasporti",
+        "lt": "Transportas",
+        "lv": "Transports",
+        "mt": "Trasport",
+        "nb": "Transport",
+        "nl": "Vervoer",
+        "nn": "Transport",
+        "no": "Transport",
+        "pl": "Transport",
+        "pt": "Transportes",
+        "ro": "Transport",
+        "sk": "Doprava",
+        "sl": "Transport",
+        "sv": "Transport"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/TRAN"
+    }
+  ],
+  "conforms_to": [],
+  "contact_point": [
+    {
+      "email": "mailto:landesvermessungsamt@vorarlberg.at",
+      "name": "Vorarlberg, Landesamt für Vermessung und Geoinformation, Abteilung Geoinformation, t: +43 (0) 5522 / 75482, f: +43 (0) 5522 / 754826,  Johannitergasse 6 6800 Feldkirch Austria",
+      "type": "Organization"
+    }
+  ],
+  "country": null,
+  "description": {
+    "de": "Dieser Datensatz beinhaltet verschiedene StVO-Maßnahmen welche in der GIP bislang eingetragen sind. Diese haben vor allem für das Routing Auswirkungen. Konkret werden Informationen zu folgenden StVO-Maßnahmen gesammelt: Geschwindigkeitsbeschränkungen, Fahrverbote (aller Art), Gesperrter Durchzugsverkehr, Wohnstraßen, Begegnungszonen, Fahrradstraßen und Fußgängerzonen. Es besteht kein Anspruch auf Vollständigkeit.  Wichtige Felder und Datentypen der Attributtabelle: sde_id\t (Integer)\t\tSDE_ID der Nutzungsbedingung str_kategorie (String)\t\tStraßenkategorie laut GIP-Tabelle (LUT_STREETCATEGORY) str_name (String)\t\tHauptstraßenname (bei Gemeindestraßen der Gemeindestraßenname, bei Landesstraßen der verordnete L-Name (z.B. L190 - Vorarlberger Straße) ucon_id (String)\t\tID der Nutzungsbedingung gueltigkeit (String)\t\tStraßenverkehrsteilnehmer für den die StVO-Maßnahme gültig ist stvo_typ (String)\t\tTyp der Nutzungsbedingung massnahme (String)\t\tTyp der Maßnahme lt. Straßenverkehrordnung\t wert(Integer)\t\t\tZahlenwert der StVO-Maßnahme (z.B. 60 bei Geschwindigkeitsbeschränkungen)\t richtung (Integer)\t\tRichtung der StVO-Maßnahme (0=gegen, 1=in, 2=beide) auf Basis der Digitalisierungsrichtung edge_id (double)\t\tID des Abschnitts edge_from (double)\t\tProzentwert; Start der Nutzungsbedingung welche auf den Abschnitt referenziert edge_to (double)\t\tProzentwert; Ende der Nutzungsbedingung welche auf den Abschnitt referenziert remark (String)\t\t\tAnmerkungsfeld  Datenquelle: verkehrsinfo.shp"
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:verkehrsinfo&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "847d73be-8e3d-40ee-a924-5f1faac5ee31",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "GPKG-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:verkehrsinfo&outputFormat=shape-zip"
+      ],
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "5a4dc1f1-8cf8-4e15-94af-c96ba8b9029f",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "SHP-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:verkehrsinfo&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "46deceb8-b890-44ea-85cb-8a5e29ebf6b7",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WFS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:verkehrsinfo&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "64a19c98-0d70-48ff-964e-d150131827a3",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "KML-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/vogis/verkehrsinfo/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+      ],
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "fef32b10-f996-4607-9182-b2922c5433f0",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WMS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/90a1ef1c-87f1-4423-8b66-e3fab397d08d"
+      ],
+      "format": {
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+      },
+      "id": "3bc11259-7c5f-46dd-bc5a-cd34b9cd6e0e",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Metadaten-Katalog"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:verkehrsinfo&outputFormat=application/json&maxFeatures=1000000"
+      ],
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "e75db6a8-5410-417d-ab3f-f8a5486386a5",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "JSON-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:verkehrsinfo&outputFormat=csv"
+      ],
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "1da45185-638f-48ff-a78a-19cf92c6c2c1",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "CSV-Download"
+      }
+    }
+  ],
+  "id": "c7880e37-ecfd-4824-89b9-ae31b88e17db",
+  "identifier": [
+    "c7880e37-ecfd-4824-89b9-ae31b88e17db"
+  ],
+  "is_hvd": false,
+  "keywords": [
+    {
+      "id": "strasse",
+      "label": "strasse",
+      "language": "de"
+    },
+    {
+      "id": "verkehr",
+      "label": "verkehr",
+      "language": "de"
+    }
+  ],
+  "publisher": {
+    "name": "Land Vorarlberg",
+    "type": "Organization"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/c7880e37-ecfd-4824-89b9-ae31b88e17db",
+  "spatial": [],
+  "title": {
+    "de": "Intermodales Verkehrsreferenzsystem (GIP.at) Verkehrsinformationen Vorarlberg"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

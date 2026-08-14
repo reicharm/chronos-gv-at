@@ -1,0 +1,855 @@
+{
+  "accrual_periodicity": {
+    "label": "weekly",
+    "resource": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
+  },
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": {
+      "de": "Open Government Data (OGD) in Wien bedeutet, dass die Stadt Zahlen, Daten und Dokumente der Verwaltung öffentlich für jegliche Nutzung zur Verfügung stellt. Dabei gelten die Leitprinzipien „open by default“ und „open by design“. \r\n&nbsp;\r\nMehrere hundert Datensätze liefern detaillierte Auskunft über Einbahnen, Echtzeitinformationen der Wiener Linien, historische Luftbildaufnahmen, Messdaten von Luftschadstoffen oder WLAN-Standorte, um nur einige wenige Bereiche zu nennen. \r\n&nbsp;\r\nMit diesen verifizierten Daten können Privatpersonen oder Unternehmen beispielsweise Apps programmieren, die das Leben einfacher machen. Die Wissenschaft und Forschung kann diese Daten einfach nutzen. \r\n\r\n\r\n&nbsp;\r\nNeue Daten werden zu folgenden Terminen publiziert:  \r\n\r\n\r\n&nbsp;\r\n* OGD-Phase 58: 7. März 2025 (Open Data MeetUp am 6.März 2025 Wien & Wein im Rahmen der Open Data Days 2025)\r\n* OGD-Phase 59: 27. Juni 2025\r\n* OGD-Phase 60: 26. September 2025 (Open Data MeetUp am 25. September 2025 Wien & Wien)\r\n* OGD-Phase 61: 19. Dezember 2025\r\n\r\n\r\n&nbsp;\r\nDetailinformationen dazu finden Sie jeweils im Changelog oder abonnieren Sie unseren Digitales Wien Newsletter.\r\n\r\n\r\n&nbsp;\r\nStudien, Gutachten und Umfragen, die die Stadt Wien seit dem 1. Jänner 2023 in Auftrag gibt, müssen nach Artikel 20 des Bundes-Verfassungsgesetzes samt Kosten veröffentlicht werden. Ausnahmen von der Veröffentlichung können sich etwa aus dem Datenschutz, der Amtsverschwiegenheit, dem Urheberrecht oder aus Geschäfts- und Betriebsgeheimnissen ergeben.\r\n\r\n\r\n&nbsp;\r\nOpen Data Beauftragter der Stadt Wien: Gerhard Hartmann gerhard.hartmann@wien.gv.at"
+    },
+    "has_part": null,
+    "homepage": null,
+    "id": "l9",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2026-02-12T07:58:10Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2026-02-12T07:58:10Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "Stadt Wien"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-12-17T13:58:53Z",
+    "modified": "2025-12-17T13:58:53Z"
+  },
+  "categories": [
+    {
+      "id": "TRAN",
+      "label": {
+        "bg": "Транспорт",
+        "cs": "Doprava",
+        "da": "Transport",
+        "de": "Verkehr",
+        "el": "Μεταφορές",
+        "en": "Transport",
+        "es": "Transporte",
+        "et": "Transport",
+        "fi": "Liikenne",
+        "fr": "Transports",
+        "ga": "Iompar",
+        "hr": "Promet",
+        "hu": "Közlekedés",
+        "it": "Trasporti",
+        "lt": "Transportas",
+        "lv": "Transports",
+        "mt": "Trasport",
+        "nb": "Transport",
+        "nl": "Vervoer",
+        "nn": "Transport",
+        "no": "Transport",
+        "pl": "Transport",
+        "pt": "Transportes",
+        "ro": "Transport",
+        "sk": "Doprava",
+        "sl": "Transport",
+        "sv": "Transport"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/TRAN"
+    }
+  ],
+  "contact_point": [],
+  "country": null,
+  "description": {
+    "de": "Der Straßengraph ist ein topologischer Graph des Abschnittsnetzes der Wiener Straßen. Die Netzlinien verlaufen in der Regel in der Straßenachse. Ein Straßenabschnitt ist der Teil einer Straße zwischen zwei Kreuzungen. Die Stationierungsrichtung erfolgt entsprechend der aufsteigenden Orientierungsnummern. Die Straßenabschnitte werden von Netzknoten begrenzt. Diese Netzknoten liegen im Regelfall im Kreuzungsmittelpunkt. Dieser Datensatz beihnaltet die öffentlichen Verkehrsflächen (Gemeindestraßen, Hauptstraßen A und B)."
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=STRASSENGRAPHOGD&styles=&format=image/gif&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "7d66812b-671e-41f9-bb51-7698d998e77f",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (GIF)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=STRASSENKNOTENOGD&styles=&format=image/png&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "0974698d-0414-443b-b3f1-6c495fe2f89d",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (PNG/8bit) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=STRASSENKNOTENOGD&styles=&format=image/jpeg&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "08f1c53c-c44f-4204-8bdb-a1d3048a7a26",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (JPEG) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENKNOTENOGD&srsName=EPSG:4326&outputFormat=csv"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "baf3dc2d-f303-4938-97af-bb409d297128",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (CSV) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:STRASSENKNOTENOGD&styles=STRASSENKNOTENOGDPNG&format=application/vnd.google-earth.kml+xml"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "3b4c0c23-0791-4441-b7db-983659c471c2",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KML) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENGRAPHOGD&srsName=EPSG:4326&outputFormat=shape-zip"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "e819dd4b-6c4d-4781-a8b1-668272c8fc90",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (SHP)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=STRASSENGRAPHOGD&styles=&format=image/jpeg&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "3f37ed96-c2ce-420a-90e9-cae5ce348ad3",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (JPEG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENKNOTENOGD&styles=&format=image/jpeg"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "435539bd-4abf-4f51-ae29-1af0ba1deb4d",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (JPEG) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENKNOTENOGD&styles=&format=image/gif"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "a3a2ad31-c04c-4f4c-99cc-ec9f71387ea8",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GIF) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENKNOTENOGD&srsName=EPSG:4326&outputFormat=json"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "ff308400-d54f-4a89-958f-8a082299e94d",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (JSON) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetCapabilities"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "c3d08217-70df-450a-b7fb-9aca18502f21",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=STRASSENGRAPHOGD&styles=&format=image/png&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "05aa2f97-4e26-439e-b592-718375f04f6e",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (PNG/8bit)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:STRASSENGRAPHOGD&styles=&format=application/vnd.google-earth.kmz"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "KMZ",
+        "label": "KMZ",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KMZ"
+      },
+      "id": "64e5368b-0a81-4702-9ec8-7825370e208e",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KMZ)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:STRASSENKNOTENOGD&styles=&format=application/rss+xml"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "id": "6a78a2d1-1ce9-47d8-9ad8-b3984262bb0b",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GeoRSS) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENGRAPHOGD&srsName=EPSG:4326"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "GML",
+        "label": "GML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
+      },
+      "id": "185ec2a3-638d-49a9-8837-d088affafe5b",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (GML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENGRAPHOGD&styles=&format=image/svg"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "id": "8ad25830-385d-4c94-838d-2617dbd070b2",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (SVG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:STRASSENGRAPHOGD&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "be6ada88-5c7f-4ce7-9755-99b0769abd31",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENGRAPHOGD&styles=&format=image/gif"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "15dadcad-a4df-46c6-a7f4-4da3e493df75",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GIF)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENGRAPHOGD&styles=&format=image/jpeg"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "7b36c517-7fec-492c-9832-036a07d2a293",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (JPEG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.1.0&service=WFS&request=GetCapabilities"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "7e14ff90-adb5-4a6f-8e01-3fdefd5b990f",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENGRAPHOGD&srsName=EPSG:4326&outputFormat=csv"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "a66e56d8-1ac7-494f-a443-feecea8fdeb2",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (CSV)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENKNOTENOGD&styles=&format=image/png"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "bdf559a5-7ef4-40a2-8d68-957d4cf60024",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:STRASSENGRAPHOGD&styles=&format=application/rss+xml"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "id": "96fd945f-57a7-4688-b3f9-481318f3097e",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GeoRSS)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENKNOTENOGD&styles=&format=image/svg"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "id": "18e448b7-9a17-4f46-89e4-ef3a651281c7",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (SVG) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:STRASSENKNOTENOGD&styles=STRASSENKNOTENOGDPNG&format=application/vnd.google-earth.kmz"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "KMZ",
+        "label": "KMZ",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KMZ"
+      },
+      "id": "00feb113-0e8e-40ec-be2b-9e9161ce0e24",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KMZ) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENKNOTENOGD&srsName=EPSG:4326&outputFormat=shape-zip"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "f90c799b-3d85-4c93-a06a-2116e042f817",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (SHP) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENGRAPHOGD&styles=&format=image/png8"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "34a2bed6-ca18-4db4-b056-ef40709a13d9",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG/8bit)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENGRAPHOGD&srsName=EPSG:4326&outputFormat=json"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "e3d15ccd-5b3b-4bac-a07b-e06d0d170ad6",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (JSON)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENKNOTENOGD&styles=&format=image/png8"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "de67d383-3dc6-4efc-9289-e8fe44c0b3be",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG/8bit) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=STRASSENKNOTENOGD&styles=&format=image/gif&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "e526cfe8-a28b-4aa6-bea3-f0a780cf02e7",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (GIF) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENGRAPHOGD&styles=&format=image/png"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "d2feba07-a9ed-4339-8093-ec76fb256225",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENKNOTENOGD&srsName=EPSG:4326"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "GML",
+        "label": "GML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
+      },
+      "id": "1d089aa8-48c7-432a-b1d7-1efc9b02b25a",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (GML) - Knoten"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?service=WMS&request=GetCapabilities&version=1.1.1"
+      ],
+      "description": {
+        "de": "Der Straßengraph besteht aus zwei Datenbeständen (Services): STRASSENGRAPHOGD (Abschnitte) und STRASSENKNOTENOGD (Knoten) mit folgenden Attributen:    \nGIP_OBJECTID = eindeutige Identifizierung des Objekts  \nMAINNAME_OBJECTID = Verweis auf den Namen in der Namenstabelle  \nFEATURENAME = Abschnittsname  \nREG_STRNAME = Regional verwendeter Straßenname (bspw. Bundesstraßenbezeichnung)  \nEDGECATEGORY = Straßenkategorie des Abschnitts, s. Feld   \nEDGECATEGORY_NAME = entschlüsselte Straßenkategorie des Abschnitts  \nFRC = Funktionelle Bewertung der Straße, s. Feld FRC_NAME  \nFRC_NAME = entschlüsselte Funktionelle Bewertung der Straße  \nFOW = Bauliche Form des Abschnitts, s. Feld FOW_NAME  \nFOW_NAME  = entschlüsselte bauliche Form des Abschnitts  \nDEDICATEDWIDTH = Trassenbreite: definiert die nutzbare Breite des Abschnitts und somit die Distanz zwischen den äußeren Kanten der Verkehrswegoberfläche.\nEs handelt sich hierbei um keinen genau vermessenen Wert. Noch nicht überarbeitete Abschnitte erhalten den Defaultwert -1\nLEVELINTERMEDIATE = Höhe des Abschnitts über Gelände in logischen Geschoßen  \nNODEFROM_OBJECTID = Verweis auf den Beginnknoten in der Knotentabelle  \nNODETO_OBJECTID = Verweis auf den Endknoten in der Knotentabelle  \nSHAPELENGTH = Länge  \nSHAPE = Geometrie  \nNEIGHBORNODE_OBJECTID = Verweis auf den Anschlussknoten in einem Nachbarnetz, das in einem anderen System gepflegt wird (z.B. Wien – ASFINAG). Die Verknüpfung verknüpft logisch die Abbildungen des selben Knotens in beiden Netzen, wobei die Geometrie der Abbilder geringfügig abweichen kann."
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "dc4ba440-037b-4974-bd99-5f69d4201734",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetCapabilities"
+      }
+    }
+  ],
+  "id": "1039ed7e-97fb-435f-b6cc-f6a105ba5e09",
+  "identifier": [
+    "1039ed7e-97fb-435f-b6cc-f6a105ba5e09"
+  ],
+  "is_hvd": false,
+  "keywords": [
+    {
+      "id": "autobahnen",
+      "label": "Autobahnen",
+      "language": "de"
+    },
+    {
+      "id": "gemeindestraße",
+      "label": "Gemeindestraße",
+      "language": "de"
+    },
+    {
+      "id": "landesstraße",
+      "label": "Landesstraße",
+      "language": "de"
+    },
+    {
+      "id": "hauptstraße-b",
+      "label": "Hauptstraße B",
+      "language": "de"
+    },
+    {
+      "id": "straßennamen",
+      "label": "Straßennamen",
+      "language": "de"
+    },
+    {
+      "id": "hauptstraße-a",
+      "label": "Hauptstraße A",
+      "language": "de"
+    },
+    {
+      "id": "straße",
+      "label": "Straße",
+      "language": "de"
+    },
+    {
+      "id": "netz",
+      "label": "Netz",
+      "language": "de"
+    },
+    {
+      "id": "schnellstraßen",
+      "label": "Schnellstraßen",
+      "language": "de"
+    },
+    {
+      "id": "rbw",
+      "label": "RBW",
+      "language": "de"
+    },
+    {
+      "id": "bundesstraße",
+      "label": "Bundesstraße",
+      "language": "de"
+    },
+    {
+      "id": "straßennetz",
+      "label": "Straßennetz",
+      "language": "de"
+    },
+    {
+      "id": "viennagis",
+      "label": "ViennaGIS",
+      "language": "de"
+    },
+    {
+      "id": "namen",
+      "label": "Namen",
+      "language": "de"
+    }
+  ],
+  "landing_page": [
+    {
+      "resource": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/"
+    }
+  ],
+  "language": [
+    {
+      "id": "de",
+      "label": "German",
+      "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+    }
+  ],
+  "modified": "2025-11-20",
+  "provenance": [
+    {
+      "label": "Abgeleitet aus Verkehrsreferenzsystem GIP.at"
+    }
+  ],
+  "publisher": {
+    "email": "mailto:open@post.wien.gv.at",
+    "homepage": "https://digitales.wien.gv.at",
+    "name": "Stadt Wien",
+    "type": "Agent"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/1039ed7e-97fb-435f-b6cc-f6a105ba5e09",
+  "spatial": [],
+  "temporal": [
+    {
+      "gte": "2012-01-01"
+    }
+  ],
+  "title": {
+    "de": "Intermodales Verkehrsreferenzsystem (GIP.at) Straßengraph Wien"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

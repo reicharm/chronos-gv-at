@@ -1,0 +1,267 @@
+{
+  "applicable_legislation": [
+    "http://data.europa.eu/eli/reg_impl/2023/138/oj"
+  ],
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": null,
+    "has_part": null,
+    "homepage": null,
+    "id": "harvest-bml",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2025-12-23T14:01:23Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2025-12-30T22:31:32Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "BML Harvester"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-09-04T13:06:32Z",
+    "modified": "2026-07-01T02:06:00Z"
+  },
+  "categories": [
+    {
+      "id": "ENVI",
+      "label": {
+        "bg": "Околна среда",
+        "cs": "Životní prostředí",
+        "da": "Miljø",
+        "de": "Umwelt",
+        "el": "Περιβάλλον",
+        "en": "Environment",
+        "es": "Medio ambiente",
+        "et": "Keskkond",
+        "fi": "Ympäristö",
+        "fr": "Environnement",
+        "ga": "Comhshaol",
+        "hr": "Okoliš",
+        "hu": "Környezet",
+        "it": "Ambiente",
+        "lt": "Aplinka",
+        "lv": "Vide",
+        "mt": "Ambjent",
+        "nb": "Miljø",
+        "nl": "Milieu",
+        "nn": "Miljø",
+        "no": "Miljø",
+        "pl": "Środowisko",
+        "pt": "Ambiente",
+        "ro": "Mediu",
+        "sk": "Životné prostredie",
+        "sl": "Okolje",
+        "sv": "Miljö"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/ENVI"
+    }
+  ],
+  "contact_point": [
+    {
+      "email": "wasserhaushalt@bmluk.gv.at",
+      "name": "Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft",
+      "type": "Organization",
+      "url": [
+        "https://ehyd.gv.at"
+      ]
+    }
+  ],
+  "country": null,
+  "description": {
+    "de": "Online über­tragene Daten sind von großer Bedeutung für die Abfluss­vorhersage und die Hoch­wasser­warnung. Die Daten geben einen österreich­weiten Über­blick der aktuellen Situation an unseren Ober­flächen­gewässern und führen weiter zu den hydro­graphischen Landes­diensten."
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://gis.lfrz.gv.at/api/geodata/i000501/wms?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities"
+      ],
+      "description": {
+        "de": "* messstelle (TEXT): Messstellenname\r\n* prognose (BOOLEAN): Angabe ob für die Messstelle Prognosedaten verfügbar sind\r\n* wertw_cm (TEXT): Wert für den Wasserstand zum angegebenen Zeitpunkt\r\n* lat (TEXT): Y-Koordinate der Messstelle in geographischen Koordinaten (WGS84)\r\n* lon (TEXT): X-Koordinate der Messstelle in geographischen Koordinaten (WGS84)\r\n* geometry (GEOMETRY): Geometry der Messstelle\r\n* gesamtcode (INTEGER): Gibt den Code für die korrekte Kategorisierung lt. https://ehyd.gv.at an. 1. Ziffer: 1...Niederwasser, 2...Mittelwasser, 3...erhöhte Wasserführung, 4...Hochwasser Stufe 1, 5...Hochwasser Stufe 2, 6...Hochwasser Stufe 3, 9...keine Daten; 2. Ziffer: 0...gleichbleibend, 1...steigend, 2...sinkend, 3...normal; 3. Ziffer: 0...normal, 1...Werte älter als 24h\r\n* zeitpunkt (DATETIME): Zeitpunkt der letzten erfolgreichen übermittlung des gemessenen Wertes\r\n* einheit (TEXT): Einheit des gemessenen Wertes (cm | m ü.A. | m³/s)\r\n* wert (TEXT): Gemessener Wert zum angegebenen Zeitpunkt\r\n* herkunft (TEXT): Datenherkunft\r\n* parameter (TEXT): Messgröße\r\n* internet (TEXT): Direkter Link zur Messstelle auf der Seites des Betreibers\r\n* land (TEXT): Angabe des Landes bei Messstellen außerhalb Österreichs\r\n* hydrodienst (TEXT): Betreiber der Messsstelle\r\n* gewaesser (TEXT): Gewässername\r\n* hzbnr (INTEGER): Messstellennummer des hydrographischen Dienstes\r\n* dbmsnr (INTEGER): Interne Datenbanknummer"
+      },
+      "id": "f243b7b6-352a-4bd5-9354-a5e8bdd79e1b",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Pegel Aktuell (WMS)"
+      }
+    },
+    {
+      "access_url": [
+        "https://gis.lfrz.gv.at/api/geodata/i000501/ogc/features/v1"
+      ],
+      "description": {
+        "de": "* messstelle (TEXT): Messstellenname\r\n* prognose (BOOLEAN): Angabe ob für die Messstelle Prognosedaten verfügbar sind\r\n* wertw_cm (TEXT): Wert für den Wasserstand zum angegebenen Zeitpunkt\r\n* lat (TEXT): Y-Koordinate der Messstelle in geographischen Koordinaten (WGS84)\r\n* lon (TEXT): X-Koordinate der Messstelle in geographischen Koordinaten (WGS84)\r\n* geometry (GEOMETRY): Geometry der Messstelle\r\n* gesamtcode (INTEGER): Gibt den Code für die korrekte Kategorisierung lt. https://ehyd.gv.at an. 1. Ziffer: 1...Niederwasser, 2...Mittelwasser, 3...erhöhte Wasserführung, 4...Hochwasser Stufe 1, 5...Hochwasser Stufe 2, 6...Hochwasser Stufe 3, 9...keine Daten; 2. Ziffer: 0...gleichbleibend, 1...steigend, 2...sinkend, 3...normal; 3. Ziffer: 0...normal, 1...Werte älter als 24h\r\n* zeitpunkt (DATETIME): Zeitpunkt der letzten erfolgreichen übermittlung des gemessenen Wertes\r\n* einheit (TEXT): Einheit des gemessenen Wertes (cm | m ü.A. | m³/s)\r\n* wert (TEXT): Gemessener Wert zum angegebenen Zeitpunkt\r\n* herkunft (TEXT): Datenherkunft\r\n* parameter (TEXT): Messgröße\r\n* internet (TEXT): Direkter Link zur Messstelle auf der Seites des Betreibers\r\n* land (TEXT): Angabe des Landes bei Messstellen außerhalb Österreichs\r\n* hydrodienst (TEXT): Betreiber der Messsstelle\r\n* gewaesser (TEXT): Gewässername\r\n* hzbnr (INTEGER): Messstellennummer des hydrographischen Dienstes\r\n* dbmsnr (INTEGER): Interne Datenbanknummer"
+      },
+      "id": "8f142fe8-7345-4622-8459-e26e4382b94f",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "OAPIF Hydrographie Österreich"
+      }
+    },
+    {
+      "access_url": [
+        "https://gis.lfrz.gv.at/api/geodata/i000501/wfs?service=WFS&amp;version=2.0.0&amp;request=GetCapabilities"
+      ],
+      "description": {
+        "de": "* messstelle (TEXT): Messstellenname\r\n* prognose (BOOLEAN): Angabe ob für die Messstelle Prognosedaten verfügbar sind\r\n* wertw_cm (TEXT): Wert für den Wasserstand zum angegebenen Zeitpunkt\r\n* lat (TEXT): Y-Koordinate der Messstelle in geographischen Koordinaten (WGS84)\r\n* lon (TEXT): X-Koordinate der Messstelle in geographischen Koordinaten (WGS84)\r\n* geometry (GEOMETRY): Geometry der Messstelle\r\n* gesamtcode (INTEGER): Gibt den Code für die korrekte Kategorisierung lt. https://ehyd.gv.at an. 1. Ziffer: 1...Niederwasser, 2...Mittelwasser, 3...erhöhte Wasserführung, 4...Hochwasser Stufe 1, 5...Hochwasser Stufe 2, 6...Hochwasser Stufe 3, 9...keine Daten; 2. Ziffer: 0...gleichbleibend, 1...steigend, 2...sinkend, 3...normal; 3. Ziffer: 0...normal, 1...Werte älter als 24h\r\n* zeitpunkt (DATETIME): Zeitpunkt der letzten erfolgreichen übermittlung des gemessenen Wertes\r\n* einheit (TEXT): Einheit des gemessenen Wertes (cm | m ü.A. | m³/s)\r\n* wert (TEXT): Gemessener Wert zum angegebenen Zeitpunkt\r\n* herkunft (TEXT): Datenherkunft\r\n* parameter (TEXT): Messgröße\r\n* internet (TEXT): Direkter Link zur Messstelle auf der Seites des Betreibers\r\n* land (TEXT): Angabe des Landes bei Messstellen außerhalb Österreichs\r\n* hydrodienst (TEXT): Betreiber der Messsstelle\r\n* gewaesser (TEXT): Gewässername\r\n* hzbnr (INTEGER): Messstellennummer des hydrographischen Dienstes\r\n* dbmsnr (INTEGER): Interne Datenbanknummer"
+      },
+      "id": "fe9c9ded-989d-4c43-ba1b-9d8272eb9b01",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Pegel Aktuell (WFS)"
+      }
+    }
+  ],
+  "id": "6a67faa7-3ad7-4faf-91e9-17a518d10685",
+  "identifier": [
+    "6a67faa7-3ad7-4faf-91e9-17a518d10685"
+  ],
+  "is_hvd": true,
+  "keywords": [
+    {
+      "id": "messstellennetz",
+      "label": "Messstellennetz",
+      "language": "de"
+    },
+    {
+      "id": "hydrographie",
+      "label": "Hydrographie",
+      "language": "de"
+    },
+    {
+      "id": "umweltüberwachung",
+      "label": "Umweltüberwachung",
+      "language": "de"
+    },
+    {
+      "id": "ehyd",
+      "label": "eHYD",
+      "language": "de"
+    },
+    {
+      "id": "niederschlag",
+      "label": "Niederschlag",
+      "language": "de"
+    },
+    {
+      "id": "gewässer",
+      "label": "Gewässer",
+      "language": "de"
+    },
+    {
+      "id": "hydrographisches-netz",
+      "label": "Hydrographisches Netz",
+      "language": "de"
+    },
+    {
+      "id": "regen-(niederschlag)",
+      "label": "Regen (Niederschlag)",
+      "language": "de"
+    },
+    {
+      "id": "highvaluedataset",
+      "label": "HighValueDataset",
+      "language": "de"
+    },
+    {
+      "id": "national",
+      "label": "National",
+      "language": "de"
+    },
+    {
+      "id": "messnetz",
+      "label": "Messnetz",
+      "language": "de"
+    }
+  ],
+  "landing_page": [
+    {
+      "resource": "https://geoportal.inspire.gv.at/metadatensuche/inspire/ger/catalog.search#/metadata/6a67faa7-3ad7-4faf-91e9-17a518d10685"
+    }
+  ],
+  "language": [
+    {
+      "id": "DEU",
+      "label": "Deutsch",
+      "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+    }
+  ],
+  "modified": "2026-06-30T04:36:48.832Z",
+  "provenance": [
+    {
+      "label": "Die Daten werden von den hydrographischen Landesdiensten zur Verfügung gestellt und vom BMLUK (Abt. Wasserwirtschaft) gesammelt und veröffentlicht."
+    }
+  ],
+  "publisher": {
+    "email": "wasserhaushalt@bmluk.gv.at",
+    "homepage": "https://ehyd.gv.at",
+    "name": "BMLUK",
+    "type": "Agent"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/6a67faa7-3ad7-4faf-91e9-17a518d10685",
+  "spatial": [],
+  "title": {
+    "de": "Aktuelle Pegelstände Österreich"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

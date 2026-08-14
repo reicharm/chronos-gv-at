@@ -1,0 +1,325 @@
+{
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": {
+      "de": "Das Land Vorarlberg stellt auf data.gv.at allen Interessierten Regierungs- und Verwaltungsdaten zur Verfügung. In unterschiedlichen Formaten stehen diese Daten zur freien Wiederverwendung und Weiterverwertung zur Verfügung. Die Daten werden in maschinenlesbarer, offen lizenzierter, nicht proprietärer Form dauerhaft und kostenlos zur Verfügung gestellt. Personenbezogene Daten werden dabei keine veröffentlicht.\r\nWir wünschen Ihnen viel Spaß beim Durchstöbern der Daten und freuen uns über jedes Feedback.\r\nWenn Sie neue Anwendungen entwickelt oder neue Erkenntnisse gewonnen haben, informieren Sie uns unter land@vorarlberg.at"
+    },
+    "has_part": null,
+    "homepage": null,
+    "id": "l8",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2026-02-12T08:23:26Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2026-02-12T08:23:26Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "Land Vorarlberg"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-12-19T08:43:23Z",
+    "modified": "2026-08-08T06:03:23Z"
+  },
+  "categories": [
+    {
+      "id": "TRAN",
+      "label": {
+        "bg": "Транспорт",
+        "cs": "Doprava",
+        "da": "Transport",
+        "de": "Verkehr",
+        "el": "Μεταφορές",
+        "en": "Transport",
+        "es": "Transporte",
+        "et": "Transport",
+        "fi": "Liikenne",
+        "fr": "Transports",
+        "ga": "Iompar",
+        "hr": "Promet",
+        "hu": "Közlekedés",
+        "it": "Trasporti",
+        "lt": "Transportas",
+        "lv": "Transports",
+        "mt": "Trasport",
+        "nb": "Transport",
+        "nl": "Vervoer",
+        "nn": "Transport",
+        "no": "Transport",
+        "pl": "Transport",
+        "pt": "Transportes",
+        "ro": "Transport",
+        "sk": "Doprava",
+        "sl": "Transport",
+        "sv": "Transport"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/TRAN"
+    }
+  ],
+  "conforms_to": [],
+  "contact_point": [
+    {
+      "email": "mailto:landesvermessungsamt@vorarlberg.at",
+      "name": "Vorarlberg, Landesamt für Vermessung und Geoinformation, Abteilung Geoinformation, t: +43 (0) 5522 / 75482, f: +43 (0) 5522 / 754826,  Johannitergasse 6 6800 Feldkirch Austria",
+      "type": "Organization"
+    }
+  ],
+  "country": null,
+  "description": {
+    "de": "Digitales Wanderwegenetz des Landes Vorarlberg. Besteht aus Linien und umfasst eine Kategorisierung in vier Kategorien (1-4), eine vom jeweiligen Wanderwegwart geschätzte Gehzeit, eine berechnete Gehzeit (richtet sich nach Weglänge und Steigung) und eine Zuteilung nach Gemeinden. Weiters sind Faktoren wie Steigung und Weglänge erfasst. Jeder Wegabschnitt sollte von einer Wegweisertafel zur nächsten führen. Das Wanderwegnetz wurde auf Basis des Orthofotos von 2012 digitalisiert und überarbeitet. In der Nähe von Straßen wurde entweder ein Mindestabstand von 2m zur nächsten Straße gehalten oder der Wanderweg genau auf diesen gelegt.  Wichtige Felder und Datentypen der Attributtabelle: WEG_ART\t\t(integer)\tWegkategorie - (1, 2,3, 4) WEG_KATEGO\t(string)\tWegkategorie - Text GEHZEIT_RI\t(short)\t\tGehzeit Wegwart (Auf und ab abhängig von Gelände!) GEHZEIT_GE\t(short)\t\tGehzeit Wegwart (Auf und ab abhängig von Gelände!) BER_GZ_RI\t(short)\t\tGehzeit berechnet (Auf und ab abhängig von Gelände, wird mittels Phyton Script Zugriff auf SpatialAnalyst berechnet) BER_GZ_GEG\t(short)\t\tGehzeit berechnet (Auf und ab abhängig von Gelände, wird mittels Phyton Script Zugriff auf SpatialAnalyst berechnet) WEG_LAENGE\t(double)\tPolyline Länge (wird mittels Phyton Script Zugriff auf SpatialAnalyst berechnet) Laenge_3D\t(double)\tPolyline Länge über Geländemodell (wird mittels Phyton Script Zugriff auf SpatialAnalyst berechnet) Temp_ID\t\t(double)\tFür Phyton Berechnung benötigt WWWE_ID\t\t(double)\tUnique, Wege sind lt. Lagemittelpunkt den Gemeinden zugeordnet (heißt aber nicht obligat, dass diese zuständig sind) Steig_Max\t(integer)\tMax Steigung (abhängig von Gelände, wird mittels Phyton Script Zugriff auf SpatialAnalyst berechnet) HM_Auf_Ri\t(integer)\tHöhenmeter Aufwärts (abhängig von Gelände, wird mittels Phyton Script Zugriff auf SpatialAnalyst berechnet) HM_Auf_GRi\t(integer)\tHöhenmeter Abwärts (abhängig von Gelände, wird mittels Phyton Script Zugriff auf SpatialAnalyst berechnet) HM_Ri\t\t(integer)\tDifferenz von oben ( wird mittels Phyton Script Zugriff auf SpatialAnalyst berechnet) Label\t\t(string)\tderzeit keine Befüllung, wurde für GIP angelegt DATUM\t\t(string)\tDatum der letzten Änderung Tafel_1\t\t(string)\tTafel Ende 1 Wegsegment Tafel_2\t\t(string)\tTafel Ende 2 Wegsegment  Datenquelle: wander_wege.shp"
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:wander_wege&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "9879fa17-3832-48ba-99c3-873843fc08ff",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WFS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/vogis/wander_wege/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+      ],
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "d2d081be-5f0c-4752-84b2-82f69affd92a",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WMS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:wander_wege&outputFormat=csv"
+      ],
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "b7bf2298-e0a9-4649-af63-e5bcdfe03bc2",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "CSV-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:wander_wege&outputFormat=shape-zip"
+      ],
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "ab2f5450-d2bc-44b3-b86b-3a4db4bbb830",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "SHP-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/8957adeb-bad3-4cff-a776-8ed7e0d8ca58"
+      ],
+      "format": {
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+      },
+      "id": "d2b1ac05-a4c7-4ff7-872c-6170a4d5f861",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Metadaten-Katalog"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:wander_wege&outputFormat=application/json&maxFeatures=1000000"
+      ],
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "f5ffd945-2ca6-45e2-9d6a-bff5bce2910b",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "JSON-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:wander_wege&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "b97a723d-071e-4cbc-ae5a-2c1b0dcba39c",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "GPKG-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:wander_wege&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "90c4f627-178c-4fe0-a5cb-f29b6b1f798c",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "KML-Download"
+      }
+    }
+  ],
+  "id": "becd3693-6b21-4435-bc9d-3fe72647e296",
+  "identifier": [
+    "becd3693-6b21-4435-bc9d-3fe72647e296"
+  ],
+  "is_hvd": false,
+  "keywords": [
+    {
+      "id": "verkehr",
+      "label": "verkehr",
+      "language": "de"
+    },
+    {
+      "id": "weg",
+      "label": "weg",
+      "language": "de"
+    }
+  ],
+  "publisher": {
+    "name": "Land Vorarlberg",
+    "type": "Organization"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/becd3693-6b21-4435-bc9d-3fe72647e296",
+  "spatial": [],
+  "title": {
+    "de": "Intermodales Verkehrsreferenzsystem (GIP.at) Wanderwegenetz Vorarlberg"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

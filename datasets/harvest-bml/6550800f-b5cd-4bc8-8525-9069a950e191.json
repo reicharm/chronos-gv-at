@@ -1,0 +1,237 @@
+{
+  "applicable_legislation": [
+    "http://data.europa.eu/eli/reg_impl/2023/138/oj"
+  ],
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": null,
+    "has_part": null,
+    "homepage": null,
+    "id": "harvest-bml",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2025-12-23T14:01:23Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2025-12-30T22:31:32Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "BML Harvester"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-09-04T13:06:32Z",
+    "modified": "2026-07-01T02:06:00Z"
+  },
+  "categories": [
+    {
+      "id": "ENVI",
+      "label": {
+        "bg": "Околна среда",
+        "cs": "Životní prostředí",
+        "da": "Miljø",
+        "de": "Umwelt",
+        "el": "Περιβάλλον",
+        "en": "Environment",
+        "es": "Medio ambiente",
+        "et": "Keskkond",
+        "fi": "Ympäristö",
+        "fr": "Environnement",
+        "ga": "Comhshaol",
+        "hr": "Okoliš",
+        "hu": "Környezet",
+        "it": "Ambiente",
+        "lt": "Aplinka",
+        "lv": "Vide",
+        "mt": "Ambjent",
+        "nb": "Miljø",
+        "nl": "Milieu",
+        "nn": "Miljø",
+        "no": "Miljø",
+        "pl": "Środowisko",
+        "pt": "Ambiente",
+        "ro": "Mediu",
+        "sk": "Životné prostredie",
+        "sl": "Okolje",
+        "sv": "Miljö"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/ENVI"
+    }
+  ],
+  "contact_point": [
+    {
+      "email": "wasserhaushalt@bmluk.gv.at",
+      "name": "Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft",
+      "type": "Organization",
+      "url": [
+        "https://ehyd.gv.at"
+      ]
+    }
+  ],
+  "country": null,
+  "description": {
+    "de": "Infor­mationen zum aktuell gefallenen Nieder­schlag sind eine Grund­voraus­setzung, um den Abfluss der unmittel­baren Zukunft berechnen zu können. Aus diesem Grund werden immer mehr Mess­stellen mit Datenfernübertragungseinrichtungen ausge­stattet, die die Mess­ergebnisse an die hydro­graphischen Landes­dienste über­tragen."
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://gis.lfrz.gv.at/api/geodata/i000501/wms?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities"
+      ],
+      "description": {
+        "de": "* gcs6/gcs12/gcs24/gcs48/gcs72 (INTEGER): Gesamtcode für die Darstellung\r\n* geometry (GEOMETRY): Geometry der Messstelle\r\n* dbmsnr (INTEGER): Interne Datenbanknummer\r\n* ds6/ds12/ds24/ds48/ds72 (TEXT): Textliche Beschreibung des gemessenen Zeitraums\r\n* hzbnr (INTEGER): Messstellennummer des hydrographischen Dienstes\r\n* land (TEXT): Angabe des Landes bei Messstellen außerhalb Österreichs\r\n* messstelle (TEXT): Messstellenname\r\n* hoehe (TEXT): Seehöhe der Messstelle [m ü. A.]\r\n* hydrodienst (TEXT): Betreiber der Messsstelle\r\n* einheit (TEXT): Einheit des gemessenen Wertes\r\n* internet (TEXT): Direkter Link zur Messstelle auf der Seites des Betreibers\r\n* internet2 (TEXT): Zusätzliche Infos auf einer externen Seite\r\n* zp1-zp72 (DATETIME): Zeitpunkt der Messung (Zahl gibt an wieviele Stunden man von der aktuellen Zeit zurückgehen muss)\r\n* d1-d24 (TEXT): Beschreibung der Zeiteinheit\r\n* w1-w72 (TEXT): Wert zur zugehörigen Zeitangabe\r\n* gc1-gc24 (INTEGER): Gesamtcode für die Darstellung. Für 2-stellige Werte gilt: Die erste Ziffer gibt die Einfärbung lt. https://ehyd.gv.at an: 2...türkis, 3...blau, 4...orange, 5...rot, 6...dunkelrot. Die zweite Ziffer kennzeichnet Datenlücken: 0...OK, 1...Datenlücke. Gesamtcode 290 steht für \"keine Daten\".\r\n* zps6/zps12/zps24/zps48/zps72 (DATETIME): Zeitpunkt für Stundensummen der letzten x Stunden\r\n* ws6/ws12/ws24/ws48/ws72 (TEXT): Summenwerte der letzten x Stunden"
+      },
+      "id": "da2320b4-e4ec-4d6b-b6e0-511ff62b01c6",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Niederschlag Aktuell (WMS)"
+      }
+    },
+    {
+      "access_url": [
+        "https://gis.lfrz.gv.at/api/geodata/i000501/ogc/features/v1"
+      ],
+      "description": {
+        "de": "* gcs6/gcs12/gcs24/gcs48/gcs72 (INTEGER): Gesamtcode für die Darstellung\r\n* geometry (GEOMETRY): Geometry der Messstelle\r\n* dbmsnr (INTEGER): Interne Datenbanknummer\r\n* ds6/ds12/ds24/ds48/ds72 (TEXT): Textliche Beschreibung des gemessenen Zeitraums\r\n* hzbnr (INTEGER): Messstellennummer des hydrographischen Dienstes\r\n* land (TEXT): Angabe des Landes bei Messstellen außerhalb Österreichs\r\n* messstelle (TEXT): Messstellenname\r\n* hoehe (TEXT): Seehöhe der Messstelle [m ü. A.]\r\n* hydrodienst (TEXT): Betreiber der Messsstelle\r\n* einheit (TEXT): Einheit des gemessenen Wertes\r\n* internet (TEXT): Direkter Link zur Messstelle auf der Seites des Betreibers\r\n* internet2 (TEXT): Zusätzliche Infos auf einer externen Seite\r\n* zp1-zp72 (DATETIME): Zeitpunkt der Messung (Zahl gibt an wieviele Stunden man von der aktuellen Zeit zurückgehen muss)\r\n* d1-d24 (TEXT): Beschreibung der Zeiteinheit\r\n* w1-w72 (TEXT): Wert zur zugehörigen Zeitangabe\r\n* gc1-gc24 (INTEGER): Gesamtcode für die Darstellung. Für 2-stellige Werte gilt: Die erste Ziffer gibt die Einfärbung lt. https://ehyd.gv.at an: 2...türkis, 3...blau, 4...orange, 5...rot, 6...dunkelrot. Die zweite Ziffer kennzeichnet Datenlücken: 0...OK, 1...Datenlücke. Gesamtcode 290 steht für \"keine Daten\".\r\n* zps6/zps12/zps24/zps48/zps72 (DATETIME): Zeitpunkt für Stundensummen der letzten x Stunden\r\n* ws6/ws12/ws24/ws48/ws72 (TEXT): Summenwerte der letzten x Stunden"
+      },
+      "id": "a7341d88-f402-4f3e-a885-d9d80d3b6747",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "OAPIF Hydrographie Österreich"
+      }
+    },
+    {
+      "access_url": [
+        "https://gis.lfrz.gv.at/api/geodata/i000501/wfs?service=WFS&amp;version=2.0.0&amp;request=GetCapabilities"
+      ],
+      "description": {
+        "de": "* gcs6/gcs12/gcs24/gcs48/gcs72 (INTEGER): Gesamtcode für die Darstellung\r\n* geometry (GEOMETRY): Geometry der Messstelle\r\n* dbmsnr (INTEGER): Interne Datenbanknummer\r\n* ds6/ds12/ds24/ds48/ds72 (TEXT): Textliche Beschreibung des gemessenen Zeitraums\r\n* hzbnr (INTEGER): Messstellennummer des hydrographischen Dienstes\r\n* land (TEXT): Angabe des Landes bei Messstellen außerhalb Österreichs\r\n* messstelle (TEXT): Messstellenname\r\n* hoehe (TEXT): Seehöhe der Messstelle [m ü. A.]\r\n* hydrodienst (TEXT): Betreiber der Messsstelle\r\n* einheit (TEXT): Einheit des gemessenen Wertes\r\n* internet (TEXT): Direkter Link zur Messstelle auf der Seites des Betreibers\r\n* internet2 (TEXT): Zusätzliche Infos auf einer externen Seite\r\n* zp1-zp72 (DATETIME): Zeitpunkt der Messung (Zahl gibt an wieviele Stunden man von der aktuellen Zeit zurückgehen muss)\r\n* d1-d24 (TEXT): Beschreibung der Zeiteinheit\r\n* w1-w72 (TEXT): Wert zur zugehörigen Zeitangabe\r\n* gc1-gc24 (INTEGER): Gesamtcode für die Darstellung. Für 2-stellige Werte gilt: Die erste Ziffer gibt die Einfärbung lt. https://ehyd.gv.at an: 2...türkis, 3...blau, 4...orange, 5...rot, 6...dunkelrot. Die zweite Ziffer kennzeichnet Datenlücken: 0...OK, 1...Datenlücke. Gesamtcode 290 steht für \"keine Daten\".\r\n* zps6/zps12/zps24/zps48/zps72 (DATETIME): Zeitpunkt für Stundensummen der letzten x Stunden\r\n* ws6/ws12/ws24/ws48/ws72 (TEXT): Summenwerte der letzten x Stunden"
+      },
+      "id": "5c180b6e-9838-44f1-996b-a48d9309aa38",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Niederschlag Aktuell (WFS)"
+      }
+    }
+  ],
+  "id": "6550800f-b5cd-4bc8-8525-9069a950e191",
+  "identifier": [
+    "6550800f-b5cd-4bc8-8525-9069a950e191"
+  ],
+  "is_hvd": true,
+  "keywords": [
+    {
+      "id": "national",
+      "label": "National",
+      "language": "de"
+    },
+    {
+      "id": "ehyd",
+      "label": "eHYD",
+      "language": "de"
+    },
+    {
+      "id": "umweltüberwachung",
+      "label": "Umweltüberwachung",
+      "language": "de"
+    },
+    {
+      "id": "hydrographie",
+      "label": "Hydrographie",
+      "language": "de"
+    },
+    {
+      "id": "highvaluedataset",
+      "label": "HighValueDataset",
+      "language": "de"
+    }
+  ],
+  "landing_page": [
+    {
+      "resource": "https://geoportal.inspire.gv.at/metadatensuche/inspire/ger/catalog.search#/metadata/6550800f-b5cd-4bc8-8525-9069a950e191"
+    }
+  ],
+  "language": [
+    {
+      "id": "DEU",
+      "label": "Deutsch",
+      "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+    }
+  ],
+  "modified": "2026-06-30T04:37:47.027Z",
+  "provenance": [
+    {
+      "label": "Die Daten werden von den hydrographischen Landesdiensten zur Verfügung gestellt und vom BMLUK (Abt. Wasserwirtschaft) gesammelt und veröffentlicht."
+    }
+  ],
+  "publisher": {
+    "email": "wasserhaushalt@bmluk.gv.at",
+    "homepage": "https://ehyd.gv.at",
+    "name": "BMLUK",
+    "type": "Agent"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/6550800f-b5cd-4bc8-8525-9069a950e191",
+  "spatial": [],
+  "title": {
+    "de": "Aktuelle Niederschläge Österreich"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

@@ -1,0 +1,536 @@
+{
+  "accrual_periodicity": {
+    "label": "continuous",
+    "resource": "http://publications.europa.eu/resource/authority/frequency/CONT"
+  },
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": {
+      "de": "Open Government Data (OGD) in Wien bedeutet, dass die Stadt Zahlen, Daten und Dokumente der Verwaltung öffentlich für jegliche Nutzung zur Verfügung stellt. Dabei gelten die Leitprinzipien „open by default“ und „open by design“. \r\n&nbsp;\r\nMehrere hundert Datensätze liefern detaillierte Auskunft über Einbahnen, Echtzeitinformationen der Wiener Linien, historische Luftbildaufnahmen, Messdaten von Luftschadstoffen oder WLAN-Standorte, um nur einige wenige Bereiche zu nennen. \r\n&nbsp;\r\nMit diesen verifizierten Daten können Privatpersonen oder Unternehmen beispielsweise Apps programmieren, die das Leben einfacher machen. Die Wissenschaft und Forschung kann diese Daten einfach nutzen. \r\n\r\n\r\n&nbsp;\r\nNeue Daten werden zu folgenden Terminen publiziert:  \r\n\r\n\r\n&nbsp;\r\n* OGD-Phase 58: 7. März 2025 (Open Data MeetUp am 6.März 2025 Wien & Wein im Rahmen der Open Data Days 2025)\r\n* OGD-Phase 59: 27. Juni 2025\r\n* OGD-Phase 60: 26. September 2025 (Open Data MeetUp am 25. September 2025 Wien & Wien)\r\n* OGD-Phase 61: 19. Dezember 2025\r\n\r\n\r\n&nbsp;\r\nDetailinformationen dazu finden Sie jeweils im Changelog oder abonnieren Sie unseren Digitales Wien Newsletter.\r\n\r\n\r\n&nbsp;\r\nStudien, Gutachten und Umfragen, die die Stadt Wien seit dem 1. Jänner 2023 in Auftrag gibt, müssen nach Artikel 20 des Bundes-Verfassungsgesetzes samt Kosten veröffentlicht werden. Ausnahmen von der Veröffentlichung können sich etwa aus dem Datenschutz, der Amtsverschwiegenheit, dem Urheberrecht oder aus Geschäfts- und Betriebsgeheimnissen ergeben.\r\n\r\n\r\n&nbsp;\r\nOpen Data Beauftragter der Stadt Wien: Gerhard Hartmann gerhard.hartmann@wien.gv.at"
+    },
+    "has_part": null,
+    "homepage": null,
+    "id": "l9",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2026-02-12T07:58:10Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2026-02-12T07:58:10Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "Stadt Wien"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-12-17T14:00:32Z",
+    "modified": "2025-12-17T14:00:32Z"
+  },
+  "categories": [
+    {
+      "id": "ENVI",
+      "label": {
+        "bg": "Околна среда",
+        "cs": "Životní prostředí",
+        "da": "Miljø",
+        "de": "Umwelt",
+        "el": "Περιβάλλον",
+        "en": "Environment",
+        "es": "Medio ambiente",
+        "et": "Keskkond",
+        "fi": "Ympäristö",
+        "fr": "Environnement",
+        "ga": "Comhshaol",
+        "hr": "Okoliš",
+        "hu": "Környezet",
+        "it": "Ambiente",
+        "lt": "Aplinka",
+        "lv": "Vide",
+        "mt": "Ambjent",
+        "nb": "Miljø",
+        "nl": "Milieu",
+        "nn": "Miljø",
+        "no": "Miljø",
+        "pl": "Środowisko",
+        "pt": "Ambiente",
+        "ro": "Mediu",
+        "sk": "Životné prostredie",
+        "sl": "Okolje",
+        "sv": "Miljö"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/ENVI"
+    }
+  ],
+  "contact_point": [],
+  "country": null,
+  "description": {
+    "de": "Standorte des Luftmessnetzes, an denen meteorologische Daten (Temperatur, Wind) gemessen werden.\n\nDie eigentlichen Messwerte sind im OGD-Datensatz \"Luftmessnetz: aktuelle Messdaten Wien\" https://www.data.gv.at/katalog/dataset/d9ae1245-158e-4d79-86a4-2d9b3defbedc angeführt und können über das gemeinsame Attribut \"NAME_KURZ\" verknüpft werden."
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:LUFTGUETENETZOGD&styles=&format=image/png"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "4c78a58d-b271-4809-9338-12ca437edae0",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:LUFTGUETENETZOGD&srsName=EPSG:4326&outputFormat=csv"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "1e21e098-403b-4ff2-85a7-35cfc4dd2dba",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (CSV)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:LUFTGUETENETZOGD&styles=&format=image/jpeg"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "56597a9e-baab-485d-886c-4d6a6e37afc6",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (JPEG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:LUFTGUETENETZOGD&srsName=EPSG:4326&outputFormat=json"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "8d6c7233-66bc-4ed2-9ff8-b4c8168837fd",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (JSON)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=LUFTGUETENETZOGD&styles=&format=image/jpeg&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "687b9e73-408d-486f-863b-d80ef5b7d64a",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (JPEG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=LUFTGUETENETZOGD&styles=&format=image/gif&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "3e912a10-91dd-46cf-882c-8cd2cb585d50",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (GIF)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=LUFTGUETENETZOGD&styles=&format=image/png&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "c94a6b3e-4ff3-40ae-8395-9c0603bbdc6e",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (PNG/8bit)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?service=WMS&request=GetCapabilities&version=1.1.1"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "c6c85276-5943-44e6-bc92-a51bbc96fa26",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:LUFTGUETENETZOGD&styles=&format=image/png8"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "a130738b-e7c7-4c14-b770-8b8f9cff8b2c",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG/8bit)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.1.0&service=WFS&request=GetCapabilities"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "61a9e31c-a86b-4a7b-b274-f5a3e055d584",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetCapabilities"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "e86bca0d-9c12-4e74-afc9-394537a443c2",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:LUFTGUETENETZOGD&srsName=EPSG:4326&outputFormat=shape-zip"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "4b378b8f-fa2d-41ad-a248-e7d5665acc2b",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (SHP)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:LUFTGUETENETZOGD&styles=&format=image/gif"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "3fa354c3-af3e-4c15-bdd7-ce8cd07f5c74",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GIF)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:LUFTGUETENETZOGD&styles=&format=application/rss+xml"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "id": "76e5003c-ef81-4d9b-8fd9-c34483df4c72",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GeoRSS)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:LUFTGUETENETZOGD&styles=&format=image/svg"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "id": "855ed2ab-ccfa-4cd2-8abf-d9a252626a07",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (SVG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:LUFTGUETENETZOGD&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "fe6f64cf-de9f-470c-a701-34f3436e77ef",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:LUFTGUETENETZOGD&styles=&format=application/vnd.google-earth.kmz"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "KMZ",
+        "label": "KMZ",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KMZ"
+      },
+      "id": "7deafd25-fc4c-490c-8e37-da942fb9a04b",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KMZ)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:LUFTGUETENETZOGD&srsName=EPSG:4326"
+      ],
+      "description": {
+        "de": "NAME_KURZ,C,4...Kurz-Name / Schlüsselfeld  \nNAME,C,25...Lang-Name der Messstation  \nANMERK,C,25...Anmerkung  \nSTANDORT,C,55...Standortbeschreibung vor Ort  \nTOPO,C,50...Topographische Beschreibung des Standortes   \nNUTZUNG,C,50...Beschreibung der städtischen Nutzung im Bereich des Standortes   \nURL_INFO,C,254...URL für weitere Informationen   \nURL_BILD,C,254...URL für kleines Bild   \nTEMP,N,5,0...Messwert Temperatur [°C]; Wert -999 bedeutet: Messwert nicht verfügbar   \nTEMP_W,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_V,N,5,0...Messwert Windgeschwindigkeit [km/h] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_VW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_R,N,5,0...Messwert Windrichtung [Winkel°] ; Wert -999 bedeutet: Messwert nicht verfügbar   \nWIND_RW,N,19,8...Mess-Zeitpunkt im Format jjjjmmdd,hhmm01 ; Wert -999 bedeutet: Messwert nicht verfügbar   \nLAENGE,C,11...geogr. Länge [°'\"]   \nBREITE,C,8...geogr. Breite [°'\"]   \nX,N,10,0...Gauß-Krüger-Koo. [m]   \nY,N,10,0...Gauß-Krüger-Koo. [m]   \nH,N,5,0...Seehöhe (Adria) [m]   \nH_ANSAUG,N,19,8...Ansaug-Höhe über Grund [m]   \nONR,C,10...Orientierungsnummer   \nSTRASSE,C,50...Straße   \nBEZIRK,N,2,0...Bezirk   \nM_WERTE_LU,C,60...Messparameter (Luftqualität)   \nM_WERTE_TE,C,60...Messparameter (Meteorologie u.a.)"
+      },
+      "format": {
+        "id": "GML",
+        "label": "GML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
+      },
+      "id": "b947a6f2-cf54-46d0-989f-83c60721b7bd",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (GML)"
+      }
+    }
+  ],
+  "id": "f2bb4f42-2c40-4c9d-890b-c2b3061bfe5a",
+  "identifier": [
+    "f2bb4f42-2c40-4c9d-890b-c2b3061bfe5a"
+  ],
+  "is_hvd": false,
+  "keywords": [
+    {
+      "id": "windgeschwindigkeit",
+      "label": "Windgeschwindigkeit",
+      "language": "de"
+    },
+    {
+      "id": "meteorologie",
+      "label": "Meteorologie",
+      "language": "de"
+    },
+    {
+      "id": "windrichtung",
+      "label": "Windrichtung",
+      "language": "de"
+    },
+    {
+      "id": "viennagis",
+      "label": "ViennaGIS",
+      "language": "de"
+    },
+    {
+      "id": "wind",
+      "label": "Wind",
+      "language": "de"
+    },
+    {
+      "id": "temperatur",
+      "label": "Temperatur",
+      "language": "de"
+    },
+    {
+      "id": "energie",
+      "label": "Energie",
+      "language": "de"
+    },
+    {
+      "id": "lufttemperatur",
+      "label": "Lufttemperatur",
+      "language": "de"
+    },
+    {
+      "id": "strom",
+      "label": "Strom",
+      "language": "de"
+    }
+  ],
+  "landing_page": [
+    {
+      "resource": "http://www.wien.gv.at/ma22-lgb/tb/tb-aktuell.htm"
+    }
+  ],
+  "language": [
+    {
+      "id": "de",
+      "label": "German",
+      "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+    }
+  ],
+  "modified": "2025-11-20",
+  "provenance": [],
+  "publisher": {
+    "email": "mailto:open@post.wien.gv.at",
+    "homepage": "https://digitales.wien.gv.at",
+    "name": "Stadt Wien",
+    "type": "Agent"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/f2bb4f42-2c40-4c9d-890b-c2b3061bfe5a",
+  "spatial": [],
+  "temporal": [
+    {
+      "gte": "2012-03-30"
+    }
+  ],
+  "title": {
+    "de": "Luftmessnetz: Meteorologie Standorte Wien"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

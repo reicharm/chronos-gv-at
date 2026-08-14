@@ -1,0 +1,429 @@
+{
+  "applicable_legislation": [
+    "http://data.europa.eu/eli/reg_impl/2023/138/oj"
+  ],
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": null,
+    "has_part": null,
+    "homepage": null,
+    "id": "harvest-ama",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2025-12-23T14:01:22Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2025-12-30T22:31:31Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "AMA Harvester"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-09-04T13:06:25Z",
+    "modified": "2026-05-26T10:59:29Z"
+  },
+  "categories": [
+    {
+      "id": "AGRI",
+      "label": {
+        "bg": "Селско стопанство, рибарство, горско стопанство и храни",
+        "cs": "Zemědělství, rybolov, lesnictví a výživa",
+        "da": "Landbrug, fiskeri, skovbrug og fødevarer",
+        "de": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "el": "Γεωργία, αλιεία, δασοκομία και τρόφιμα",
+        "en": "Agriculture, fisheries, forestry and food",
+        "es": "Agricultura, pesca, silvicultura y alimentación",
+        "et": "Põllumajandus, kalandus, metsandus ja toiduained",
+        "fi": "Maatalous, kalastus, metsätalous ja elintarvikkeet",
+        "fr": "Agriculture, pêche, sylviculture et alimentation",
+        "ga": "Talmhaíocht, iascach, foraoiseacht agus bia",
+        "hr": "Poljoprivreda, ribarstvo, šumarstvo i hrana",
+        "hu": "Mezőgazdaság, halászat, erdészet és élelmiszer",
+        "it": "Agricoltura, pesca, silvicoltura e prodotti alimentari",
+        "lt": "Žemės ūkis, žuvininkystė, miškininkystė ir maistas",
+        "lv": "Lauksaimniecība, zivsaimniecība, mežsaimniecība un pārtika",
+        "mt": "Agrikoltura, sajd, forestrija u ikel",
+        "nb": "Jordbruk, fiskeri, skogbruk og mat",
+        "nl": "Landbouw, visserij, bosbouw en voeding",
+        "nn": "Jordbruk, fiskeri, skogbruk og mat",
+        "no": "Jordbruk, fiskeri, skogbruk og mat",
+        "pl": "Rolnictwo, rybołówstwo, leśnictwo i żywność",
+        "pt": "Agricultura, pesca, silvicultura e alimentação",
+        "ro": "Agricultură, pescuit, silvicultură şi hrană",
+        "sk": "Poľnohospodárstvo, rybné hospodárstvo, lesníctvo a potravinárstvo",
+        "sl": "Kmetijstvo, ribištvo, gozdarstvo in prehrana",
+        "sv": "Jordbruk, fiske, skogsbruk och livsmedel"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/AGRI"
+    }
+  ],
+  "contact_point": [
+    {
+      "email": "inspire@ama.gv.at",
+      "name": "Agrarmarkt Austria",
+      "type": "Organization",
+      "url": [
+        "https://www.ama.at/"
+      ]
+    }
+  ],
+  "country": null,
+  "description": {
+    "de": "Dieser Layer umfasst alle von den AntragstellerInnen erfassten Schlagnutzungen, welche als Grundlage der Förderabwicklung dienen. Ein Schlag ist eine zusammenhängende Fläche eines Feldstücks, die für eine Vegetationsperiode mit nur einer Kultur (Schlagnutzungsart) und einheitlicher Bewirtschaftungsauflage bzw. als ein Landschaftselementetyp gemäß Anlage 1 der Verordnung des zuständigen Bundesministeriums mit horizontalen Regeln für den Bereich der Gemeinsamen Agrarpolitik (Horizontale GAP-Verordnung) StF: BGBl. II Nr. 100/2015 bewirtschaftet oder aber lediglich in gutem landwirtschaftlichen und ökologischen Zustand gemäß Art. 94 der Verordnung (EU) Nr. 1306/2013 erhalten wird und im GIS als Polygon oder als Punkt digitalisiert ist.\n            \nKoordinatensystem der Daten im Format GeoPackage: EPSG 31287.\n\nDer Datensatz wird jährlich in zwei Ständen bereitgestellt. Der Sommerdatenbestand ist im Titel mit \"JJJJ-1\" gekennzeichnet, die Winterüberarbeitung mit \"JJJJ-2\".\n\nFlächen- und punktförmige Schläge, die in der ÖPUL Maßnahme Biologische Wirtschaftsweise gültig beantragt wurden, werden in der Winterüberarbeitung im Attribut KZ_BIO_OEPUL_JN mit „J“ gekennzeichnet. Die Bio-Flächen von Bio-Teilbetrieben sind ebenfalls mit „J“ gekennzeichnet. Das Attribut KZ_BIO_OEPUL_JN ist im Sommerdatenbestand nicht befüllt."
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://inspire.lfrz.gv.at/009501/wms?version=1.3.0&amp;request=GetCapabilities"
+      ],
+      "description": {
+        "de": "* SNAR_CODE (TEXT): fachlicher Code der Schlagnutzungsart\r\n* GML_IDENTIFIER (TEXT): GML:IDENTIFIER gemäß OGC GML Standard\r\n* GML_ID (TEXT): GML:ID gemäß OGC GML Standard\r\n* INSPIRE_ID (TEXT): fachlicher INSPIRE Identifikator der Geometrie\r\n* GML_GEOM (BLOB): technisches Merkmal\r\n* SL_FLAECHE_BRUTTO_HA (DOUBLE): Schlagfläche Brutto in Hektar\r\n* SNAR_BEZEICHNUNG (TEXT): fachliche Bezeichnung der Schlagnutzungsart\r\n* FS_KENNUNG (DOUBLE): Feldstücks-ID, technischer Fremdschlüssel, ausschließlich zur Verbindung zu den INVEKOS Feldstücken des jeweils gleichen Jahres.\r\n* GEO_ID (INTEGER): technischer Identifikator\r\n* GML_LENGTH (DOUBLE): technisches Merkmal\r\n* KZ_BIO_OEPUL_JN (TEXT): Kennzeichen für Teilnahme an der ÖPUL Maßnahme „Biologische Wirtschaftsweise“\r\n* GEOMETRY (GEOMETRY): enthält die Geometrieinformation\r\n* FART_ID (INTEGER): ID der Förderart\r\n* GEOM_DATE_CREATED (DATETIME): technisches Entstehungsdatum der Geometrie, keine fachliche Gültigkeit\r\n* LOG_PKEY (DOUBLE): technisches Merkmal\r\n* GEO_PART_KEY (DOUBLE): technisches Merkmal"
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "1c9a6a65-1536-45c7-a75c-b7877fafe8b8",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "inspire_schlaege_2024-2_polygon"
+      }
+    },
+    {
+      "access_url": [
+        "https://gis.lfrz.gv.at/api/geodata/i009501/ogc/features/v1/"
+      ],
+      "description": {
+        "de": "* SNAR_CODE (TEXT): fachlicher Code der Schlagnutzungsart\r\n* GML_IDENTIFIER (TEXT): GML:IDENTIFIER gemäß OGC GML Standard\r\n* GML_ID (TEXT): GML:ID gemäß OGC GML Standard\r\n* INSPIRE_ID (TEXT): fachlicher INSPIRE Identifikator der Geometrie\r\n* GML_GEOM (BLOB): technisches Merkmal\r\n* SL_FLAECHE_BRUTTO_HA (DOUBLE): Schlagfläche Brutto in Hektar\r\n* SNAR_BEZEICHNUNG (TEXT): fachliche Bezeichnung der Schlagnutzungsart\r\n* FS_KENNUNG (DOUBLE): Feldstücks-ID, technischer Fremdschlüssel, ausschließlich zur Verbindung zu den INVEKOS Feldstücken des jeweils gleichen Jahres.\r\n* GEO_ID (INTEGER): technischer Identifikator\r\n* GML_LENGTH (DOUBLE): technisches Merkmal\r\n* KZ_BIO_OEPUL_JN (TEXT): Kennzeichen für Teilnahme an der ÖPUL Maßnahme „Biologische Wirtschaftsweise“\r\n* GEOMETRY (GEOMETRY): enthält die Geometrieinformation\r\n* FART_ID (INTEGER): ID der Förderart\r\n* GEOM_DATE_CREATED (DATETIME): technisches Entstehungsdatum der Geometrie, keine fachliche Gültigkeit\r\n* LOG_PKEY (DOUBLE): technisches Merkmal\r\n* GEO_PART_KEY (DOUBLE): technisches Merkmal"
+      },
+      "id": "974cf135-027e-4d82-ac88-dff747379c07",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "OAPIF INVEKOS Schläge 2024-2 (Point)"
+      }
+    },
+    {
+      "access_url": [
+        "https://inspire.lfrz.gv.at/009501/ds/inspire_schlaege_2024-2_point.gpkg.zip"
+      ],
+      "description": {
+        "de": "* SNAR_CODE (TEXT): fachlicher Code der Schlagnutzungsart\r\n* GML_IDENTIFIER (TEXT): GML:IDENTIFIER gemäß OGC GML Standard\r\n* GML_ID (TEXT): GML:ID gemäß OGC GML Standard\r\n* INSPIRE_ID (TEXT): fachlicher INSPIRE Identifikator der Geometrie\r\n* GML_GEOM (BLOB): technisches Merkmal\r\n* SL_FLAECHE_BRUTTO_HA (DOUBLE): Schlagfläche Brutto in Hektar\r\n* SNAR_BEZEICHNUNG (TEXT): fachliche Bezeichnung der Schlagnutzungsart\r\n* FS_KENNUNG (DOUBLE): Feldstücks-ID, technischer Fremdschlüssel, ausschließlich zur Verbindung zu den INVEKOS Feldstücken des jeweils gleichen Jahres.\r\n* GEO_ID (INTEGER): technischer Identifikator\r\n* GML_LENGTH (DOUBLE): technisches Merkmal\r\n* KZ_BIO_OEPUL_JN (TEXT): Kennzeichen für Teilnahme an der ÖPUL Maßnahme „Biologische Wirtschaftsweise“\r\n* GEOMETRY (GEOMETRY): enthält die Geometrieinformation\r\n* FART_ID (INTEGER): ID der Förderart\r\n* GEOM_DATE_CREATED (DATETIME): technisches Entstehungsdatum der Geometrie, keine fachliche Gültigkeit\r\n* LOG_PKEY (DOUBLE): technisches Merkmal\r\n* GEO_PART_KEY (DOUBLE): technisches Merkmal"
+      },
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "b0215e90-ee19-4d41-8363-e1b99600ed2b",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "INVEKOS Schläge 2024-2 Point (GPKG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://inspire.lfrz.gv.at/009501/wms?version=1.3.0&amp;request=GetCapabilities"
+      ],
+      "description": {
+        "de": "* SNAR_CODE (TEXT): fachlicher Code der Schlagnutzungsart\r\n* GML_IDENTIFIER (TEXT): GML:IDENTIFIER gemäß OGC GML Standard\r\n* GML_ID (TEXT): GML:ID gemäß OGC GML Standard\r\n* INSPIRE_ID (TEXT): fachlicher INSPIRE Identifikator der Geometrie\r\n* GML_GEOM (BLOB): technisches Merkmal\r\n* SL_FLAECHE_BRUTTO_HA (DOUBLE): Schlagfläche Brutto in Hektar\r\n* SNAR_BEZEICHNUNG (TEXT): fachliche Bezeichnung der Schlagnutzungsart\r\n* FS_KENNUNG (DOUBLE): Feldstücks-ID, technischer Fremdschlüssel, ausschließlich zur Verbindung zu den INVEKOS Feldstücken des jeweils gleichen Jahres.\r\n* GEO_ID (INTEGER): technischer Identifikator\r\n* GML_LENGTH (DOUBLE): technisches Merkmal\r\n* KZ_BIO_OEPUL_JN (TEXT): Kennzeichen für Teilnahme an der ÖPUL Maßnahme „Biologische Wirtschaftsweise“\r\n* GEOMETRY (GEOMETRY): enthält die Geometrieinformation\r\n* FART_ID (INTEGER): ID der Förderart\r\n* GEOM_DATE_CREATED (DATETIME): technisches Entstehungsdatum der Geometrie, keine fachliche Gültigkeit\r\n* LOG_PKEY (DOUBLE): technisches Merkmal\r\n* GEO_PART_KEY (DOUBLE): technisches Merkmal"
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "3f108647-75b5-40ba-8cbb-ab3e29c34b77",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "inspire_schlaege_2024-2_point"
+      }
+    },
+    {
+      "access_url": [
+        "https://inspire.lfrz.gv.at/009501/ds/inspire_schlaege_2024-2_polygon.gpkg.zip"
+      ],
+      "description": {
+        "de": "* SNAR_CODE (TEXT): fachlicher Code der Schlagnutzungsart\r\n* GML_IDENTIFIER (TEXT): GML:IDENTIFIER gemäß OGC GML Standard\r\n* GML_ID (TEXT): GML:ID gemäß OGC GML Standard\r\n* INSPIRE_ID (TEXT): fachlicher INSPIRE Identifikator der Geometrie\r\n* GML_GEOM (BLOB): technisches Merkmal\r\n* SL_FLAECHE_BRUTTO_HA (DOUBLE): Schlagfläche Brutto in Hektar\r\n* SNAR_BEZEICHNUNG (TEXT): fachliche Bezeichnung der Schlagnutzungsart\r\n* FS_KENNUNG (DOUBLE): Feldstücks-ID, technischer Fremdschlüssel, ausschließlich zur Verbindung zu den INVEKOS Feldstücken des jeweils gleichen Jahres.\r\n* GEO_ID (INTEGER): technischer Identifikator\r\n* GML_LENGTH (DOUBLE): technisches Merkmal\r\n* KZ_BIO_OEPUL_JN (TEXT): Kennzeichen für Teilnahme an der ÖPUL Maßnahme „Biologische Wirtschaftsweise“\r\n* GEOMETRY (GEOMETRY): enthält die Geometrieinformation\r\n* FART_ID (INTEGER): ID der Förderart\r\n* GEOM_DATE_CREATED (DATETIME): technisches Entstehungsdatum der Geometrie, keine fachliche Gültigkeit\r\n* LOG_PKEY (DOUBLE): technisches Merkmal\r\n* GEO_PART_KEY (DOUBLE): technisches Merkmal"
+      },
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "f13dc379-ff21-41b9-a487-b42369398ca3",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "INVEKOS Schläge 2024-2 Polygon (GPKG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://inspire.lfrz.gv.at/009501/ds/inspire_schlaege_2024-2_point.gml.zip"
+      ],
+      "description": {
+        "de": "* SNAR_CODE (TEXT): fachlicher Code der Schlagnutzungsart\r\n* GML_IDENTIFIER (TEXT): GML:IDENTIFIER gemäß OGC GML Standard\r\n* GML_ID (TEXT): GML:ID gemäß OGC GML Standard\r\n* INSPIRE_ID (TEXT): fachlicher INSPIRE Identifikator der Geometrie\r\n* GML_GEOM (BLOB): technisches Merkmal\r\n* SL_FLAECHE_BRUTTO_HA (DOUBLE): Schlagfläche Brutto in Hektar\r\n* SNAR_BEZEICHNUNG (TEXT): fachliche Bezeichnung der Schlagnutzungsart\r\n* FS_KENNUNG (DOUBLE): Feldstücks-ID, technischer Fremdschlüssel, ausschließlich zur Verbindung zu den INVEKOS Feldstücken des jeweils gleichen Jahres.\r\n* GEO_ID (INTEGER): technischer Identifikator\r\n* GML_LENGTH (DOUBLE): technisches Merkmal\r\n* KZ_BIO_OEPUL_JN (TEXT): Kennzeichen für Teilnahme an der ÖPUL Maßnahme „Biologische Wirtschaftsweise“\r\n* GEOMETRY (GEOMETRY): enthält die Geometrieinformation\r\n* FART_ID (INTEGER): ID der Förderart\r\n* GEOM_DATE_CREATED (DATETIME): technisches Entstehungsdatum der Geometrie, keine fachliche Gültigkeit\r\n* LOG_PKEY (DOUBLE): technisches Merkmal\r\n* GEO_PART_KEY (DOUBLE): technisches Merkmal"
+      },
+      "format": {
+        "id": "GML",
+        "label": "GML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
+      },
+      "id": "85f7466d-3b94-4c3b-8b2f-9ac886b753ee",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "INVEKOS Schläge 2024-2 Point (GML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://gis.lfrz.gv.at/api/geodata/i009501/ogc/features/v1/"
+      ],
+      "description": {
+        "de": "* SNAR_CODE (TEXT): fachlicher Code der Schlagnutzungsart\r\n* GML_IDENTIFIER (TEXT): GML:IDENTIFIER gemäß OGC GML Standard\r\n* GML_ID (TEXT): GML:ID gemäß OGC GML Standard\r\n* INSPIRE_ID (TEXT): fachlicher INSPIRE Identifikator der Geometrie\r\n* GML_GEOM (BLOB): technisches Merkmal\r\n* SL_FLAECHE_BRUTTO_HA (DOUBLE): Schlagfläche Brutto in Hektar\r\n* SNAR_BEZEICHNUNG (TEXT): fachliche Bezeichnung der Schlagnutzungsart\r\n* FS_KENNUNG (DOUBLE): Feldstücks-ID, technischer Fremdschlüssel, ausschließlich zur Verbindung zu den INVEKOS Feldstücken des jeweils gleichen Jahres.\r\n* GEO_ID (INTEGER): technischer Identifikator\r\n* GML_LENGTH (DOUBLE): technisches Merkmal\r\n* KZ_BIO_OEPUL_JN (TEXT): Kennzeichen für Teilnahme an der ÖPUL Maßnahme „Biologische Wirtschaftsweise“\r\n* GEOMETRY (GEOMETRY): enthält die Geometrieinformation\r\n* FART_ID (INTEGER): ID der Förderart\r\n* GEOM_DATE_CREATED (DATETIME): technisches Entstehungsdatum der Geometrie, keine fachliche Gültigkeit\r\n* LOG_PKEY (DOUBLE): technisches Merkmal\r\n* GEO_PART_KEY (DOUBLE): technisches Merkmal"
+      },
+      "id": "2190d67a-bb01-4f64-8ea2-6dfc7b4a3267",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "OAPIF INVEKOS Schläge 2024-2 (Polygon)"
+      }
+    },
+    {
+      "access_url": [
+        "https://inspire.lfrz.gv.at/009501/ds/inspire_schlaege_2024-2_polygon.gml.zip"
+      ],
+      "description": {
+        "de": "* SNAR_CODE (TEXT): fachlicher Code der Schlagnutzungsart\r\n* GML_IDENTIFIER (TEXT): GML:IDENTIFIER gemäß OGC GML Standard\r\n* GML_ID (TEXT): GML:ID gemäß OGC GML Standard\r\n* INSPIRE_ID (TEXT): fachlicher INSPIRE Identifikator der Geometrie\r\n* GML_GEOM (BLOB): technisches Merkmal\r\n* SL_FLAECHE_BRUTTO_HA (DOUBLE): Schlagfläche Brutto in Hektar\r\n* SNAR_BEZEICHNUNG (TEXT): fachliche Bezeichnung der Schlagnutzungsart\r\n* FS_KENNUNG (DOUBLE): Feldstücks-ID, technischer Fremdschlüssel, ausschließlich zur Verbindung zu den INVEKOS Feldstücken des jeweils gleichen Jahres.\r\n* GEO_ID (INTEGER): technischer Identifikator\r\n* GML_LENGTH (DOUBLE): technisches Merkmal\r\n* KZ_BIO_OEPUL_JN (TEXT): Kennzeichen für Teilnahme an der ÖPUL Maßnahme „Biologische Wirtschaftsweise“\r\n* GEOMETRY (GEOMETRY): enthält die Geometrieinformation\r\n* FART_ID (INTEGER): ID der Förderart\r\n* GEOM_DATE_CREATED (DATETIME): technisches Entstehungsdatum der Geometrie, keine fachliche Gültigkeit\r\n* LOG_PKEY (DOUBLE): technisches Merkmal\r\n* GEO_PART_KEY (DOUBLE): technisches Merkmal"
+      },
+      "format": {
+        "id": "GML",
+        "label": "GML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
+      },
+      "id": "b025ecf7-56c5-4a6c-a00a-2437edae6738",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "INVEKOS Schläge 2024-2 Polygon (GML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://geometadatensuche.inspire.gv.at/metadatensuche/srv/atom/describe/service?uuid=bda17d44-e4d8-47bb-bc76-8ed8d1728223"
+      ],
+      "description": {
+        "de": "* SNAR_CODE (TEXT): fachlicher Code der Schlagnutzungsart\r\n* GML_IDENTIFIER (TEXT): GML:IDENTIFIER gemäß OGC GML Standard\r\n* GML_ID (TEXT): GML:ID gemäß OGC GML Standard\r\n* INSPIRE_ID (TEXT): fachlicher INSPIRE Identifikator der Geometrie\r\n* GML_GEOM (BLOB): technisches Merkmal\r\n* SL_FLAECHE_BRUTTO_HA (DOUBLE): Schlagfläche Brutto in Hektar\r\n* SNAR_BEZEICHNUNG (TEXT): fachliche Bezeichnung der Schlagnutzungsart\r\n* FS_KENNUNG (DOUBLE): Feldstücks-ID, technischer Fremdschlüssel, ausschließlich zur Verbindung zu den INVEKOS Feldstücken des jeweils gleichen Jahres.\r\n* GEO_ID (INTEGER): technischer Identifikator\r\n* GML_LENGTH (DOUBLE): technisches Merkmal\r\n* KZ_BIO_OEPUL_JN (TEXT): Kennzeichen für Teilnahme an der ÖPUL Maßnahme „Biologische Wirtschaftsweise“\r\n* GEOMETRY (GEOMETRY): enthält die Geometrieinformation\r\n* FART_ID (INTEGER): ID der Förderart\r\n* GEOM_DATE_CREATED (DATETIME): technisches Entstehungsdatum der Geometrie, keine fachliche Gültigkeit\r\n* LOG_PKEY (DOUBLE): technisches Merkmal\r\n* GEO_PART_KEY (DOUBLE): technisches Merkmal"
+      },
+      "format": {
+        "id": "ATOM",
+        "label": "Atom Feed",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/ATOM"
+      },
+      "id": "c30c74e4-a577-4c5c-92dd-5af36dd01ed9",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Downloaddienst der INVEKOS Referenzflächen, Feldstücke, Schläge und Hofstellen"
+      }
+    }
+  ],
+  "id": "b037d48d-06f3-4af2-ac48-ae07e7ca1e00",
+  "identifier": [
+    "b037d48d-06f3-4af2-ac48-ae07e7ca1e00"
+  ],
+  "is_hvd": true,
+  "keywords": [
+    {
+      "id": "nutzung-der-landwirtschaftlichen-fläche",
+      "label": "Nutzung der landwirtschaftlichen Fläche",
+      "language": "de"
+    },
+    {
+      "id": "gsaa",
+      "label": "GSAA",
+      "language": "de"
+    },
+    {
+      "id": "national",
+      "label": "National",
+      "language": "de"
+    },
+    {
+      "id": "highvaluedataset",
+      "label": "HighValueDataset",
+      "language": "de"
+    },
+    {
+      "id": "invekos",
+      "label": "InVeKoS",
+      "language": "de"
+    },
+    {
+      "id": "landwirtschaftliche-nutzung",
+      "label": "Landwirtschaftliche Nutzung",
+      "language": "de"
+    },
+    {
+      "id": "lpis",
+      "label": "LPIS",
+      "language": "de"
+    },
+    {
+      "id": "landwirtschaftliche-fläche",
+      "label": "Landwirtschaftliche Fläche",
+      "language": "de"
+    },
+    {
+      "id": "bodennutzung",
+      "label": "Bodennutzung",
+      "language": "de"
+    }
+  ],
+  "landing_page": [
+    {
+      "resource": "https://geoportal.inspire.gv.at/metadatensuche/inspire/ger/catalog.search#/metadata/b037d48d-06f3-4af2-ac48-ae07e7ca1e00"
+    }
+  ],
+  "language": [
+    {
+      "id": "DEU",
+      "label": "Deutsch",
+      "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+    }
+  ],
+  "modified": "2026-04-15T10:54:49.411Z",
+  "provenance": [
+    {
+      "label": "INVEKOS Schlagdigitalisierung über EAMA/GIS durch Landwirt auf Basis von Orthophotos."
+    }
+  ],
+  "publisher": {
+    "email": "inspire@ama.gv.at",
+    "homepage": "https://www.ama.at/",
+    "name": "AMA",
+    "type": "Agent"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/b037d48d-06f3-4af2-ac48-ae07e7ca1e00",
+  "spatial": [],
+  "temporal": [
+    {
+      "gte": "2024-12-31"
+    }
+  ],
+  "title": {
+    "de": "INVEKOS Schläge Österreich 2024-2"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}
