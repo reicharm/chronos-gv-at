@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T10:28:45Z",
-    "modified": "2026-08-08T06:03:02Z"
+    "modified": "2026-08-15T06:02:53Z"
   },
   "categories": [
     {
@@ -93,14 +93,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/4febe50c-8150-4f98-af61-b6e404d1dd64"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:biotopverbund_verbundachsen&outputFormat=shape-zip"
       ],
       "format": {
-        "id": "HTML",
-        "label": "HTML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "e1d6d9b0-2e84-4bcb-b441-dd55c305ed9d",
+      "id": "1fdab370-971f-476a-a826-683a76a3a782",
       "language": [
         {
           "id": "DEU",
@@ -112,31 +112,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "Metadaten-Katalog"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/vogis/biotopverbund_verbundachsen/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
-      ],
-      "format": {
-        "id": "WMS_SRVC",
-        "label": "WMS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
-      },
-      "id": "f17eda61-db5f-4097-a591-3a9ac696deae",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "WMS-GetCapabilities"
+        "de": "SHP-Download"
       }
     },
     {
@@ -148,7 +124,7 @@
         "label": "KML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "f2236487-c926-4bfd-9239-23ae338b5e8c",
+      "id": "8379473e-9b92-424b-80be-1eec6bfda74c",
       "language": [
         {
           "id": "DEU",
@@ -172,7 +148,7 @@
         "label": "CSV",
         "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "43740993-91cc-443e-a0c1-220cfd6dba0c",
+      "id": "d97b8d99-0521-4f74-b49d-19e0221b30ce",
       "language": [
         {
           "id": "DEU",
@@ -189,14 +165,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:biotopverbund_verbundachsen&outputFormat=shape-zip"
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/4febe50c-8150-4f98-af61-b6e404d1dd64"
       ],
       "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "761a57aa-012d-4a27-b001-52a00ffb2297",
+      "id": "ac84f497-7972-44b8-879b-5d70767cf5a7",
       "language": [
         {
           "id": "DEU",
@@ -208,7 +184,31 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "SHP-Download"
+        "de": "Metadaten-Katalog"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:biotopverbund_verbundachsen&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "aa79ce51-b4cd-447b-ac35-da7b8681379c",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "GPKG-Download"
       }
     },
     {
@@ -220,7 +220,7 @@
         "label": "WFS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "ef82e916-70e7-487e-a695-6a62813cfea4",
+      "id": "649a2f4b-e966-4220-8659-c8bff9c38d4c",
       "language": [
         {
           "id": "DEU",
@@ -244,7 +244,7 @@
         "label": "JSON",
         "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "557ffc35-561b-4561-bb26-ea74f5c5fa12",
+      "id": "0ad8b5ed-71c1-44fd-8181-2bdc6038d7d8",
       "language": [
         {
           "id": "DEU",
@@ -261,14 +261,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:biotopverbund_verbundachsen&outputFormat=gpkg"
+        "https://vogis.cnv.at/geoserver/vogis/biotopverbund_verbundachsen/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
       ],
       "format": {
-        "id": "GPKG",
-        "label": "GeoPackage",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "692936cb-4065-46e4-a2b0-5abdfa4dce4d",
+      "id": "0012a2c6-83fa-4d31-8332-4e8c26a3138b",
       "language": [
         {
           "id": "DEU",
@@ -280,7 +280,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "GPKG-Download"
+        "de": "WMS-GetCapabilities"
       }
     }
   ],
