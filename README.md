@@ -1,3 +1,4 @@
+![CHRONOS](chronos-logo.svg)
 # CHRONOS
 
 **C**ontinuous **H**istorical **R**ecord **O**f **N**ational **O**pen-data **S**napshots
