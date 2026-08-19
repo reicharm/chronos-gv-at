@@ -23,8 +23,8 @@ und je veröffentlichende Stelle – mit wählbarem Aspekt, Zeitraum, Zeitachsen
 (Tag/Woche/Monat) und Umschaltung zwischen Bestand und Veränderung (Δ). Es läuft als
 statische Seite auf **GitHub Pages**:
 
-- **Dashboard:** `https://<user>.github.io/chronos-gv-at/`
-- **Über das Projekt:** `https://<user>.github.io/chronos-gv-at/about.html`
+- **Dashboard:** `https://reicharm.github.io/chronos-gv-at/`
+- **Über das Projekt:** `https://reicharm.github.io/chronos-gv-at/about.html`
 
 ## Wie es funktioniert
 
