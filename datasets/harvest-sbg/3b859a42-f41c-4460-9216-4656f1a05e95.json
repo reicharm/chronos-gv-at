@@ -40,7 +40,7 @@
   },
   "catalog_record": {
     "issued": "2026-06-23T11:24:46Z",
-    "modified": "2026-08-12T02:20:08Z"
+    "modified": "2026-08-19T02:20:05Z"
   },
   "contact_point": [
     {
@@ -54,6 +54,20 @@
     "de": "Nationaler Gewässerbewirtschaftungsplan NGP. Staustrecken im Land Salzburg"
   },
   "distributions": [
+    {
+      "access_url": [
+        "https://service.salzburg.gv.at/arcgis/services/OGD/OGD_Gewaesser_Land_Salzburg/MapServer/WFSServer?request=GetCapabilities&service=WFS&version=2.0.0"
+      ],
+      "format": {
+        "id": "XML",
+        "label": "XML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+      },
+      "id": "6aface65-533e-48e3-b79b-e9d259a3a371",
+      "title": {
+        "de": "WFS Staustrecken"
+      }
+    },
     {
       "access_url": [
         "https://www.salzburg.gv.at/ogd/3b859a42-f41c-4460-9216-4656f1a05e95/Staustrecken.json"
@@ -109,20 +123,6 @@
       "title": {
         "de": "Staustrecken"
       }
-    },
-    {
-      "access_url": [
-        "https://service.salzburg.gv.at/arcgis/services/OGD/OGD_Gewaesser_Land_Salzburg/MapServer/WFSServer?request=GetCapabilities&service=WFS&version=2.0.0"
-      ],
-      "format": {
-        "id": "XML",
-        "label": "XML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/XML"
-      },
-      "id": "6aface65-533e-48e3-b79b-e9d259a3a371",
-      "title": {
-        "de": "WFS Staustrecken"
-      }
     }
   ],
   "id": "3b859a42-f41c-4460-9216-4656f1a05e95",
@@ -137,18 +137,18 @@
       "language": "de"
     },
     {
-      "id": "stau",
-      "label": "Stau",
-      "language": "de"
-    },
-    {
       "id": "fisch",
       "label": "Fisch",
       "language": "de"
     },
     {
-      "id": "-ngp",
-      "label": " NGP",
+      "id": "wasser",
+      "label": "Wasser",
+      "language": "de"
+    },
+    {
+      "id": "stau",
+      "label": "Stau",
       "language": "de"
     },
     {
@@ -157,12 +157,12 @@
       "language": "de"
     },
     {
-      "id": "wasser",
-      "label": "Wasser",
+      "id": "-ngp",
+      "label": " NGP",
       "language": "de"
     }
   ],
-  "modified": "2026-08-11",
+  "modified": "2026-08-18",
   "publisher": {
     "name": "Land Salzburg",
     "type": "Organization"
