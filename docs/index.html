@@ -3,10 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:image" content="chronos-social-1200x630.png">
-<meta property="og:title" content="CHRONOS — data.gv.at über die Zeit">
-<meta property="og:description" content="Tägliche Git-Historie der data.gv.at-Metadaten.">
-<meta name="twitter:card" content="summary_large_image">
 <title>CHRONOS — data.gv.at über die Zeit</title>
 <link rel="icon" type="image/svg+xml" href="chronos-mark.svg">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
@@ -66,7 +62,11 @@
   .picker .search{border:0;border-bottom:1px solid var(--line);padding:8px 9px;font-family:var(--sans);font-size:13px;outline:none}
   .picker .quick{display:flex;gap:6px;padding:7px 8px;border-bottom:1px solid var(--line);flex-wrap:wrap}
   .picker .quick button{border:1px solid var(--line-strong);background:transparent;border-radius:3px;
-    padding:3px 7px;font-family:var(--mono);font-size:11px;cursor:pointer;color:var(--ink-soft)}
+    padding:3px 8px;font-family:var(--mono);font-size:11px;cursor:pointer;color:var(--ink-soft);min-width:26px}
+  .picker .quick .qlbl{width:100%;font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--ink-soft);margin:2px 0 -2px}
+  .opt .cnt .dc{margin-left:6px}
+  .opt .cnt .dc.pos{color:var(--pos)} .opt .cnt .dc.neg{color:var(--neg)}
   .list{max-height:300px;overflow:auto}
   .opt{display:flex;align-items:center;gap:8px;padding:6px 9px;font-size:13px;cursor:pointer;border-bottom:1px solid #F0F2F1}
   .opt:hover{background:#F5F7F6}
@@ -209,9 +209,14 @@
         <div class="picker">
           <input class="search" id="search" placeholder="Suchen…" aria-label="Serien suchen">
           <div class="quick">
-            <button data-top="5">Top 5</button>
-            <button data-top="10">Top 10</button>
-            <button data-top="20">Top 20</button>
+            <span class="qlbl">Top nach Bestand</span>
+            <button data-top="5">5</button>
+            <button data-top="10">10</button>
+            <button data-top="20">20</button>
+            <span class="qlbl">Top nach Veränderung (Zeitraum)</span>
+            <button data-topd="5">5</button>
+            <button data-topd="10">10</button>
+            <button data-topd="20">20</button>
             <button data-clear>Leeren</button>
           </div>
           <div class="list" id="list"></div>
@@ -329,6 +334,17 @@ function topIds(dim,n){
   return ids.slice(0,n);
 }
 function latest(arr){for(let i=arr.length-1;i>=0;i--)if(arr[i]!=null)return arr[i];return 0;}
+function changeInRange(arr,idx){
+  let first=null,last=null;
+  for(const i of idx){const v=arr[i];if(v!=null){if(first==null)first=v;last=v;}}
+  return (first==null||last==null)?0:last-first;
+}
+function topChangedIds(dim,n){
+  const idx=rangeIndices();
+  const ids=Object.keys(DATA[dim]||{});
+  ids.sort((a,b)=>Math.abs(changeInRange(DATA[dim][b],idx))-Math.abs(changeInRange(DATA[dim][a],idx)));
+  return ids.slice(0,n);
+}
 
 // ---- Render -------------------------------------------------------------
 function compute(){
@@ -427,24 +443,32 @@ function buildPicker(){
 }
 function renderList(){
   const dim=state.aspect;
+  if(dim==="total")return;
   const q=$("#search").value.trim().toLowerCase();
   const labels=DATA.labels[dim]||{};
-  const ids=Object.keys(DATA[dim]||{});
+  const sel=state.selected[dim];
+  const selOrder=[...sel];
+  const idx=rangeIndices();
+  let ids=Object.keys(DATA[dim]||{});
   ids.sort((a,b)=>latest(DATA[dim][b])-latest(DATA[dim][a]));
-  const list=$("#list");
-  list.innerHTML=ids.filter(id=>{
-    const nm=(labels[id]||id).toLowerCase();return !q||nm.includes(q)||id.toLowerCase().includes(q);
-  }).slice(0,400).map(id=>{
-    const on=state.selected[dim].has(id);
-    const ci=[...state.selected[dim]].indexOf(id);
+  const match=id=>{const nm=(labels[id]||id).toLowerCase();return !q||nm.includes(q)||id.toLowerCase().includes(q);};
+  const filtered=ids.filter(match);
+  const selShown=selOrder.filter(match);                 // Ausgewaehlte zuerst, in Farbreihenfolge
+  const rest=filtered.filter(id=>!sel.has(id)).slice(0,400);
+  const render=id=>{
+    const on=sel.has(id);
+    const ci=selOrder.indexOf(id);
     const col=on?PALETTE[ci%PALETTE.length]:"transparent";
+    const dv=changeInRange(DATA[dim][id],idx);
+    const dcls=dv>0?"pos":dv<0?"neg":"";
     return `<label class="opt ${on?"on":""}">
       <input type="checkbox" data-id="${esc(id)}" ${on?"checked":""}>
       <span class="swatch" style="background:${col}"></span>
       <span class="nm">${esc(labels[id]||id)}</span>
-      <span class="cnt">${fmt.format(latest(DATA[dim][id]))}</span>
+      <span class="cnt">${fmt.format(latest(DATA[dim][id]))}<span class="dc ${dcls}">${dv?(dv>0?"+":"")+fmt.format(dv):""}</span></span>
     </label>`;
-  }).join("");
+  };
+  $("#list").innerHTML=selShown.map(render).join("")+rest.map(render).join("");
 }
 
 // ---- Events -------------------------------------------------------------
@@ -466,10 +490,10 @@ function initEvents(){
   $("#presets").addEventListener("click",e=>{
     const b=e.target.closest("button");if(!b)return;
     [...e.currentTarget.children].forEach(x=>x.setAttribute("aria-pressed",x===b));
-    state.preset=b.dataset.v;state.from=state.to=null;syncDateInputs();draw();
+    state.preset=b.dataset.v;state.from=state.to=null;syncDateInputs();renderList();draw();
   });
-  $("#from").addEventListener("change",e=>{state.from=e.target.value||null;state.preset="custom";clearPresetUI();draw();});
-  $("#to").addEventListener("change",e=>{state.to=e.target.value||null;state.preset="custom";clearPresetUI();draw();});
+  $("#from").addEventListener("change",e=>{state.from=e.target.value||null;state.preset="custom";clearPresetUI();renderList();draw();});
+  $("#to").addEventListener("change",e=>{state.to=e.target.value||null;state.preset="custom";clearPresetUI();renderList();draw();});
   $("#search").addEventListener("input",renderList);
   $("#list").addEventListener("change",e=>{
     const cb=e.target.closest("input[type=checkbox]");if(!cb)return;
@@ -480,7 +504,8 @@ function initEvents(){
   $(".quick").addEventListener("click",e=>{
     const b=e.target.closest("button");if(!b)return;const dim=state.aspect;
     if(b.dataset.clear!=null)state.selected[dim].clear();
-    else{state.selected[dim]=new Set(topIds(dim,parseInt(b.dataset.top,10)));}
+    else if(b.dataset.topd!=null)state.selected[dim]=new Set(topChangedIds(dim,parseInt(b.dataset.topd,10)));
+    else if(b.dataset.top!=null)state.selected[dim]=new Set(topIds(dim,parseInt(b.dataset.top,10)));
     renderList();draw();
   });
 }
