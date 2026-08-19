@@ -3,10 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:image" content="chronos-social-1200x630.png">
-<meta property="og:title" content="CHRONOS — data.gv.at über die Zeit">
-<meta property="og:description" content="Tägliche Git-Historie der data.gv.at-Metadaten.">
-<meta name="twitter:card" content="summary_large_image">
 <title>CHRONOS — Über das Projekt</title>
 <link rel="icon" type="image/svg+xml" href="chronos-mark.svg">
 <style>
@@ -137,8 +133,9 @@
     <li>legt <strong>eine JSON-Datei pro Datensatz</strong> ab, gruppiert in <strong>Unterordner je Katalog</strong>,</li>
     <li>schreibt Dateien nur bei tatsächlich geändertem Inhalt (deterministisches JSON → saubere, minimale Diffs),</li>
     <li>löscht Dateien von Datensätzen, die aus dem Portal verschwunden sind,</li>
-    <li>erfasst zusätzlich alle Facetten als Sicherung und baut daraus die Daten fürs Dashboard,</li>
-    <li>committet den Tagesstand und setzt einen Datums-Tag <code>snapshot-YYYY-MM-DD</code>.</li>
+    <li>erfasst zusätzlich <strong>alle Facetten</strong> als komprimierte Tages-Sicherung — Grundlage für beliebige spätere Visualisierungen,</li>
+    <li>baut daraus die Dashboard-Daten und deployt die Seite auf <strong>GitHub Pages</strong>,</li>
+    <li>committet den Tagesstand und setzt einen Datums-Tag <code>snapshot-YYYY-MM-DD</code> (an änderungslosen Tagen ein Keepalive-Commit).</li>
   </ol>
   <p>Dadurch zeigt schon der geänderte Ordner-Teilbaum, in welchem Katalog sich etwas bewegt hat.</p>
 
@@ -154,10 +151,12 @@
 ├── stats/                                # Facetten-Sicherung
 │   ├── facets/&lt;datum&gt;.json.gz
 │   └── facet-labels.json
-└── docs/                                 # GitHub Pages
-    ├── index.html                        # Dashboard
-    ├── about.html                        # diese Seite
-    └── data.json                         # täglich neu gebaut</code></pre>
+├── docs/                                 # GitHub Pages
+│   ├── index.html                        # Dashboard
+│   ├── about.html                        # diese Seite
+│   ├── chronos-mark.svg                  # Logo-Mark / Favicon
+│   └── data.json                         # via Actions gebaut &amp; deployt (nicht eingecheckt)
+└── chronos-logo.svg                      # Logo-Lockup</code></pre>
 
   <h2>Nutzung</h2>
   <p>Den heutigen Stand ansehen: durch <code>datasets/</code> browsen. Änderungen nachvollziehen:</p>
@@ -180,6 +179,10 @@ git log -p -- datasets/&lt;katalog&gt;/&lt;id&gt;.json # ein Datensatz über die
       (OHOLD, offenerhaushalt.at …); die veröffentlichende Stelle (Publisher) ist die inhaltlich nähere Achse.</li>
     <li><strong>Facetten-Sicherung:</strong> Alle Facetten werden täglich archiviert — spätere
       Visualisierungen (Themen, Formate, Sprachen …) sind rückwirkend möglich.</li>
+    <li><strong>Pages via Actions:</strong> Die Seite wird als Actions-Artefakt deployt;
+      <code>data.json</code> ist nicht eingecheckt, damit die Git-History schlank bleibt.</li>
+    <li><strong>Größe:</strong> Der Workflow warnt ab 4 GB Repo-Größe; bei Bedarf hilft ein
+      jährlicher History-Rollover.</li>
   </ul>
 
   <footer>
