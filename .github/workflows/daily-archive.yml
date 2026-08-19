@@ -8,16 +8,21 @@ on:
   workflow_dispatch:        # erlaubt manuelles Ausloesen ueber die Actions-UI
 
 permissions:
-  contents: write           # noetig fuer Commit, Push und Tag
+  contents: write           # Commit, Push, Tag
+  pages: write              # GitHub-Pages-Deploy
+  id-token: write           # Pages-Deploy (OIDC)
 
 concurrency:
-  group: daily-archive      # nie zwei Laeufe gleichzeitig
+  group: daily-archive
   cancel-in-progress: false
 
 jobs:
   archive:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -42,11 +47,12 @@ jobs:
       - name: Capture facet snapshot (all facets)
         run: python capture_facets.py
 
-      # 3) Dashboard-Daten aus dem Facetten-Archiv bauen
+      # 3) Dashboard-Daten bauen -> docs/data.json (NICHT committet, siehe .gitignore)
       - name: Build dashboard data
         run: python build_dashboard_data.py
 
-      # 4) Alles committen; an aenderungslosen Tagen Empty-Commit als Keepalive
+      # 4) Versionierten Teil committen: datasets/ + stats/ (docs/data.json ist ignoriert)
+      #    An aenderungslosen Tagen Empty-Commit als Keepalive.
       - name: Commit snapshot
         id: commit
         run: |
@@ -61,7 +67,6 @@ jobs:
             STATS="+0 ~0 -0"
             git commit --allow-empty -m "data.gv.at snapshot $DATE (keine Aenderungen)"
           else
-            # Aenderungszahlen nur ueber datasets/ -> aussagekraeftige Message
             A=$(git diff --cached --name-status -- datasets | grep -c '^A' || true)
             M=$(git diff --cached --name-status -- datasets | grep -c '^M' || true)
             D=$(git diff --cached --name-status -- datasets | grep -c '^D' || true)
@@ -73,13 +78,36 @@ jobs:
           echo "stats=$STATS" >> "$GITHUB_OUTPUT"
           git push
 
-      # 5) Datums-Tag fuer jeden Tag (auch ohne Aenderung, dank Keepalive-Commit)
+      # 5) Datums-Tag fuer jeden Tag
       - name: Tag snapshot
         run: |
           set -euo pipefail
           DATE="${{ steps.commit.outputs.date }}"
           STATS="${{ steps.commit.outputs.stats }}"
           TAG="snapshot-$DATE"
-          # -f: mehrfacher Lauf am selben Tag verschiebt den Tag auf den neuesten Stand
           git tag -fa "$TAG" -m "data.gv.at datasets $STATS ($DATE)"
           git push -f origin "refs/tags/$TAG"
+
+      # 6) Groessen-Waechter: warnt ab 4 GB (API-Wert kann leicht nachhinken)
+      - name: Check repo size
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          KB=$(gh api repos/${{ github.repository }} --jq '.size')
+          echo "Repo-Groesse (serverseitig, inkl. History): $((KB/1024)) MB"
+          if [ "$KB" -gt 4194304 ]; then
+            echo "::warning title=CHRONOS Repo-Groesse::Repo ueber 4 GB ($((KB/1024)) MB) - jaehrlichen Rollover planen."
+          fi
+
+      # 7) Dashboard als GitHub-Pages-Artefakt deployen (docs/ inkl. frisch gebauter data.json)
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy to Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
