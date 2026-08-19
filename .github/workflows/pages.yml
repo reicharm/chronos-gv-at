@@ -1,0 +1,49 @@
+name: CHRONOS Pages deploy
+
+# Schlanker Deploy nur fuer die Seite - ohne Volldump.
+# Nutzt das bereits committete stats/-Archiv, um docs/data.json neu zu bauen.
+on:
+  workflow_dispatch:          # manueller "Run workflow"-Button
+  push:
+    branches: [main]
+    paths:                    # nur wenn sich die Seite/der Build aendert, nicht die Daten
+      - "docs/**"
+      - "build_dashboard_data.py"
+
+permissions:
+  pages: write
+  id-token: write
+  contents: read
+
+concurrency:
+  group: pages                # serialisiert Pages-Deploys
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # data.json aus dem committeten Facetten-Archiv neu bauen (kein Netz noetig).
+      # Falls stats/ noch leer ist (vor dem ersten Daily-Lauf): einfach ueberspringen.
+      - name: Build dashboard data
+        run: |
+          if ls stats/facets/*.json.gz >/dev/null 2>&1; then
+            python build_dashboard_data.py
+          else
+            echo "Kein stats/-Archiv vorhanden - deploye Seite ohne data.json-Rebuild."
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deploy
+        uses: actions/deploy-pages@v4
