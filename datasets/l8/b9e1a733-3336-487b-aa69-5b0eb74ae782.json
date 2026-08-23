@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:06Z",
-    "modified": "2026-08-15T06:02:42Z"
+    "modified": "2026-08-22T06:02:45Z"
   },
   "categories": [
     {
@@ -126,14 +126,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/14ba43bb-57a2-42f8-957d-04409d0cfe54"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:schulen_vorarlberg&outputFormat=application/json&maxFeatures=1000000"
       ],
       "format": {
-        "id": "HTML",
-        "label": "HTML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "62e656a6-352c-4e17-8937-b9441f8120ff",
+      "id": "a92a0893-6233-4488-9e55-1059b46cdadd",
       "language": [
         {
           "id": "DEU",
@@ -145,7 +145,31 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "Metadaten-Katalog"
+        "de": "JSON-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:schulen_vorarlberg&outputFormat=csv"
+      ],
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "1c3daf6e-b678-4eb9-b371-168215e1e74b",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "CSV-Download"
       }
     },
     {
@@ -157,7 +181,7 @@
         "label": "Esri Shape",
         "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "377724ca-970d-4eea-8c3f-f6834929167d",
+      "id": "61c9df11-32fb-4fb9-b703-25c5e14d0e58",
       "language": [
         {
           "id": "DEU",
@@ -181,7 +205,7 @@
         "label": "WFS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "4f071f99-913f-4759-a9ca-d4c3a7c70ccd",
+      "id": "ac70c509-3ef2-47a6-bf8f-958dcef804c4",
       "language": [
         {
           "id": "DEU",
@@ -205,7 +229,7 @@
         "label": "GeoPackage",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "cab412e1-0a31-49bd-89a7-7775ef1565e1",
+      "id": "988b67ad-76cc-4282-899e-416f34066e29",
       "language": [
         {
           "id": "DEU",
@@ -222,14 +246,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:schulen_vorarlberg&outputFormat=csv"
+        "https://vogis.cnv.at/geoserver/vogis/schulen_vorarlberg/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
       ],
       "format": {
-        "id": "CSV",
-        "label": "CSV",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "4a5cc308-eafa-4b9a-bdbb-da7c41fcaf69",
+      "id": "3dbbb943-3562-4d4a-ad06-84803541e90d",
       "language": [
         {
           "id": "DEU",
@@ -241,7 +265,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "CSV-Download"
+        "de": "WMS-GetCapabilities"
       }
     },
     {
@@ -253,7 +277,7 @@
         "label": "KML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "890d08b5-402a-4491-9480-5a9375499ef0",
+      "id": "04fa9fb4-18de-44e0-9a4d-aa52537287a9",
       "language": [
         {
           "id": "DEU",
@@ -270,14 +294,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:schulen_vorarlberg&outputFormat=application/json&maxFeatures=1000000"
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/14ba43bb-57a2-42f8-957d-04409d0cfe54"
       ],
       "format": {
-        "id": "JSON",
-        "label": "JSON",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "68828f4d-7de1-4b88-aca1-eab507cf088f",
+      "id": "98d51e66-8057-4162-8b5d-0fac52122c9d",
       "language": [
         {
           "id": "DEU",
@@ -289,31 +313,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "JSON-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/vogis/schulen_vorarlberg/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
-      ],
-      "format": {
-        "id": "WMS_SRVC",
-        "label": "WMS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
-      },
-      "id": "ad585c4a-ba48-4018-82eb-d51cfc4cf0b4",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "WMS-GetCapabilities"
+        "de": "Metadaten-Katalog"
       }
     }
   ],
@@ -324,13 +324,13 @@
   "is_hvd": false,
   "keywords": [
     {
-      "id": "schulen",
-      "label": "schulen",
+      "id": "points_of_interest",
+      "label": "points_of_interest",
       "language": "de"
     },
     {
-      "id": "points_of_interest",
-      "label": "points_of_interest",
+      "id": "schulen",
+      "label": "schulen",
       "language": "de"
     }
   ],
