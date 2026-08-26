@@ -42,7 +42,7 @@
   },
   "catalog_record": {
     "issued": "2025-09-26T10:11:05Z",
-    "modified": "2026-08-22T19:58:09Z"
+    "modified": "2026-08-25T13:27:47Z"
   },
   "categories": [
     {
@@ -79,12 +79,13 @@
       "resource": "http://publications.europa.eu/resource/authority/data-theme/ENVI"
     }
   ],
-  "conforms_to": [],
   "contact_point": [
     {
       "email": "mailto:abt8.post@ktn.gv.at",
       "name": "Abteilung 8 - Umwelt, Naturschutz und Klimaschutzkoordination",
-      "type": "Organization"
+      "url": [
+        "https://www.ktn.gv.at/Verwaltung/Amt-der-Kaerntner-Landesregierung/Abteilung-8"
+      ]
     }
   ],
   "country": null,
@@ -94,50 +95,8 @@
   "distributions": [
     {
       "access_url": [
-        "https://gis.ktn.gv.at/api/features/inspire/v1/collections/AT.0019.9af8e57e-61e0-4091-abec-b0c5153a17af/items"
-      ],
-      "description": {
-        "de": "URL zu den Items (OGC Feature API) in der Projektion EPSG:4326\r\n"
-      },
-      "id": "b6461abe-2e3e-4633-8fa6-1f5c3cc1c05c",
-      "issued": "2024-03-18T12:42:55.106289Z",
-      "license": {
-        "resource": "https://creativecommons.org/publicdomain/zero/1.0/"
-      },
-      "modified": "2026-08-22T00:00:00Z",
-      "title": {
-        "de": "URL zu den Items (OGC Feature API) in der Projektion EPSG:4326"
-      }
-    },
-    {
-      "access_url": [
-        "https://gis.ktn.gv.at/OGD/INSPIRE/PS_ProtectedSite_KTN_GPKG.zip"
-      ],
-      "byte_size": 3272,
-      "description": {
-        "de": "Alle Schutzgebietskategorien als gml File in EPSG:31258 (Bundesmeldenetz M31)"
-      },
-      "format": {
-        "id": "GPKG",
-        "label": "GeoPackage",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
-      },
-      "id": "a6e7be5c-183d-4873-aca5-a6acbab2bf80",
-      "issued": "2019-01-11T00:00:00Z",
-      "license": {
-        "resource": "https://creativecommons.org/publicdomain/zero/1.0/"
-      },
-      "media_type": "application/zip",
-      "modified": "2026-08-22T00:00:00Z",
-      "title": {
-        "de": "Vereinfachte Umsetzung als Geopackage in EPSG:31258"
-      }
-    },
-    {
-      "access_url": [
         "https://gis.ktn.gv.at/OGD/INSPIRE/PS_ProtectedSite_KTN_GML.zip"
       ],
-      "byte_size": 1560,
       "description": {
         "de": "Alle Schutzgebietskategorien als gml File in EPSG3045 "
       },
@@ -146,15 +105,53 @@
         "label": "GML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
       },
-      "id": "4e4f0d78-30c6-4aeb-8375-b2bfb908c3e2",
+      "id": "e508cb23-d15c-4515-a59f-2ccb1ba18b22",
       "issued": "2019-01-11T00:00:00Z",
       "license": {
         "resource": "https://creativecommons.org/publicdomain/zero/1.0/"
       },
-      "media_type": "application/zip",
       "modified": "2026-08-22T00:00:00Z",
       "title": {
         "de": "INSPIRE-konforme Umsetzung als GML in EPSG:3045"
+      }
+    },
+    {
+      "access_url": [
+        "https://gis.ktn.gv.at/OGD/INSPIRE/PS_ProtectedSite_KTN_GPKG.zip"
+      ],
+      "description": {
+        "de": "Alle Schutzgebietskategorien als gml File in EPSG:31258 (Bundesmeldenetz M31)"
+      },
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "a580e76e-c8af-48a3-b111-a4162b635e74",
+      "issued": "2019-01-11T00:00:00Z",
+      "license": {
+        "resource": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "modified": "2026-08-22T00:00:00Z",
+      "title": {
+        "de": "Vereinfachte Umsetzung als Geopackage in EPSG:31258"
+      }
+    },
+    {
+      "access_url": [
+        "https://gis.ktn.gv.at/api/features/inspire/v1/collections/AT.0019.9af8e57e-61e0-4091-abec-b0c5153a17af/items"
+      ],
+      "description": {
+        "de": "URL zu den Items (OGC Feature API) in der Projektion EPSG:4326\r\n"
+      },
+      "id": "39ac8a0e-91bb-4187-b460-6b5e0bc52df2",
+      "issued": "2024-03-18T12:42:55.106289Z",
+      "license": {
+        "resource": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "modified": "2026-08-22T00:00:00Z",
+      "title": {
+        "de": "URL zu den Items (OGC Feature API) in der Projektion EPSG:4326"
       }
     }
   ],
@@ -208,10 +205,10 @@
   ],
   "modified": "2026-08-22T00:00:00Z",
   "publisher": {
-    "email": "kagis@ktn.gv.at",
+    "email": "mailto:kagis@ktn.gv.at",
     "homepage": "https://kagis.ktn.gv.at/",
     "name": "Land Kärnten",
-    "type": "Organization"
+    "type": "Agent"
   },
   "quality_meas": null,
   "resource": "https://www.data.gv.at/katalog/datasets/83662edf-6db4-4d86-a2b3-4f839290d011",

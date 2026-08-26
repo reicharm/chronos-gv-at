@@ -45,7 +45,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-16T14:24:16Z",
-    "modified": "2025-12-16T14:24:16Z"
+    "modified": "2026-08-25T12:01:23Z"
   },
   "categories": [
     {
@@ -148,12 +148,42 @@
       "resource": "http://publications.europa.eu/resource/authority/data-theme/ENER"
     }
   ],
-  "contact_point": [],
+  "contact_point": [
+    {
+      "email": "mailto:post@ma20.wien.gv.at",
+      "name": "Magistrat Wien - Magistratsabteilung 20 - Energieplanung",
+      "type": "Organization",
+      "url": [
+        "https://www.wien.gv.at/kontakte/ma20/index.html"
+      ]
+    }
+  ],
   "country": null,
   "description": {
     "de": "Der Endenergieverbauch des Verkehrs wird auf die Einwphneranzahl von Wien bezogen"
   },
   "distributions": [
+    {
+      "access_url": [
+        "https://www.wien.gv.at/data/ogd/ma20/endenergieverkehrprokopflokal2024.csv"
+      ],
+      "description": {
+        "de": "NUTS1 (AT1 für Ostösterreich); NUTS2 (AT13 für Bundesland Wien); NUTS3(AT130 für Stadt Wien); DISTRICT_CODE (90001 für Wien); SUB_DISTRICT_CODE(0 da nicht verwendet); REF_YEAR (Datenjahr); YEAR (Jahr, für das der Verbrauch gilt);  ENERGY_USE(Lokaler Endenergieverbrauch); UNIT (Einheit: kWh/Kopf);"
+      },
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "c7bd9a93-3620-4c9c-8180-6c55f63ff83d",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "Endenergieverbrauch des Verkehrs pro Kopf 2024",
+        "en": "Endenergieverbrauch des Verkehrs pro Kopf 2024"
+      }
+    },
     {
       "access_url": [
         "https://www.wien.gv.at/gogv/l9ogdendenergieverkehrprokopflokal2021"
@@ -171,7 +201,8 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "Endenergieverbrauch des Verkehrs pro Kopf 2021"
+        "de": "Endenergieverbrauch des Verkehrs pro Kopf 2021",
+        "en": "Endenergieverbrauch des Verkehrs pro Kopf 2021"
       }
     }
   ],
@@ -192,24 +223,24 @@
       "language": "de"
     },
     {
-      "id": "capita",
-      "label": "capita",
+      "id": "verkehr",
+      "label": "Verkehr",
       "language": "de"
     },
     {
-      "id": "verkehr",
-      "label": "Verkehr",
+      "id": "capita",
+      "label": "capita",
       "language": "de"
     }
   ],
   "language": [
     {
-      "id": "de",
-      "label": "German",
+      "id": "DEU",
+      "label": "Deutsch",
       "resource": "http://publications.europa.eu/resource/authority/language/DEU"
     }
   ],
-  "modified": "2025-11-20",
+  "modified": "2025-12-16",
   "provenance": [
     {
       "label": "Die Daten werden von der Statistik Austria für die Energiebilanz erstellt, jeweils mit den Vorjahren verglichen und Ausreißer geprüft."
@@ -230,15 +261,20 @@
     }
   ],
   "title": {
-    "de": "Endenergieverbrauch des Verkehrs pro Kopf Wien"
+    "de": "Endenergieverbrauch des Verkehrs pro Kopf Wien",
+    "en": "Annual final energy use for secotr mobility in Vienna in kWh/capita"
   },
   "translation_meta": {
     "details": {
       "de": {
         "machine_translated": false
+      },
+      "en": {
+        "machine_translated": false
       }
     },
     "full_available_languages": [
+      "en",
       "de"
     ],
     "status": "unknown"

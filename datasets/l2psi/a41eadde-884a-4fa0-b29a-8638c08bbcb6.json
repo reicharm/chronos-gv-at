@@ -42,7 +42,7 @@
   },
   "catalog_record": {
     "issued": "2025-09-26T10:10:59Z",
-    "modified": "2025-09-26T10:10:59Z"
+    "modified": "2026-08-25T14:47:36Z"
   },
   "categories": [
     {
@@ -79,12 +79,13 @@
       "resource": "http://publications.europa.eu/resource/authority/data-theme/ENVI"
     }
   ],
-  "conforms_to": [],
   "contact_point": [
     {
       "email": "mailto:abt8.post@ktn.gv.at",
       "name": "Abteilung 8 - Umwelt, Naturschutz und Klimaschutzkoordination",
-      "type": "Organization"
+      "url": [
+        "https://www.ktn.gv.at/Verwaltung/Amt-der-Kaerntner-Landesregierung/Abteilung-8"
+      ]
     }
   ],
   "country": null,
@@ -94,33 +95,12 @@
   "distributions": [
     {
       "access_url": [
-        "https://gis.ktn.gv.at/OGD/INSPIRE/PF_SEVESO_KTN_GPKG.zip"
-      ],
-      "byte_size": 8,
-      "format": {
-        "id": "GPKG",
-        "label": "GeoPackage",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
-      },
-      "id": "7e3a2439-b28f-45e9-aa98-24b3409a1c5f",
-      "issued": "2020-10-05T00:00:00Z",
-      "license": {
-        "resource": "https://creativecommons.org/publicdomain/zero/1.0/"
-      },
-      "media_type": "application/zip",
-      "modified": "2023-12-09T21:30:14.466817Z",
-      "title": {
-        "de": "Vereinfachte Umsetzung als Geopackage in der Projektion EPSG:31258"
-      }
-    },
-    {
-      "access_url": [
         "https://gis.ktn.gv.at/api/features/inspire/v1/collections/AT.0019.85ae0a0c-de74-422b-b1e5-09a41f06ab0e/items"
       ],
       "description": {
         "de": "URL zu den Items (OGC Feature API) in der Projektion EPSG:4326"
       },
-      "id": "e93bd4cb-e8d0-407b-be60-de4e9ae99f76",
+      "id": "0c82baf2-be4b-4abf-b2db-d81e3a72c42f",
       "issued": "2024-03-18T12:31:54.849981Z",
       "license": {
         "resource": "https://creativecommons.org/publicdomain/zero/1.0/"
@@ -132,20 +112,37 @@
     },
     {
       "access_url": [
+        "https://gis.ktn.gv.at/OGD/INSPIRE/PF_SEVESO_KTN_GPKG.zip"
+      ],
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "4e0ea146-e052-4235-9f9a-bae2c9cc4c10",
+      "issued": "2020-10-05T00:00:00Z",
+      "license": {
+        "resource": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "modified": "2023-12-09T21:30:14.466817Z",
+      "title": {
+        "de": "Vereinfachte Umsetzung als Geopackage in der Projektion EPSG:31258"
+      }
+    },
+    {
+      "access_url": [
         "https://gis.ktn.gv.at/OGD/INSPIRE/PF_SEVESO_KTN_GML.zip"
       ],
-      "byte_size": 3,
       "format": {
         "id": "GML",
         "label": "GML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
       },
-      "id": "cf872943-461a-4b29-8417-990ace584063",
+      "id": "f6496a9e-7f7c-4ffc-ba52-4c0860f90ff5",
       "issued": "2020-10-05T00:00:00Z",
       "license": {
         "resource": "https://creativecommons.org/publicdomain/zero/1.0/"
       },
-      "media_type": "application/zip",
       "modified": "2023-12-09T21:30:14.466735Z",
       "title": {
         "de": "INSPIRE-konforme Umsetzung als GML in der Projektion EPSG:3045"
@@ -160,6 +157,16 @@
   "issued": "2020-10-06T13:10:57.765360Z",
   "keywords": [
     {
+      "id": "sevesobetriebsanlagen",
+      "label": "Sevesobetriebsanlagen",
+      "language": "de"
+    },
+    {
+      "id": "highvaluedataset",
+      "label": "HighValueDataset",
+      "language": "de"
+    },
+    {
       "id": "gefährliche-stoffe",
       "label": "gefährliche Stoffe",
       "language": "de"
@@ -170,32 +177,22 @@
       "language": "de"
     },
     {
-      "id": "sevesobetriebsanlagen",
-      "label": "Sevesobetriebsanlagen",
+      "id": "kagis",
+      "label": "KAGIS",
       "language": "de"
     },
     {
       "id": "seveso",
       "label": "Seveso",
       "language": "de"
-    },
-    {
-      "id": "kagis",
-      "label": "KAGIS",
-      "language": "de"
-    },
-    {
-      "id": "highvaluedataset",
-      "label": "HighValueDataset",
-      "language": "de"
     }
   ],
   "modified": "2025-09-08T12:30:41.652757Z",
   "publisher": {
-    "email": "kagis@ktn.gv.at",
+    "email": "mailto:kagis@ktn.gv.at",
     "homepage": "https://kagis.ktn.gv.at/",
     "name": "Land Kärnten",
-    "type": "Organization"
+    "type": "Agent"
   },
   "quality_meas": null,
   "resource": "https://www.data.gv.at/katalog/datasets/a41eadde-884a-4fa0-b29a-8638c08bbcb6",
