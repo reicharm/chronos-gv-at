@@ -45,7 +45,7 @@
   },
   "catalog_record": {
     "issued": "2026-01-08T10:42:29Z",
-    "modified": "2026-07-01T12:00:17Z"
+    "modified": "2026-09-01T09:00:11Z"
   },
   "categories": [
     {
@@ -80,6 +80,39 @@
         "sv": "Utbildning, kultur och sport"
       },
       "resource": "http://publications.europa.eu/resource/authority/data-theme/EDUC"
+    },
+    {
+      "id": "TECH",
+      "label": {
+        "bg": "Наука и tехнологии",
+        "cs": "Věda a technika",
+        "da": "Videnskab og teknologi",
+        "de": "Wissenschaft und Technologie",
+        "el": "Επιστήμη και τεχνολογία",
+        "en": "Science and technology",
+        "es": "Ciencia y tecnología",
+        "et": "Teadus ja tehnoloogia",
+        "fi": "Tiede ja teknologia",
+        "fr": "Science et technologie",
+        "ga": "Eolaíocht agus teicneolaíocht",
+        "hr": "Znanost i tehnologija",
+        "hu": "Tudomány és technológia",
+        "it": "Scienza e tecnologia",
+        "lt": "Mokslas ir technologijos",
+        "lv": "Zinātne un tehnoloģija",
+        "mt": "Xjenza u teknoloġija",
+        "nb": "Vitenskap og teknologi",
+        "nl": "Wetenschap en technologie",
+        "nn": "Vitskap og teknologi",
+        "no": "Vitenskap og teknologi",
+        "pl": "Nauka i technologia",
+        "pt": "Ciência e tecnologia",
+        "ro": "Ştiinţă şi tehnologie",
+        "sk": "Veda a technika",
+        "sl": "Znanost in tehnologija",
+        "sv": "Vetenskap och teknik"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/TECH"
     }
   ],
   "contact_point": [
@@ -102,7 +135,7 @@
         "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:FUNDPUNKTEOGD&styles=&format=image/png8"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "PNG",
@@ -123,7 +156,7 @@
         "https://data.wien.gv.at/daten/geo?version=1.1.0&service=WFS&request=GetCapabilities"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "WFS_SRVC",
@@ -144,7 +177,7 @@
         "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:FUNDPUNKTEOGD&srsName=EPSG:4326&outputFormat=json"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "JSON",
@@ -165,7 +198,7 @@
         "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=FUNDPUNKTEOGD&styles=&format=image/png&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "PNG",
@@ -186,7 +219,7 @@
         "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=FUNDPUNKTEOGD&styles=&format=image/jpeg&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "JPEG",
@@ -207,7 +240,7 @@
         "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:FUNDPUNKTEOGD&styles=FUNDPUNKTEOGDPNG&format=application/vnd.google-earth.kml+xml"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "KML",
@@ -228,7 +261,7 @@
         "https://data.wien.gv.at/daten/wms?service=WMS&request=GetCapabilities&version=1.1.1"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "WMS_SRVC",
@@ -249,7 +282,7 @@
         "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=FUNDPUNKTEOGD&styles=&format=image/gif&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "GIF",
@@ -270,7 +303,7 @@
         "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:FUNDPUNKTEOGD&styles=&format=image/svg"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "id": "93c379aa-190a-4f2b-9ee5-7c11f61914c2",
       "license": {
@@ -286,7 +319,7 @@
         "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:FUNDPUNKTEOGD&srsName=EPSG:4326&outputFormat=shape-zip"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "SHP",
@@ -307,7 +340,7 @@
         "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:FUNDPUNKTEOGD&styles=&format=image/jpeg"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "JPEG",
@@ -328,7 +361,7 @@
         "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:FUNDPUNKTEOGD&styles=&format=image/png"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "PNG",
@@ -349,7 +382,7 @@
         "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:FUNDPUNKTEOGD&srsName=EPSG:4326&outputFormat=csv"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "CSV",
@@ -370,7 +403,7 @@
         "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:FUNDPUNKTEOGD&styles=&format=image/gif"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "GIF",
@@ -391,7 +424,7 @@
         "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:FUNDPUNKTEOGD&styles=&format=application/rss+xml"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "id": "d221fd7c-333f-4488-b712-c91735fccc87",
       "license": {
@@ -407,7 +440,7 @@
         "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetCapabilities"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "WMS_SRVC",
@@ -428,7 +461,7 @@
         "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:FUNDPUNKTEOGD&styles=FUNDPUNKTEOGDPNG&format=application/vnd.google-earth.kmz"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "KMZ",
@@ -449,7 +482,7 @@
         "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:FUNDPUNKTEOGD&srsName=EPSG:4326"
       ],
       "description": {
-        "de": "GB_CODE: eindeutiger Grabungscode    BEFUND_KAT:Befundkategorie\nOBJECTID: Objektnummer  \nBEZ: Bezirk  \nSTRNAM: Straßenname  \nHNR: Hausnummer  \nHNR_BIS: Hausnummer bis  \nFUNDKATEGORIE: Fundkategorie  \nFUNDE: wichtige Funde (Auswahl)  \nDATIERUNG: Zeitstellung"
+        "de": "* OBJECTID: Objektnummer  \n* BEZ: Bezirk  \n* STRNAM: Straßenname  \n* HNR: Hausnummer  \n* HNR_BIS: Hausnummer bis\n* BEFUND_KAT: Befundkategorie (Einzel- , Streufund, Fossilfund, Grabbefund, Siedlungsbefund)\n* GRABUNGSAR: Grabungsart (Flächengrabung, Künettengrabung, Prospektion, Aufsammlung, Bauforschung, Fundmeldung)\n* GB_CODE: eindeutiger Grabungscode\n* DATUM: Grabungsjahr\n* DATIERUNG: Zeitstellung (UG (Urgeschichte), RZ (Römerzeit), MA (Mittelalter), NZ (Neuzeit), unbekannt)\n* BESCH: kurze Beschreibung der Fundstelle\n* FUNDKATEGORIE: Fundkategorie\n* FUNDE: wichtige Funde der Fundstelle (Auswahl)  \n* LITERATUR: weiterführende Literatur\n* LINK: Verlinkung von weiterführenden Informationen"
       },
       "format": {
         "id": "GML",
@@ -500,10 +533,10 @@
       "resource": "http://publications.europa.eu/resource/authority/language/DEU"
     }
   ],
-  "modified": "2026-01-08",
+  "modified": "2026-07-01",
   "provenance": [
     {
-      "label": "Grabungsergebnisse"
+      "label": "Grabungsergebnisse der Fundstellen in Wien."
     }
   ],
   "publisher": {
