@@ -45,7 +45,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-17T15:07:41Z",
-    "modified": "2025-12-17T15:07:41Z"
+    "modified": "2026-09-04T08:00:14Z"
   },
   "categories": [
     {
@@ -82,13 +82,25 @@
       "resource": "http://publications.europa.eu/resource/authority/data-theme/TRAN"
     }
   ],
-  "contact_point": [],
+  "contact_point": [
+    {
+      "email": "mailto:post@ma46.wien.gv.at",
+      "name": "Magistrat Wien - Magistratsabteilung 46 - Verkehrsorganisation und technische Verkehrsangelegenheiten",
+      "type": "Organization",
+      "url": [
+        "https://www.wien.gv.at/kontakte/ma46/index.html"
+      ]
+    }
+  ],
   "country": null,
   "description": {
     "de": "Übersicht über alle verkehrsbehördlich genehmigten - mit Verkehrszeichen kundgemachten - Fiakerstandorte"
   },
   "distributions": [
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:FIAKEROGD&srsName=EPSG:4326&outputFormat=json"
+      ],
       "description": {
         "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
       },
@@ -102,10 +114,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WFS GetFeature (JSON)"
+        "de": "WFS GetFeature (JSON)",
+        "en": "WFS GetFeature (JSON)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:FIAKEROGD&styles=&format=application/rss+xml"
+      ],
       "description": {
         "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
       },
@@ -114,27 +130,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (GeoRSS)"
+        "de": "WMS Geoserver GetMap (GeoRSS)",
+        "en": "WMS Geoserver GetMap (GeoRSS)"
       }
     },
     {
-      "description": {
-        "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
-      },
-      "format": {
-        "id": "CSV",
-        "label": "CSV",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
-      },
-      "id": "156e970e-483d-469c-8e34-fa7ebc3ec20a",
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
-      },
-      "title": {
-        "de": "WFS GetFeature (CSV)"
-      }
-    },
-    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=FIAKEROGD&styles=&format=image/gif&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
       "description": {
         "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
       },
@@ -148,7 +151,29 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS getMap (GIF)"
+        "de": "WMS getMap (GIF)",
+        "en": "WMS getMap (GIF)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:FIAKEROGD&srsName=EPSG:4326&outputFormat=csv"
+      ],
+      "description": {
+        "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
+      },
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "156e970e-483d-469c-8e34-fa7ebc3ec20a",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (CSV)",
+        "en": "WFS GetFeature (CSV)"
       }
     },
     {
@@ -165,7 +190,8 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (KML)"
+        "de": "WMS Geoserver GetMap (KML)",
+        "en": "WMS Geoserver GetMap (KML)"
       }
     },
     {
@@ -185,10 +211,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WFS GetCapabilities"
+        "de": "WFS GetCapabilities",
+        "en": "WFS GetCapabilities"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:FIAKEROGD&styles=&format=image/svg"
+      ],
       "description": {
         "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
       },
@@ -202,24 +232,8 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (SVG)"
-      }
-    },
-    {
-      "description": {
-        "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
-      },
-      "format": {
-        "id": "GML",
-        "label": "GML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
-      },
-      "id": "9c124911-d7e5-48de-8bf2-3a8eb6e8a0d4",
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
-      },
-      "title": {
-        "de": "WFS GetFeature (GML)"
+        "de": "WMS Geoserver GetMap (SVG)",
+        "en": "WMS Geoserver GetMap (SVG)"
       }
     },
     {
@@ -239,10 +253,35 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS GetCapabilities"
+        "de": "WMS GetCapabilities",
+        "en": "WMS GetCapabilities"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:FIAKEROGD&srsName=EPSG:4326"
+      ],
+      "description": {
+        "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
+      },
+      "format": {
+        "id": "GML",
+        "label": "GML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
+      },
+      "id": "9c124911-d7e5-48de-8bf2-3a8eb6e8a0d4",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (GML)",
+        "en": "WFS GetFeature (GML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:FIAKEROGD&srsName=EPSG:4326&outputFormat=shape-zip"
+      ],
       "description": {
         "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
       },
@@ -256,10 +295,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WFS GetFeature (SHP)"
+        "de": "WFS GetFeature (SHP)",
+        "en": "WFS GetFeature (SHP)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:FIAKEROGD&styles=&format=image/jpeg"
+      ],
       "description": {
         "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
       },
@@ -273,10 +316,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (JPEG)"
+        "de": "WMS Geoserver GetMap (JPEG)",
+        "en": "WMS Geoserver GetMap (JPEG)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:FIAKEROGD&styles=&format=image/png"
+      ],
       "description": {
         "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
       },
@@ -290,7 +337,8 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (PNG)"
+        "de": "WMS Geoserver GetMap (PNG)",
+        "en": "WMS Geoserver GetMap (PNG)"
       }
     },
     {
@@ -307,10 +355,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (KMZ)"
+        "de": "WMS Geoserver GetMap (KMZ)",
+        "en": "WMS Geoserver GetMap (KMZ)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:FIAKEROGD&styles=&format=image/png8"
+      ],
       "description": {
         "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
       },
@@ -324,10 +376,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver (PNG/8bit)"
+        "de": "WMS Geoserver (PNG/8bit)",
+        "en": "WMS Geoserver (PNG/8bit)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=FIAKEROGD&styles=&format=image/png&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
       "description": {
         "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
       },
@@ -341,10 +397,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS GetMap (PNG/8bit)"
+        "de": "WMS GetMap (PNG/8bit)",
+        "en": "WMS GetMap (PNG/8bit)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=FIAKEROGD&styles=&format=image/jpeg&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
       "description": {
         "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
       },
@@ -358,7 +418,8 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS GetMap (JPEG)"
+        "de": "WMS GetMap (JPEG)",
+        "en": "WMS GetMap (JPEG)"
       }
     },
     {
@@ -378,10 +439,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetCapabilities"
+        "de": "WMS Geoserver GetCapabilities",
+        "en": "WMS Geoserver GetCapabilities"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:FIAKEROGD&styles=&format=image/gif"
+      ],
       "description": {
         "de": "OBJEKT_ID = eindeutiger Schlüssel  ZEITRAUM = Gültigkeitsdauer des Fiakerstandortes   ADRESSE = Standortadresse"
       },
@@ -395,7 +460,8 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (GIF)"
+        "de": "WMS Geoserver GetMap (GIF)",
+        "en": "WMS Geoserver GetMap (GIF)"
       }
     }
   ],
@@ -438,12 +504,12 @@
   ],
   "language": [
     {
-      "id": "de",
-      "label": "German",
+      "id": "DEU",
+      "label": "Deutsch",
       "resource": "http://publications.europa.eu/resource/authority/language/DEU"
     }
   ],
-  "modified": "2025-11-20",
+  "modified": "2025-12-17",
   "provenance": [
     {
       "label": "Verortung auf Basis der topografischen Grundkarte der Stadt Wien (Mehrzweckkarte)"
@@ -464,16 +530,21 @@
     }
   ],
   "title": {
-    "de": "Fiakerstandorte Wien"
+    "de": "Fiakerstandorte Wien",
+    "en": "Fiaker locations Vienna; Overview of all officially approved - with traffic signs announced - Fiaker locations"
   },
   "translation_meta": {
     "details": {
       "de": {
         "machine_translated": false
+      },
+      "en": {
+        "machine_translated": false
       }
     },
     "full_available_languages": [
-      "de"
+      "de",
+      "en"
     ],
     "status": "unknown"
   }

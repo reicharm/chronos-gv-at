@@ -45,7 +45,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-17T15:07:55Z",
-    "modified": "2025-12-17T15:07:55Z"
+    "modified": "2026-09-04T08:00:15Z"
   },
   "categories": [
     {
@@ -82,13 +82,25 @@
       "resource": "http://publications.europa.eu/resource/authority/data-theme/TRAN"
     }
   ],
-  "contact_point": [],
+  "contact_point": [
+    {
+      "email": "mailto:post@ma46.wien.gv.at",
+      "name": "Magistrat Wien - Magistratsabteilung 46 - Verkehrsorganisation und technische Verkehrsangelegenheiten",
+      "type": "Organization",
+      "url": [
+        "https://www.wien.gv.at/kontakte/ma46/index.html"
+      ]
+    }
+  ],
   "country": null,
   "description": {
     "de": "Übersicht über Ladezonenstandorte von Wien"
   },
   "distributions": [
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:LADEZONENOGD&styles=&format=image/gif"
+      ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
@@ -102,7 +114,8 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (GIF)"
+        "de": "WMS Geoserver GetMap (GIF)",
+        "en": "WMS Geoserver GetMap (GIF)"
       }
     },
     {
@@ -119,10 +132,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (KMZ)"
+        "de": "WMS Geoserver GetMap (KMZ)",
+        "en": "WMS Geoserver GetMap (KMZ)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:LADEZONENOGD&styles=&format=application/rss+xml"
+      ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
@@ -131,10 +148,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (GeoRSS)"
+        "de": "WMS Geoserver GetMap (GeoRSS)",
+        "en": "WMS Geoserver GetMap (GeoRSS)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=LADEZONENOGD&styles=&format=image/gif&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
@@ -148,10 +169,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS getMap (GIF)"
+        "de": "WMS getMap (GIF)",
+        "en": "WMS getMap (GIF)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:LADEZONENOGD&styles=&format=image/png"
+      ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
@@ -165,10 +190,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (PNG)"
+        "de": "WMS Geoserver GetMap (PNG)",
+        "en": "WMS Geoserver GetMap (PNG)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:LADEZONENOGD&srsName=EPSG:4326&outputFormat=json"
+      ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
@@ -182,10 +211,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WFS GetFeature (JSON)"
+        "de": "WFS GetFeature (JSON)",
+        "en": "WFS GetFeature (JSON)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:LADEZONENOGD&srsName=EPSG:4326&outputFormat=csv"
+      ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
@@ -199,27 +232,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WFS GetFeature (CSV)"
+        "de": "WFS GetFeature (CSV)",
+        "en": "WFS GetFeature (CSV)"
       }
     },
     {
-      "description": {
-        "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
-      },
-      "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
-      },
-      "id": "d0cbfd28-154a-472f-8fc1-239dd5225876",
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
-      },
-      "title": {
-        "de": "WFS GetFeature (SHP)"
-      }
-    },
-    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:LADEZONENOGD&srsName=EPSG:4326"
+      ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
@@ -233,10 +253,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WFS GetFeature (GML)"
+        "de": "WFS GetFeature (GML)",
+        "en": "WFS GetFeature (GML)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=LADEZONENOGD&styles=&format=image/png&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
@@ -250,10 +274,35 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS GetMap (PNG/8bit)"
+        "de": "WMS GetMap (PNG/8bit)",
+        "en": "WMS GetMap (PNG/8bit)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:LADEZONENOGD&srsName=EPSG:4326&outputFormat=shape-zip"
+      ],
+      "description": {
+        "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
+      },
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "d0cbfd28-154a-472f-8fc1-239dd5225876",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (SHP)",
+        "en": "WFS GetFeature (SHP)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:LADEZONENOGD&styles=&format=image/png8"
+      ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
@@ -267,7 +316,8 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver (PNG/8bit)"
+        "de": "WMS Geoserver (PNG/8bit)",
+        "en": "WMS Geoserver (PNG/8bit)"
       }
     },
     {
@@ -287,10 +337,14 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS GetCapabilities"
+        "de": "WMS GetCapabilities",
+        "en": "WMS GetCapabilities"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=LADEZONENOGD&styles=&format=image/jpeg&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
@@ -304,27 +358,29 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS GetMap (JPEG)"
+        "de": "WMS GetMap (JPEG)",
+        "en": "WMS GetMap (JPEG)"
       }
     },
     {
       "access_url": [
-        "https://data.wien.gv.at/daten/geo?version=1.1.0&service=WFS&request=GetCapabilities"
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:LADEZONENOGD&styles=&format=image/svg"
       ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
       "format": {
-        "id": "WFS_SRVC",
-        "label": "WFS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+        "id": "SVG",
+        "label": "SVG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SVG"
       },
-      "id": "2d6833a2-6795-4af1-93cc-79c8d21f0249",
+      "id": "3af825ed-0973-481f-a19d-98dca888646c",
       "license": {
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WFS GetCapabilities"
+        "de": "WMS Geoserver GetMap (SVG)",
+        "en": "WMS Geoserver GetMap (SVG)"
       }
     },
     {
@@ -344,24 +400,8 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetCapabilities"
-      }
-    },
-    {
-      "description": {
-        "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
-      },
-      "format": {
-        "id": "JPEG",
-        "label": "JPEG",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
-      },
-      "id": "4dce9ffa-ad10-4cc8-b0ba-a6496838d281",
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
-      },
-      "title": {
-        "de": "WMS Geoserver GetMap (JPEG)"
+        "de": "WMS Geoserver GetCapabilities",
+        "en": "WMS Geoserver GetCapabilities"
       }
     },
     {
@@ -378,24 +418,50 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (KML)"
+        "de": "WMS Geoserver GetMap (KML)",
+        "en": "WMS Geoserver GetMap (KML)"
       }
     },
     {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.1.0&service=WFS&request=GetCapabilities"
+      ],
       "description": {
         "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
       },
       "format": {
-        "id": "SVG",
-        "label": "SVG",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SVG"
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "3af825ed-0973-481f-a19d-98dca888646c",
+      "id": "2d6833a2-6795-4af1-93cc-79c8d21f0249",
       "license": {
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "WMS Geoserver GetMap (SVG)"
+        "de": "WFS GetCapabilities",
+        "en": "WFS GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:LADEZONENOGD&styles=&format=image/jpeg"
+      ],
+      "description": {
+        "de": "HV_ID = eindeutiger Schlüssel zur Identifierung des Datensatzes   BEZIRK = Wiener Gemeindebezirk    STRNAM = Straßename und Hausnummer gemäß amtlichen Straßenverzeichnis   LAENGE = Länge der Ladezone    LZ_WEEKDAYS = der Ladezonenzeitraum zeigt jene Tage an, an den die Ladezone gilt (7-stelliger Code, 1=ja, 0=nein, z.B. 1101000 = Ladezone gilt Montag, Dienstag und Donnerstag; es können auf einer Zusatztafel mehrere Zeiträume angegeben sein)   LZ_WORKDAY: -1= Ladezone gilt nur an Werktagen, 0 = Ladezone gilt nicht nur an Werktagen   LZ_HOLIDAY: -1 = Ladezone gilt an Feiertagen, 0 = Ladezone gilt nicht an Feiertagen    LZ_TIME_FROM = Ladezonenzeitraum gilt von   LZ_TIME_TO = Ladezonenzeitraum gilt bis   FZG_KAT = Fahrzeugkategorie   FZG_KAT_TXT = Beschreibung der Fahrzeugkategorie"
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "4dce9ffa-ad10-4cc8-b0ba-a6496838d281",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (JPEG)",
+        "en": "WMS Geoserver GetMap (JPEG)"
       }
     }
   ],
@@ -416,13 +482,13 @@
       "language": "de"
     },
     {
-      "id": "viennagis",
-      "label": "ViennaGIS",
+      "id": "halteverbote",
+      "label": "Halteverbote",
       "language": "de"
     },
     {
-      "id": "halteverbote",
-      "label": "Halteverbote",
+      "id": "viennagis",
+      "label": "ViennaGIS",
       "language": "de"
     },
     {
@@ -438,12 +504,12 @@
   ],
   "language": [
     {
-      "id": "de",
-      "label": "German",
+      "id": "DEU",
+      "label": "Deutsch",
       "resource": "http://publications.europa.eu/resource/authority/language/DEU"
     }
   ],
-  "modified": "2025-11-20",
+  "modified": "2025-12-17",
   "provenance": [
     {
       "label": "Verortung auf Basis der topografischen Grundkarte der Stadt Wien (Mehrzweckkarte)"
@@ -464,16 +530,21 @@
     }
   ],
   "title": {
-    "de": "Ladezonen Standorte (Linienbestand) Wien"
+    "de": "Ladezonen Standorte (Linienbestand) Wien",
+    "en": "Overview of loading zones in Vienna (line inventory)"
   },
   "translation_meta": {
     "details": {
       "de": {
         "machine_translated": false
+      },
+      "en": {
+        "machine_translated": false
       }
     },
     "full_available_languages": [
-      "de"
+      "de",
+      "en"
     ],
     "status": "unknown"
   }
