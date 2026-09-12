@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:16Z",
-    "modified": "2026-09-05T06:02:33Z"
+    "modified": "2026-09-12T06:02:33Z"
   },
   "categories": [
     {
@@ -93,6 +93,30 @@
   "distributions": [
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laendergebiete&outputFormat=shape-zip"
+      ],
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "a01fadaa-8cad-49b3-9173-504bb59cb739",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "SHP-Download"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laendergebiete&outputFormat=csv"
       ],
       "format": {
@@ -100,7 +124,7 @@
         "label": "CSV",
         "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "5ebaa56b-21bc-4b4b-8ba1-e34c3497e667",
+      "id": "cdb24e22-97e3-4e10-a77b-ac215354f703",
       "language": [
         {
           "id": "DEU",
@@ -117,14 +141,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laendergebiete&outputFormat=application/json&maxFeatures=1000000"
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/84146f0e-e9e8-40ef-ae93-fdac3e7f6b4c"
       ],
       "format": {
-        "id": "JSON",
-        "label": "JSON",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "65cfe667-a6a2-492a-b5c6-8ed6ac22cea8",
+      "id": "5527dce6-7635-413d-a480-e9d6b85f9a4f",
       "language": [
         {
           "id": "DEU",
@@ -136,31 +160,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "JSON-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laendergebiete&outputFormat=gpkg"
-      ],
-      "format": {
-        "id": "WFS_SRVC",
-        "label": "WFS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
-      },
-      "id": "979765fe-26fa-43e8-ad1e-e219ba3476a9",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "WFS-GetCapabilities"
+        "de": "Metadaten-Katalog"
       }
     },
     {
@@ -172,7 +172,7 @@
         "label": "WMS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "89b3484c-ebaa-47d4-ac61-c2ec38ea4a32",
+      "id": "27ebc71d-3e15-45ca-abc6-dcf768517718",
       "language": [
         {
           "id": "DEU",
@@ -192,11 +192,11 @@
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laendergebiete&outputFormat=gpkg"
       ],
       "format": {
-        "id": "GPKG",
-        "label": "GeoPackage",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "21a48492-397e-49ca-aa63-7a1895122c63",
+      "id": "26c22dae-76ec-4e40-be98-f9ddeed2d96d",
       "language": [
         {
           "id": "DEU",
@@ -208,7 +208,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "GPKG-Download"
+        "de": "WFS-GetCapabilities"
       }
     },
     {
@@ -220,7 +220,7 @@
         "label": "KML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "0d811b9e-4a2a-43df-9eb2-7ee5382d7f85",
+      "id": "a4ab7a46-3fa6-4d35-9c1a-631306794c25",
       "language": [
         {
           "id": "DEU",
@@ -237,14 +237,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/84146f0e-e9e8-40ef-ae93-fdac3e7f6b4c"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laendergebiete&outputFormat=gpkg"
       ],
       "format": {
-        "id": "HTML",
-        "label": "HTML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "b3e01097-c814-4123-9774-daf89032c155",
+      "id": "db452052-ef9c-4e9b-a9a9-a595f0801723",
       "language": [
         {
           "id": "DEU",
@@ -256,19 +256,19 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "Metadaten-Katalog"
+        "de": "GPKG-Download"
       }
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laendergebiete&outputFormat=shape-zip"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laendergebiete&outputFormat=application/json&maxFeatures=1000000"
       ],
       "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "de5a13e1-ab0c-4689-9fc0-7010d1c5a10a",
+      "id": "0c793862-2523-4197-a457-13cbb9389ef6",
       "language": [
         {
           "id": "DEU",
@@ -280,7 +280,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "SHP-Download"
+        "de": "JSON-Download"
       }
     }
   ],
