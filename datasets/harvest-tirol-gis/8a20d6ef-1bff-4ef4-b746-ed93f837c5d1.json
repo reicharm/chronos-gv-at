@@ -39,7 +39,7 @@
   },
   "catalog_record": {
     "issued": "2026-03-14T02:32:00Z",
-    "modified": "2026-05-27T02:32:00Z"
+    "modified": "2026-09-30T02:32:00Z"
   },
   "categories": [
     {
@@ -93,54 +93,15 @@
   "distributions": [
     {
       "access_url": [
-        "https://haleconnect.com/ows/datasets/org.892.c6c976ac-675e-4e40-b36c-54afe6fdfd04_ogcapi"
-      ],
-      "description": {
-        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
-      },
-      "id": "c0e3b060-e554-4c3d-9042-f18728c57d4e",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "RAMSAR Gebiete Tirol (OGC API)"
-      }
-    },
-    {
-      "access_url": [
-        "https://haleconnect.com/ows/services/org.892.c6c976ac-675e-4e40-b36c-54afe6fdfd04_wms?SERVICE=WMS&amp;Request=GetCapabilities"
-      ],
-      "description": {
-        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
-      },
-      "id": "580d3834-1c26-4956-ae9d-9cebbf8306f8",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "RAMSAR Gebiete Tirol (INSPIRE WMS)"
-      }
-    },
-    {
-      "access_url": [
         "https://services3.arcgis.com/hG7UfxX49PQ8XkXh/arcgis/rest/services/Ramsar_Gebiete/FeatureServer/0/query?outFields=*&amp;where=1%3D1&amp;f=geojson"
       ],
       "description": {
         "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
+      },
+      "format": {
+        "id": "GEOJSON",
+        "label": "GeoJSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GEOJSON"
       },
       "id": "2f907f1f-11ba-4acd-a626-f179d956725b",
       "language": [
@@ -177,6 +138,50 @@
       },
       "title": {
         "de": "RAMSAR Gebiete Tirol (Feature Service)"
+      }
+    },
+    {
+      "access_url": [
+        "https://haleconnect.com/ows/services/org.892.c6c976ac-675e-4e40-b36c-54afe6fdfd04_wms?SERVICE=WMS&amp;Request=GetCapabilities"
+      ],
+      "description": {
+        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
+      },
+      "id": "580d3834-1c26-4956-ae9d-9cebbf8306f8",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "RAMSAR Gebiete Tirol (INSPIRE WMS)"
+      }
+    },
+    {
+      "access_url": [
+        "https://haleconnect.com/ows/datasets/org.892.c6c976ac-675e-4e40-b36c-54afe6fdfd04_ogcapi"
+      ],
+      "description": {
+        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
+      },
+      "id": "c0e3b060-e554-4c3d-9042-f18728c57d4e",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "RAMSAR Gebiete Tirol (OGC API)"
       }
     },
     {
@@ -310,13 +315,13 @@
       "language": "de"
     },
     {
-      "id": "regional",
-      "label": "Regional",
+      "id": "umwelt",
+      "label": "Umwelt",
       "language": "de"
     },
     {
-      "id": "umwelt",
-      "label": "Umwelt",
+      "id": "regional",
+      "label": "Regional",
       "language": "de"
     },
     {

@@ -42,7 +42,7 @@
   },
   "catalog_record": {
     "issued": "2025-09-04T13:06:32Z",
-    "modified": "2026-07-01T02:06:00Z"
+    "modified": "2026-09-30T02:06:00Z"
   },
   "categories": [
     {
@@ -101,6 +101,11 @@
       "description": {
         "de": "* messstelle (TEXT): Messstellenname\r\n* prognose (BOOLEAN): Angabe ob für die Messstelle Prognosedaten verfügbar sind\r\n* wertw_cm (TEXT): Wert für den Wasserstand zum angegebenen Zeitpunkt\r\n* lat (TEXT): Y-Koordinate der Messstelle in geographischen Koordinaten (WGS84)\r\n* lon (TEXT): X-Koordinate der Messstelle in geographischen Koordinaten (WGS84)\r\n* geometry (GEOMETRY): Geometry der Messstelle\r\n* gesamtcode (INTEGER): Gibt den Code für die korrekte Kategorisierung lt. https://ehyd.gv.at an. 1. Ziffer: 1...Niederwasser, 2...Mittelwasser, 3...erhöhte Wasserführung, 4...Hochwasser Stufe 1, 5...Hochwasser Stufe 2, 6...Hochwasser Stufe 3, 9...keine Daten; 2. Ziffer: 0...gleichbleibend, 1...steigend, 2...sinkend, 3...normal; 3. Ziffer: 0...normal, 1...Werte älter als 24h\r\n* zeitpunkt (DATETIME): Zeitpunkt der letzten erfolgreichen übermittlung des gemessenen Wertes\r\n* einheit (TEXT): Einheit des gemessenen Wertes (cm | m ü.A. | m³/s)\r\n* wert (TEXT): Gemessener Wert zum angegebenen Zeitpunkt\r\n* herkunft (TEXT): Datenherkunft\r\n* parameter (TEXT): Messgröße\r\n* internet (TEXT): Direkter Link zur Messstelle auf der Seites des Betreibers\r\n* land (TEXT): Angabe des Landes bei Messstellen außerhalb Österreichs\r\n* hydrodienst (TEXT): Betreiber der Messsstelle\r\n* gewaesser (TEXT): Gewässername\r\n* hzbnr (INTEGER): Messstellennummer des hydrographischen Dienstes\r\n* dbmsnr (INTEGER): Interne Datenbanknummer"
       },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
       "id": "f243b7b6-352a-4bd5-9354-a5e8bdd79e1b",
       "language": [
         {
@@ -144,6 +149,11 @@
       ],
       "description": {
         "de": "* messstelle (TEXT): Messstellenname\r\n* prognose (BOOLEAN): Angabe ob für die Messstelle Prognosedaten verfügbar sind\r\n* wertw_cm (TEXT): Wert für den Wasserstand zum angegebenen Zeitpunkt\r\n* lat (TEXT): Y-Koordinate der Messstelle in geographischen Koordinaten (WGS84)\r\n* lon (TEXT): X-Koordinate der Messstelle in geographischen Koordinaten (WGS84)\r\n* geometry (GEOMETRY): Geometry der Messstelle\r\n* gesamtcode (INTEGER): Gibt den Code für die korrekte Kategorisierung lt. https://ehyd.gv.at an. 1. Ziffer: 1...Niederwasser, 2...Mittelwasser, 3...erhöhte Wasserführung, 4...Hochwasser Stufe 1, 5...Hochwasser Stufe 2, 6...Hochwasser Stufe 3, 9...keine Daten; 2. Ziffer: 0...gleichbleibend, 1...steigend, 2...sinkend, 3...normal; 3. Ziffer: 0...normal, 1...Werte älter als 24h\r\n* zeitpunkt (DATETIME): Zeitpunkt der letzten erfolgreichen übermittlung des gemessenen Wertes\r\n* einheit (TEXT): Einheit des gemessenen Wertes (cm | m ü.A. | m³/s)\r\n* wert (TEXT): Gemessener Wert zum angegebenen Zeitpunkt\r\n* herkunft (TEXT): Datenherkunft\r\n* parameter (TEXT): Messgröße\r\n* internet (TEXT): Direkter Link zur Messstelle auf der Seites des Betreibers\r\n* land (TEXT): Angabe des Landes bei Messstellen außerhalb Österreichs\r\n* hydrodienst (TEXT): Betreiber der Messsstelle\r\n* gewaesser (TEXT): Gewässername\r\n* hzbnr (INTEGER): Messstellennummer des hydrographischen Dienstes\r\n* dbmsnr (INTEGER): Interne Datenbanknummer"
+      },
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
       "id": "fe9c9ded-989d-4c43-ba1b-9d8272eb9b01",
       "language": [

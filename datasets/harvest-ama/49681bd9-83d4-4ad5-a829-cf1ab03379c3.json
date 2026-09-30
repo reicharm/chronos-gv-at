@@ -42,7 +42,7 @@
   },
   "catalog_record": {
     "issued": "2026-01-30T02:04:01Z",
-    "modified": "2026-05-26T10:59:29Z"
+    "modified": "2026-09-30T02:04:01Z"
   },
   "categories": [
     {
@@ -94,6 +94,28 @@
     "de": "Der Layer umfasst alle von den AntragstellerInnen erfassten Feldstücken, welche als Grundlage der Förderabwicklung dienen. Ein Feldstück ist eine im Bundesgebiet gelegene, eindeutig abgrenzbare Bewirtschaftungseinheit eines Betriebsinhabers mit nur einer Nutzungsart gemäß § 16 der Verordnung des zuständigen Bundesministeriums mit horizontalen Regeln für den Bereich der Gemeinsamen Agrarpolitik (Horizontale GAP-Verordnung) StF: BGBl. II Nr. 100/2015, die im Geographischen Informationssystem (GIS) als Polygon digitalisiert ist und aus Schlägen besteht.\n            \nKoordinatensystem der Daten im Format GeoPackage: EPSG 31287.\n\nDer Datensatz wird jährlich in zwei Ständen bereitgestellt. Der Sommerdatenbestand ist im Titel mit \"JJJJ-1\" gekennzeichnet, die Winterüberarbeitung mit \"JJJJ-2\"."
   },
   "distributions": [
+    {
+      "access_url": [
+        "https://inspire.lfrz.gv.at/009501/ds/inspire_feldstuecke_2025-2_polygon.gpkg.zip"
+      ],
+      "description": {
+        "de": "* FS_KENNUNG (DOUBLE): Feldstücks-ID, technischer Identifikator, ausschließlich zur Referenzierung aus den INVEKOS Schlägen des jeweils gleichen Jahres\r\n* GEOMETRY (GEOMETRY): enthält die Geometrieinformation\r\n* GML_LENGTH (DOUBLE): technisches Merkmal\r\n* FNAR_BEZEICHNUNG (TEXT): fachliche Bezeichnung der Feldstücksnutzungsart\r\n* FS_FLAECHE_HA (DOUBLE): Fläche des Feldstückes in Hektar\r\n* GEO_ID (INTEGER): technischer Identifikator\r\n* INSPIRE_ID (TEXT): fachlicher INSPIRE Identifikator der Geometrie\r\n* GML_ID (TEXT): GML:ID gemäß OGC GML Standard\r\n* GML_IDENTIFIER (TEXT): GML:IDENTIFIER gemäß OGC GML Standard\r\n* FNAR_CODE (TEXT): fachlicher Code der Feldstücksnutzungsart\r\n* GEO_PART_KEY (DOUBLE): technisches Merkmal\r\n* LOG_PKEY (DOUBLE): technisches Merkmal\r\n* GEOM_DATE_CREATED (DATETIME): technisches Entstehungsdatum der Geometrie, keine fachliche Gültigkeit\r\n* FART_ID (INTEGER): ID der Förderart\r\n* GML_GEOM (BLOB): technisches Merkmal"
+      },
+      "id": "90e36383-2bbe-4f9c-a989-85eb25bf84d5",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "INVEKOS Feldstücke 2025-2 (GPKG)"
+      }
+    },
     {
       "access_url": [
         "https://inspire.lfrz.gv.at/009501/ds/inspire_feldstuecke_2025-2_polygon.gml.zip"
@@ -185,28 +207,6 @@
       },
       "title": {
         "de": "Downloaddienst der INVEKOS Referenzflächen, Feldstücke, Schläge und Hofstellen"
-      }
-    },
-    {
-      "access_url": [
-        "https://inspire.lfrz.gv.at/009501/ds/inspire_feldstuecke_2025-2_polygon.gpkg.zip"
-      ],
-      "description": {
-        "de": "* FS_KENNUNG (DOUBLE): Feldstücks-ID, technischer Identifikator, ausschließlich zur Referenzierung aus den INVEKOS Schlägen des jeweils gleichen Jahres\r\n* GEOMETRY (GEOMETRY): enthält die Geometrieinformation\r\n* GML_LENGTH (DOUBLE): technisches Merkmal\r\n* FNAR_BEZEICHNUNG (TEXT): fachliche Bezeichnung der Feldstücksnutzungsart\r\n* FS_FLAECHE_HA (DOUBLE): Fläche des Feldstückes in Hektar\r\n* GEO_ID (INTEGER): technischer Identifikator\r\n* INSPIRE_ID (TEXT): fachlicher INSPIRE Identifikator der Geometrie\r\n* GML_ID (TEXT): GML:ID gemäß OGC GML Standard\r\n* GML_IDENTIFIER (TEXT): GML:IDENTIFIER gemäß OGC GML Standard\r\n* FNAR_CODE (TEXT): fachlicher Code der Feldstücksnutzungsart\r\n* GEO_PART_KEY (DOUBLE): technisches Merkmal\r\n* LOG_PKEY (DOUBLE): technisches Merkmal\r\n* GEOM_DATE_CREATED (DATETIME): technisches Entstehungsdatum der Geometrie, keine fachliche Gültigkeit\r\n* FART_ID (INTEGER): ID der Förderart\r\n* GML_GEOM (BLOB): technisches Merkmal"
-      },
-      "id": "90e36383-2bbe-4f9c-a989-85eb25bf84d5",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "INVEKOS Feldstücke 2025-2 (GPKG)"
       }
     }
   ],
