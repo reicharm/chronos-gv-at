@@ -1,4 +1,7 @@
 {
+  "applicable_legislation": [
+    "http://data.europa.eu/eli/reg_impl/2023/138/oj"
+  ],
   "catalog": {
     "availability": null,
     "catalog": null,
@@ -39,7 +42,7 @@
   },
   "catalog_record": {
     "issued": "2026-03-14T02:32:00Z",
-    "modified": "2026-09-30T02:32:00Z"
+    "modified": "2026-10-01T02:32:00Z"
   },
   "categories": [
     {
@@ -93,6 +96,50 @@
   "distributions": [
     {
       "access_url": [
+        "https://haleconnect.com/ows/datasets/org.892.c6c976ac-675e-4e40-b36c-54afe6fdfd04_ogcapi"
+      ],
+      "description": {
+        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
+      },
+      "id": "c0e3b060-e554-4c3d-9042-f18728c57d4e",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "RAMSAR Gebiete Tirol (OGC API)"
+      }
+    },
+    {
+      "access_url": [
+        "https://haleconnect.com/ows/services/org.892.c6c976ac-675e-4e40-b36c-54afe6fdfd04_wms?SERVICE=WMS&amp;Request=GetCapabilities"
+      ],
+      "description": {
+        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
+      },
+      "id": "580d3834-1c26-4956-ae9d-9cebbf8306f8",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "RAMSAR Gebiete Tirol (INSPIRE WMS)"
+      }
+    },
+    {
+      "access_url": [
         "https://services3.arcgis.com/hG7UfxX49PQ8XkXh/arcgis/rest/services/Ramsar_Gebiete/FeatureServer/0/query?outFields=*&amp;where=1%3D1&amp;f=geojson"
       ],
       "description": {
@@ -142,50 +189,6 @@
     },
     {
       "access_url": [
-        "https://haleconnect.com/ows/services/org.892.c6c976ac-675e-4e40-b36c-54afe6fdfd04_wms?SERVICE=WMS&amp;Request=GetCapabilities"
-      ],
-      "description": {
-        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
-      },
-      "id": "580d3834-1c26-4956-ae9d-9cebbf8306f8",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "RAMSAR Gebiete Tirol (INSPIRE WMS)"
-      }
-    },
-    {
-      "access_url": [
-        "https://haleconnect.com/ows/datasets/org.892.c6c976ac-675e-4e40-b36c-54afe6fdfd04_ogcapi"
-      ],
-      "description": {
-        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
-      },
-      "id": "c0e3b060-e554-4c3d-9042-f18728c57d4e",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "RAMSAR Gebiete Tirol (OGC API)"
-      }
-    },
-    {
-      "access_url": [
         "https://data-tiris.opendata.arcgis.com/datasets/ramsar-gebiete/explore"
       ],
       "description": {
@@ -204,28 +207,6 @@
       },
       "title": {
         "de": "RAMSAR Gebiete Tirol (SHP, GPKG, uvm.)"
-      }
-    },
-    {
-      "access_url": [
-        "https://storymaps.arcgis.com/stories/c4bdd1fbacb34847ba0303581b63ce9a"
-      ],
-      "description": {
-        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
-      },
-      "id": "c621dfdc-8dc5-44fa-958f-a8118169015d",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "Anleitung zur Einbindung von Geodatendiensten und zum Download von Geodaten"
       }
     },
     {
@@ -271,13 +252,79 @@
       "title": {
         "de": "RAMSAR Gebiete Tirol (INSPIRE WFS)"
       }
+    },
+    {
+      "access_url": [
+        "https://storymaps.arcgis.com/stories/c4bdd1fbacb34847ba0303581b63ce9a"
+      ],
+      "description": {
+        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
+      },
+      "id": "c621dfdc-8dc5-44fa-958f-a8118169015d",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Anleitung zur Einbindung von Geodatendiensten und zum Download von Geodaten"
+      }
+    },
+    {
+      "access_url": [
+        "https://geoportal.inspire.gv.at/metadatensuche/tiris/ger/catalog.search#/metadata/fdb130c6-1377-4e89-bb50-b52c476f10a5"
+      ],
+      "description": {
+        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
+      },
+      "id": "99a88290-a860-43be-837d-9f43420a64e3",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Attribute Ramsar Gebiete Tirol"
+      }
+    },
+    {
+      "access_url": [
+        "https://geoportal.inspire.gv.at/metadatensuche/tiris/ger/catalog.search#/metadata/8a20d6ef-1bff-4ef4-b746-ed93f837c5d1"
+      ],
+      "description": {
+        "de": "* STAND (Date): Datum der offiziellen Nominierung\r\n* LNUMMER (Integer): Gebietsnummer\r\n* OBJEKT (Character): Ramsar Gebiets-Code"
+      },
+      "id": "767aa896-3e6e-47e2-9e56-6dd84e76a7d7",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "tiris Geo-Metadatenbank"
+      }
     }
   ],
   "id": "8a20d6ef-1bff-4ef4-b746-ed93f837c5d1",
   "identifier": [
     "8a20d6ef-1bff-4ef4-b746-ed93f837c5d1"
   ],
-  "is_hvd": false,
+  "is_hvd": true,
   "keywords": [
     {
       "id": "hvd",
@@ -325,6 +372,11 @@
       "language": "de"
     },
     {
+      "id": "highvaluedataset",
+      "label": "HighValueDataset",
+      "language": "de"
+    },
+    {
       "id": "tirol",
       "label": "Tirol",
       "language": "de"
@@ -347,7 +399,7 @@
       "resource": "http://publications.europa.eu/resource/authority/language/DEU"
     }
   ],
-  "modified": "2026-03-24T06:27:04.837Z",
+  "modified": "2026-09-30T07:04:10.212Z",
   "provenance": [
     {
       "label": "Digitalisiert auf der Basis von Farb-Orthofotos 1:5000"
