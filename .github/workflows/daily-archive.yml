@@ -2,15 +2,13 @@ name: CHRONOS daily archive
 
 on:
   schedule:
-    # taeglich 03:17 UTC. Bewusst nicht :00 -> geplante Laeufe werden unter Last
-    # von GitHub verzoegert/geskippt; ein "krummer" Zeitpunkt reduziert das.
-    - cron: "17 3 * * *"
-  workflow_dispatch:        # erlaubt manuelles Ausloesen ueber die Actions-UI
+    - cron: "17 3 * * *"      # taeglich 03:17 UTC (bewusst nicht :00)
+  workflow_dispatch:
 
 permissions:
-  contents: write           # Commit, Push, Tag
-  pages: write              # GitHub-Pages-Deploy
-  id-token: write           # Pages-Deploy (OIDC)
+  contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: daily-archive
@@ -35,24 +33,18 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      # 1) Volldump: eine JSON-Datei pro Datensatz (diffbare Historie)
       - name: Dump datasets (per-file archive)
         run: python dump_data_gv_at_perfile.py
-        # Fuer interne Instanz / MITM-Proxy Secrets durchreichen:
         # env:
         #   DUMP_PROXY: ${{ secrets.DUMP_PROXY }}
         #   REQUESTS_CA_BUNDLE: ${{ secrets.CA_BUNDLE_PATH }}
 
-      # 2) Facetten-Snapshot: ALLE Facetten (Sicherung fuer spaetere Visualisierungen)
       - name: Capture facet snapshot (all facets)
         run: python capture_facets.py
 
-      # 3) Dashboard-Daten bauen -> docs/data.json (NICHT committet, siehe .gitignore)
       - name: Build dashboard data
         run: python build_dashboard_data.py
 
-      # 4) Versionierten Teil committen: datasets/ + stats/ (docs/data.json ist ignoriert)
-      #    An aenderungslosen Tagen Empty-Commit als Keepalive.
       - name: Commit snapshot
         id: commit
         run: |
@@ -76,9 +68,18 @@ jobs:
 
           echo "date=$DATE"   >> "$GITHUB_OUTPUT"
           echo "stats=$STATS" >> "$GITHUB_OUTPUT"
-          git push
 
-      # 5) Datums-Tag fuer jeden Tag
+          # Robust gegen zwischenzeitliche Remote-Aenderungen: rebase & retry
+          for i in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "Push erfolgreich (Versuch $i)."; break
+            fi
+            if [ "$i" -eq 5 ]; then echo "Push nach 5 Versuchen fehlgeschlagen."; exit 1; fi
+            echo "Push abgelehnt - hole Remote-Stand (rebase) und wiederhole (Versuch $i)…"
+            git pull --rebase --autostash origin main
+            sleep $((RANDOM % 4 + 2))
+          done
+
       - name: Tag snapshot
         run: |
           set -euo pipefail
@@ -88,7 +89,6 @@ jobs:
           git tag -fa "$TAG" -m "data.gv.at datasets $STATS ($DATE)"
           git push -f origin "refs/tags/$TAG"
 
-      # 6) Groessen-Waechter: warnt ab 4 GB (API-Wert kann leicht nachhinken)
       - name: Check repo size
         env:
           GH_TOKEN: ${{ github.token }}
@@ -99,7 +99,6 @@ jobs:
             echo "::warning title=CHRONOS Repo-Groesse::Repo ueber 4 GB ($((KB/1024)) MB) - jaehrlichen Rollover planen."
           fi
 
-      # 7) Dashboard als GitHub-Pages-Artefakt deployen (docs/ inkl. frisch gebauter data.json)
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
