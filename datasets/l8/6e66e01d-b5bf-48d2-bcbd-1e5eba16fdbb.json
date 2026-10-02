@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:03Z",
-    "modified": "2026-08-15T06:02:53Z"
+    "modified": "2026-09-26T06:03:19Z"
   },
   "categories": [
     {
@@ -93,6 +93,30 @@
   "distributions": [
     {
       "access_url": [
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/6ead7c00-7d94-42b6-9b43-9674878fcefb"
+      ],
+      "format": {
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+      },
+      "id": "05c91c6f-2250-4cd5-8a0b-f75553f62a21",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Metadaten-Katalog"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:bodensee_steganlagen_2012&outputFormat=gpkg"
       ],
       "format": {
@@ -100,7 +124,7 @@
         "label": "GeoPackage",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "e37bb8f0-2641-43cd-98d8-6ac203330910",
+      "id": "f99d91c0-2311-47ef-888a-142887a301e6",
       "language": [
         {
           "id": "DEU",
@@ -117,14 +141,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:bodensee_steganlagen_2012&outputFormat=application/json&maxFeatures=1000000"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:bodensee_steganlagen_2012&outputFormat=csv"
       ],
       "format": {
-        "id": "JSON",
-        "label": "JSON",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "b83be6ad-4487-4683-ac50-8ac2816d3925",
+      "id": "8d07f4a6-4530-4606-921b-789f5703408f",
       "language": [
         {
           "id": "DEU",
@@ -136,7 +160,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "JSON-Download"
+        "de": "CSV-Download"
       }
     },
     {
@@ -148,7 +172,7 @@
         "label": "KML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "1cae02f4-976d-4c53-85f7-bb8f1b9a5c60",
+      "id": "396cc095-a629-40ee-9318-2dfd0eda890c",
       "language": [
         {
           "id": "DEU",
@@ -165,6 +189,54 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:bodensee_steganlagen_2012&outputFormat=application/json&maxFeatures=1000000"
+      ],
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "b9350215-9f40-4c91-b9c2-3b6c41e1fd97",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "JSON-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:bodensee_steganlagen_2012&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "5f8167f6-bfc8-4afb-8faa-3d734a71139d",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WFS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/vogis/bodensee_steganlagen_2012/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
       ],
       "format": {
@@ -172,7 +244,7 @@
         "label": "WMS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "298d2899-4a85-4a32-b666-b46cec2c1988",
+      "id": "f3ffcddb-5b70-41d9-9709-2df55134b952",
       "language": [
         {
           "id": "DEU",
@@ -196,7 +268,7 @@
         "label": "Esri Shape",
         "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "83c6f2c5-33a0-4d1f-a2aa-8c7bc342e271",
+      "id": "bfb25ec0-475b-4146-a57d-5ae2cce5eed9",
       "language": [
         {
           "id": "DEU",
@@ -210,78 +282,6 @@
       "title": {
         "de": "SHP-Download"
       }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:bodensee_steganlagen_2012&outputFormat=gpkg"
-      ],
-      "format": {
-        "id": "WFS_SRVC",
-        "label": "WFS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
-      },
-      "id": "1f5f350b-bed3-4a61-b63b-d5b4ade65662",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "WFS-GetCapabilities"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:bodensee_steganlagen_2012&outputFormat=csv"
-      ],
-      "format": {
-        "id": "CSV",
-        "label": "CSV",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
-      },
-      "id": "0df24701-a0a6-414c-89da-dae079f5d9ac",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "CSV-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/6ead7c00-7d94-42b6-9b43-9674878fcefb"
-      ],
-      "format": {
-        "id": "HTML",
-        "label": "HTML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-      },
-      "id": "11cd746f-fd63-4d7b-9bd0-262caf0ff016",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "Metadaten-Katalog"
-      }
     }
   ],
   "id": "6e66e01d-b5bf-48d2-bcbd-1e5eba16fdbb",
@@ -291,13 +291,13 @@
   "is_hvd": false,
   "keywords": [
     {
-      "id": "bodensee",
-      "label": "bodensee",
+      "id": "wasser",
+      "label": "wasser",
       "language": "de"
     },
     {
-      "id": "wasser",
-      "label": "wasser",
+      "id": "bodensee",
+      "label": "bodensee",
       "language": "de"
     }
   ],

@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:05Z",
-    "modified": "2026-08-15T06:03:21Z"
+    "modified": "2026-09-26T06:03:46Z"
   },
   "categories": [
     {
@@ -93,14 +93,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laser_2002_04_dominos&outputFormat=shape-zip"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laser_2002_04_dominos&outputFormat=csv"
       ],
       "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "d40b51ec-c76a-4c2f-81dd-6a55fa2c77d3",
+      "id": "d24d694b-58ef-4836-9fd5-2d458b829bef",
       "language": [
         {
           "id": "DEU",
@@ -112,31 +112,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "SHP-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:laser_2002_04_dominos&styles=&format=application/vnd.google-earth.kml+xml"
-      ],
-      "format": {
-        "id": "KML",
-        "label": "KML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
-      },
-      "id": "d8483ff5-6440-429f-b26b-34a88d7d019b",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "KML-Download"
+        "de": "CSV-Download"
       }
     },
     {
@@ -148,7 +124,7 @@
         "label": "HTML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "fb961275-0a27-4de1-9269-e6dbb64fe129",
+      "id": "b1fd2519-395c-4eec-a3e9-232f38478bff",
       "language": [
         {
           "id": "DEU",
@@ -165,6 +141,102 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laser_2002_04_dominos&outputFormat=shape-zip"
+      ],
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "e41e4d07-d324-484c-bba7-5c62dc40702a",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "SHP-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laser_2002_04_dominos&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "7bfb00c7-ef6a-42eb-a5d7-6c7394c8397e",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WFS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:laser_2002_04_dominos&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "00a06f17-c1b7-4427-86b6-b82d2111a46d",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "KML-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laser_2002_04_dominos&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "430d8d49-2d57-4da3-8470-112f3d38d2ce",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "GPKG-Download"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/vogis/laser_2002_04_dominos/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
       ],
       "format": {
@@ -172,7 +244,7 @@
         "label": "WMS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "a21ba3c7-4ab2-456f-b34c-0485deb332a4",
+      "id": "84c6b2de-1f21-42e6-a9ea-cec6e5a5de0a",
       "language": [
         {
           "id": "DEU",
@@ -196,7 +268,7 @@
         "label": "JSON",
         "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "76b20599-51e1-4d01-a60a-f47ef3c7a568",
+      "id": "8382811e-aea0-4aff-a1ea-6a8d2dfc4399",
       "language": [
         {
           "id": "DEU",
@@ -209,78 +281,6 @@
       },
       "title": {
         "de": "JSON-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laser_2002_04_dominos&outputFormat=gpkg"
-      ],
-      "format": {
-        "id": "WFS_SRVC",
-        "label": "WFS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
-      },
-      "id": "cf938ae3-78eb-44dd-943e-61e2493746c5",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "WFS-GetCapabilities"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laser_2002_04_dominos&outputFormat=csv"
-      ],
-      "format": {
-        "id": "CSV",
-        "label": "CSV",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
-      },
-      "id": "4df261ba-2dbc-480b-9826-881adbb948e9",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "CSV-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:laser_2002_04_dominos&outputFormat=gpkg"
-      ],
-      "format": {
-        "id": "GPKG",
-        "label": "GeoPackage",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
-      },
-      "id": "da9ac748-7fac-411b-b555-8b15c997785b",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "GPKG-Download"
       }
     }
   ],

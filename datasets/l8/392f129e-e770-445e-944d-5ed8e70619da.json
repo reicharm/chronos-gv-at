@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:35Z",
-    "modified": "2026-08-15T06:03:08Z"
+    "modified": "2026-09-26T06:02:54Z"
   },
   "categories": [
     {
@@ -93,14 +93,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/vogis/historische_wege/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege&outputFormat=csv"
       ],
       "format": {
-        "id": "WMS_SRVC",
-        "label": "WMS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "d5934bed-8926-45a8-9c6f-f022de9a3f8c",
+      "id": "fdb3a516-2fba-44e7-b89a-74e8920f4a02",
       "language": [
         {
           "id": "DEU",
@@ -112,103 +112,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "WMS-GetCapabilities"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:historische_wege&styles=&format=application/vnd.google-earth.kml+xml"
-      ],
-      "format": {
-        "id": "KML",
-        "label": "KML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
-      },
-      "id": "fd4e2447-d005-427f-a044-5a2aaa23c228",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "KML-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege&outputFormat=shape-zip"
-      ],
-      "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
-      },
-      "id": "e9862ed2-b848-4261-a442-ad79d5c0f788",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "SHP-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege&outputFormat=gpkg"
-      ],
-      "format": {
-        "id": "GPKG",
-        "label": "GeoPackage",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
-      },
-      "id": "d175fbbd-39f1-47b3-ba3b-a1ef9f4072c3",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "GPKG-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege&outputFormat=application/json&maxFeatures=1000000"
-      ],
-      "format": {
-        "id": "JSON",
-        "label": "JSON",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
-      },
-      "id": "978e3df8-c1d0-4c50-821a-04db0cd933b0",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "JSON-Download"
+        "de": "CSV-Download"
       }
     },
     {
@@ -220,7 +124,7 @@
         "label": "HTML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "5464372b-4d7f-49ab-a17e-880bcd4bd2db",
+      "id": "7b2aec46-050c-4e8f-9d4e-2111e0a5e8e5",
       "language": [
         {
           "id": "DEU",
@@ -240,11 +144,59 @@
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege&outputFormat=gpkg"
       ],
       "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "8c8e0c24-d346-4f04-b153-cdbbe8278717",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "GPKG-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:historische_wege&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "eb653462-35cf-4555-8d0b-ec39f431fe01",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "KML-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege&outputFormat=gpkg"
+      ],
+      "format": {
         "id": "WFS_SRVC",
         "label": "WFS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "5111fb52-cd66-4a49-b601-18d74371da92",
+      "id": "f949ad30-9167-4dc0-91c0-ca992e395e74",
       "language": [
         {
           "id": "DEU",
@@ -261,14 +213,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege&outputFormat=csv"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege&outputFormat=shape-zip"
       ],
       "format": {
-        "id": "CSV",
-        "label": "CSV",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "32aec8bc-e2dc-4afc-8783-21adfe169ca0",
+      "id": "94734bab-98b7-4368-b555-6eed5dde2d3d",
       "language": [
         {
           "id": "DEU",
@@ -280,7 +232,55 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "CSV-Download"
+        "de": "SHP-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/vogis/historische_wege/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+      ],
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "1337089d-e581-4e88-b163-872c9d882267",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WMS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:historische_wege&outputFormat=application/json&maxFeatures=1000000"
+      ],
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "38707169-1180-47a5-9bd2-74ef3e146d40",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "JSON-Download"
       }
     }
   ],

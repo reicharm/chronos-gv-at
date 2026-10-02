@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T10:28:09Z",
-    "modified": "2026-08-15T06:02:49Z"
+    "modified": "2026-09-26T06:02:14Z"
   },
   "categories": [
     {
@@ -93,14 +93,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:gewaessernetz2017_km&styles=&format=application/vnd.google-earth.kml+xml"
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/9e63eda0-8616-417f-929e-a57586750b25"
       ],
       "format": {
-        "id": "KML",
-        "label": "KML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "59d67126-d59b-49cf-a1d4-bd5e34c90e47",
+      "id": "3536aaa7-9f44-4b01-889d-a5dbb83b2ffe",
       "language": [
         {
           "id": "DEU",
@@ -112,31 +112,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "KML-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:gewaessernetz2017_km&outputFormat=shape-zip"
-      ],
-      "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
-      },
-      "id": "54f47af6-0790-486d-b892-0318901aafe0",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "SHP-Download"
+        "de": "Metadaten-Katalog"
       }
     },
     {
@@ -148,7 +124,7 @@
         "label": "CSV",
         "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "8c6f6b36-c93d-4db1-a4d8-cccb2afa69b1",
+      "id": "25107fc8-52a7-41bd-8d6a-f010792691f5",
       "language": [
         {
           "id": "DEU",
@@ -168,11 +144,35 @@
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:gewaessernetz2017_km&outputFormat=gpkg"
       ],
       "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "2dfbacd9-e607-4762-825c-d795dc60a6e3",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WFS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:gewaessernetz2017_km&outputFormat=gpkg"
+      ],
+      "format": {
         "id": "GPKG",
         "label": "GeoPackage",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "04b59e51-ed93-41e5-8da5-fafaf123e05f",
+      "id": "0cc20de3-aa1c-4636-a939-103bb5e13aac",
       "language": [
         {
           "id": "DEU",
@@ -189,6 +189,30 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:gewaessernetz2017_km&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "98684187-3a42-47c1-8006-b9be1af475a9",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "KML-Download"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/vogis/gewaessernetz2017_km/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
       ],
       "format": {
@@ -196,7 +220,7 @@
         "label": "WMS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "c85ea7ef-fea8-4534-8b0c-b6e63933fa1e",
+      "id": "8a06fee0-88bc-4b1f-aace-efb135a8de52",
       "language": [
         {
           "id": "DEU",
@@ -220,7 +244,7 @@
         "label": "JSON",
         "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "a01021df-1627-457b-9227-12b61ddab466",
+      "id": "01ceee3e-de4f-4201-ae4c-ec0a75bd6e03",
       "language": [
         {
           "id": "DEU",
@@ -237,14 +261,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/9e63eda0-8616-417f-929e-a57586750b25"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:gewaessernetz2017_km&outputFormat=shape-zip"
       ],
       "format": {
-        "id": "HTML",
-        "label": "HTML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "a86e9605-aa87-4001-aa4e-aa99eb0fe739",
+      "id": "9dd89999-e91a-4a9d-872c-e7cc843f19bd",
       "language": [
         {
           "id": "DEU",
@@ -256,31 +280,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "Metadaten-Katalog"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:gewaessernetz2017_km&outputFormat=gpkg"
-      ],
-      "format": {
-        "id": "WFS_SRVC",
-        "label": "WFS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
-      },
-      "id": "ccc46b57-95ef-47f1-a73e-3485c034a671",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "WFS-GetCapabilities"
+        "de": "SHP-Download"
       }
     }
   ],
@@ -291,13 +291,13 @@
   "is_hvd": false,
   "keywords": [
     {
-      "id": "fluesse",
-      "label": "fluesse",
+      "id": "wasser",
+      "label": "wasser",
       "language": "de"
     },
     {
-      "id": "wasser",
-      "label": "wasser",
+      "id": "fluesse",
+      "label": "fluesse",
       "language": "de"
     }
   ],

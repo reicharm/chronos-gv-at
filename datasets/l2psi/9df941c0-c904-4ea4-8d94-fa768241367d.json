@@ -40,7 +40,7 @@
   },
   "catalog_record": {
     "issued": "2025-09-26T10:11:27Z",
-    "modified": "2025-09-26T10:11:27Z"
+    "modified": "2026-08-31T08:00:36Z"
   },
   "categories": [
     {
@@ -77,12 +77,13 @@
       "resource": "http://publications.europa.eu/resource/authority/data-theme/REGI"
     }
   ],
-  "conforms_to": [],
   "contact_point": [
     {
       "email": "mailto:abt8.post@ktn.gv.at",
       "name": "Abteilung 8 - Umwelt, Naturschutz und Klimaschutzkoordination",
-      "type": "Organization"
+      "url": [
+        "https://www.ktn.gv.at/Verwaltung/Amt-der-Kaerntner-Landesregierung/Abteilung-8"
+      ]
     }
   ],
   "country": null,
@@ -92,9 +93,26 @@
   "distributions": [
     {
       "access_url": [
+        "https://gis.ktn.gv.at/OGD/rtc/default/ortho_2013_2015_epsg31258/WMTSCapabilities.xml"
+      ],
+      "description": {
+        "de": "Geodienst der digitalen Orthofotos 2013-2015 für Kärnten"
+      },
+      "id": "9e1972d5-ab1a-4289-a561-5203cfd9e439",
+      "issued": "2017-04-19T00:00:00Z",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "modified": "2024-06-10T14:57:57.629058Z",
+      "title": {
+        "de": "WMTS-Dienst Orthofotos 2013-2015 in EPSG 31258"
+      }
+    },
+    {
+      "access_url": [
         "https://gis.ktn.gv.at/OGD/Geographie_Planung/op1315.qlr"
       ],
-      "id": "819b6f33-9e39-4fc5-9357-8e8ef4821e86",
+      "id": "419a731f-879b-4f4e-9b5b-521e2a2dc331",
       "issued": "2017-04-19T00:00:00Z",
       "license": {
         "resource": "https://creativecommons.org/licenses/by/4.0/"
@@ -102,24 +120,6 @@
       "modified": "2024-06-10T14:57:57.629121Z",
       "title": {
         "de": "QGIS Layer File für Digitale Ortophotos 2013-2015 WMTS"
-      }
-    },
-    {
-      "access_url": [
-        "https://gis.ktn.gv.at/OGD/rtc/default/ortho_2013_2015_epsg31258/WMTSCapabilities.xml"
-      ],
-      "description": {
-        "de": "Geodienst der digitalen Orthofotos 2013-2015 für Kärnten"
-      },
-      "id": "69a3f56d-8d3a-4277-ba0f-90e136cce336",
-      "issued": "2017-04-19T00:00:00Z",
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "media_type": "text/xml",
-      "modified": "2024-06-10T14:57:57.629058Z",
-      "title": {
-        "de": "WMTS-Dienst Orthofotos 2013-2015 in EPSG 31258"
       }
     }
   ],
@@ -131,13 +131,8 @@
   "issued": "2017-04-19T09:37:27.190534Z",
   "keywords": [
     {
-      "id": "orthofotos",
-      "label": "Orthofotos",
-      "language": "de"
-    },
-    {
-      "id": "luftbild",
-      "label": "Luftbild",
+      "id": "orthofoto-2013-2015",
+      "label": "Orthofoto 2013-2015",
       "language": "de"
     },
     {
@@ -146,32 +141,36 @@
       "language": "de"
     },
     {
-      "id": "orthofoto-2013-2015",
-      "label": "Orthofoto 2013-2015",
-      "language": "de"
-    },
-    {
-      "id": "orthofoto",
-      "label": "Orthofoto",
+      "id": "orthofotos",
+      "label": "Orthofotos",
       "language": "de"
     },
     {
       "id": "ortho",
       "label": "Ortho",
       "language": "de"
+    },
+    {
+      "id": "luftbild",
+      "label": "Luftbild",
+      "language": "de"
+    },
+    {
+      "id": "orthofoto",
+      "label": "Orthofoto",
+      "language": "de"
     }
   ],
   "modified": "2024-06-10T14:57:57.626633Z",
   "publisher": {
-    "email": "kagis@ktn.gv.at",
+    "email": "mailto:kagis@ktn.gv.at",
     "homepage": "https://kagis.ktn.gv.at/",
     "name": "Land Kärnten",
-    "type": "Organization"
+    "type": "Agent"
   },
   "quality_meas": null,
   "resource": "https://www.data.gv.at/katalog/datasets/9df941c0-c904-4ea4-8d94-fa768241367d",
   "spatial": [],
-  "temporal": [],
   "title": {
     "de": "Digitale Orthofotos 2013-2015 Kärnten"
   },

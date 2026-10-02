@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:23Z",
-    "modified": "2026-08-15T06:03:16Z"
+    "modified": "2026-09-26T06:03:41Z"
   },
   "categories": [
     {
@@ -100,7 +100,7 @@
         "label": "HTML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "c1aa935c-c802-41fc-834a-0a8151fd62b9",
+      "id": "fdf12b0a-203c-4b24-a9e2-2a2ec4f21e6d",
       "language": [
         {
           "id": "DEU",
@@ -124,7 +124,7 @@
         "label": "KML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "79a737d7-3050-463e-b765-062876d73382",
+      "id": "8db5c69a-e4bd-4532-9430-f5445053da06",
       "language": [
         {
           "id": "DEU",
@@ -141,6 +141,30 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:maisaessgebietsausweisung&outputFormat=application/json&maxFeatures=1000000"
+      ],
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "55068052-81c4-4553-aae5-6029bf8ee32f",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "JSON-Download"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:maisaessgebietsausweisung&outputFormat=gpkg"
       ],
       "format": {
@@ -148,7 +172,7 @@
         "label": "GeoPackage",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "732e6148-614c-435a-b641-6956a6c3e083",
+      "id": "b06291e3-9b65-4051-9d95-f13e0c0b4ef9",
       "language": [
         {
           "id": "DEU",
@@ -165,6 +189,54 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:maisaessgebietsausweisung&outputFormat=csv"
+      ],
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "38f05090-915b-4f9d-bbbc-0a1e2acb1cbb",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "CSV-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:maisaessgebietsausweisung&outputFormat=shape-zip"
+      ],
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "820ab578-ea17-4131-aa0f-379412210c07",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "SHP-Download"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:maisaessgebietsausweisung&outputFormat=gpkg"
       ],
       "format": {
@@ -172,7 +244,7 @@
         "label": "WFS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "89734fe4-5ab8-4957-8e54-50a4e60ed995",
+      "id": "901c9d39-d006-4a32-a59e-2ef328ebe1e3",
       "language": [
         {
           "id": "DEU",
@@ -196,7 +268,7 @@
         "label": "WMS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "a103c047-163a-48e6-be96-01d3b4b51325",
+      "id": "b3104908-7e62-4051-b001-effe8b660827",
       "language": [
         {
           "id": "DEU",
@@ -210,78 +282,6 @@
       "title": {
         "de": "WMS-GetCapabilities"
       }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:maisaessgebietsausweisung&outputFormat=application/json&maxFeatures=1000000"
-      ],
-      "format": {
-        "id": "JSON",
-        "label": "JSON",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
-      },
-      "id": "db0ac212-ab42-4d25-a724-b94a96ba7199",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "JSON-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:maisaessgebietsausweisung&outputFormat=shape-zip"
-      ],
-      "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
-      },
-      "id": "d38c339d-b545-498e-94f3-3c67482e3e4a",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "SHP-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:maisaessgebietsausweisung&outputFormat=csv"
-      ],
-      "format": {
-        "id": "CSV",
-        "label": "CSV",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
-      },
-      "id": "1fafd63a-aca1-4f97-baa2-ff705c40b7fb",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "CSV-Download"
-      }
     }
   ],
   "id": "4be11859-7d0a-4dc8-8090-d34c189504cc",
@@ -291,13 +291,13 @@
   "is_hvd": false,
   "keywords": [
     {
-      "id": "maisaessgebietsausweisung",
-      "label": "maisaessgebietsausweisung",
+      "id": "raumplanung",
+      "label": "raumplanung",
       "language": "de"
     },
     {
-      "id": "raumplanung",
-      "label": "raumplanung",
+      "id": "maisaessgebietsausweisung",
+      "label": "maisaessgebietsausweisung",
       "language": "de"
     }
   ],

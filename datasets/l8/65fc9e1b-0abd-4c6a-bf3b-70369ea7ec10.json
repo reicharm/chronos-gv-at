@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:07Z",
-    "modified": "2026-08-15T06:03:14Z"
+    "modified": "2026-09-26T06:02:42Z"
   },
   "categories": [
     {
@@ -93,14 +93,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:seveso_ii_betriebe&styles=&format=application/vnd.google-earth.kml+xml"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:seveso_ii_betriebe&outputFormat=csv"
       ],
       "format": {
-        "id": "KML",
-        "label": "KML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "bc8aeb8a-b61a-4baa-96d2-19ba602544d0",
+      "id": "6613e2e9-894d-4609-acf0-f37014255b42",
       "language": [
         {
           "id": "DEU",
@@ -112,7 +112,31 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "KML-Download"
+        "de": "CSV-Download"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:seveso_ii_betriebe&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "0a83778a-865f-4c8c-88c8-8edcc4d19a74",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WFS-GetCapabilities"
       }
     },
     {
@@ -124,7 +148,7 @@
         "label": "HTML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "e8f7f2b1-e252-4e68-8784-fa33fc26360f",
+      "id": "00a226bc-11a8-4ffb-aa08-8dad15533a14",
       "language": [
         {
           "id": "DEU",
@@ -141,14 +165,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/vogis/seveso_ii_betriebe/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:seveso_ii_betriebe&styles=&format=application/vnd.google-earth.kml+xml"
       ],
       "format": {
-        "id": "WMS_SRVC",
-        "label": "WMS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "4266aee2-05ef-4088-bf35-e35720b78fae",
+      "id": "ea2038e9-9fbc-425e-9466-b97f08013759",
       "language": [
         {
           "id": "DEU",
@@ -160,7 +184,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "WMS-GetCapabilities"
+        "de": "KML-Download"
       }
     },
     {
@@ -172,7 +196,7 @@
         "label": "GeoPackage",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "86086634-acd6-492d-a6fd-7ee5e9b47fc6",
+      "id": "a517c664-ee5f-47a4-b49c-0f1803588fa5",
       "language": [
         {
           "id": "DEU",
@@ -196,7 +220,7 @@
         "label": "JSON",
         "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "ab81afd8-61e5-4cb3-9fa4-3a00d70a3b23",
+      "id": "af67b02a-35f6-4c9c-8164-7edd831142c7",
       "language": [
         {
           "id": "DEU",
@@ -213,14 +237,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:seveso_ii_betriebe&outputFormat=csv"
+        "https://vogis.cnv.at/geoserver/vogis/seveso_ii_betriebe/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
       ],
       "format": {
-        "id": "CSV",
-        "label": "CSV",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "2521dad2-420c-4239-ac26-42ea0f5c3629",
+      "id": "f08f6e91-a3a9-4a93-bc7f-b4cbb75189c7",
       "language": [
         {
           "id": "DEU",
@@ -232,7 +256,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "CSV-Download"
+        "de": "WMS-GetCapabilities"
       }
     },
     {
@@ -244,7 +268,7 @@
         "label": "Esri Shape",
         "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "33f54efd-1230-4f29-bb40-0bc6745a9293",
+      "id": "578a84e5-7f63-4b04-9e3b-4f5853cef729",
       "language": [
         {
           "id": "DEU",
@@ -257,30 +281,6 @@
       },
       "title": {
         "de": "SHP-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:seveso_ii_betriebe&outputFormat=gpkg"
-      ],
-      "format": {
-        "id": "WFS_SRVC",
-        "label": "WFS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
-      },
-      "id": "e86f09b9-90d9-44e9-a752-8ca8b81fb6b5",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "WFS-GetCapabilities"
       }
     }
   ],

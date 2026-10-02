@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:28Z",
-    "modified": "2026-08-15T06:03:06Z"
+    "modified": "2026-09-26T06:03:34Z"
   },
   "categories": [
     {
@@ -93,14 +93,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/vogis/blattschnitt_hist_prov_oek/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:blattschnitt_hist_prov_oek&outputFormat=application/json&maxFeatures=1000000"
       ],
       "format": {
-        "id": "WMS_SRVC",
-        "label": "WMS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "7685606f-4a9a-4d4d-8967-a8aa26dd8344",
+      "id": "f1c6403d-086e-4958-a352-009993ce870b",
       "language": [
         {
           "id": "DEU",
@@ -112,31 +112,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "WMS-GetCapabilities"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:blattschnitt_hist_prov_oek&outputFormat=gpkg"
-      ],
-      "format": {
-        "id": "GPKG",
-        "label": "GeoPackage",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
-      },
-      "id": "fc866072-41dd-4c52-bbfb-958da3714041",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "GPKG-Download"
+        "de": "JSON-Download"
       }
     },
     {
@@ -148,7 +124,7 @@
         "label": "HTML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "54d4c36c-f4a5-4577-992d-c0c954031577",
+      "id": "493bd288-2205-4a35-b3f5-02a3c37dae73",
       "language": [
         {
           "id": "DEU",
@@ -172,7 +148,7 @@
         "label": "WFS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "a7a0b29f-abcd-49bc-bd52-7d87b1e51eaf",
+      "id": "b5a38084-e7ca-4879-a18f-9981dc0223a0",
       "language": [
         {
           "id": "DEU",
@@ -189,14 +165,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:blattschnitt_hist_prov_oek&outputFormat=application/json&maxFeatures=1000000"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:blattschnitt_hist_prov_oek&outputFormat=shape-zip"
       ],
       "format": {
-        "id": "JSON",
-        "label": "JSON",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "4125df45-162b-4c5d-b06a-52669cf31454",
+      "id": "6ab95e4f-3af6-45e3-a6aa-25323ee27429",
       "language": [
         {
           "id": "DEU",
@@ -208,7 +184,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "JSON-Download"
+        "de": "SHP-Download"
       }
     },
     {
@@ -220,7 +196,7 @@
         "label": "CSV",
         "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "52fd137d-757a-4a01-b3f0-f6a8564b85bb",
+      "id": "1e2edab3-a623-4feb-86e4-aaedb219aa57",
       "language": [
         {
           "id": "DEU",
@@ -237,6 +213,30 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:blattschnitt_hist_prov_oek&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "2f0318de-6a99-4005-a43d-59020bcc0260",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "GPKG-Download"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:blattschnitt_hist_prov_oek&styles=&format=application/vnd.google-earth.kml+xml"
       ],
       "format": {
@@ -244,7 +244,7 @@
         "label": "KML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "52953f91-71a5-43a2-8787-0f64aae41b02",
+      "id": "32a65858-4a08-44b1-8bd1-c8e6f0e77437",
       "language": [
         {
           "id": "DEU",
@@ -261,14 +261,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:blattschnitt_hist_prov_oek&outputFormat=shape-zip"
+        "https://vogis.cnv.at/geoserver/vogis/blattschnitt_hist_prov_oek/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
       ],
       "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "e46e3ce2-c0b3-4f49-a512-2f57be7123c4",
+      "id": "091d51d6-24d2-4893-8ed3-8f915e8c1e84",
       "language": [
         {
           "id": "DEU",
@@ -280,7 +280,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "SHP-Download"
+        "de": "WMS-GetCapabilities"
       }
     }
   ],

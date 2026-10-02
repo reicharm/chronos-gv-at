@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2026-04-25T06:02:46Z",
-    "modified": "2026-08-15T06:03:18Z"
+    "modified": "2026-09-26T06:03:44Z"
   },
   "categories": [
     {
@@ -93,14 +93,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ef2025_seamlines&outputFormat=csv"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ef2025_seamlines&outputFormat=gpkg"
       ],
       "format": {
-        "id": "CSV",
-        "label": "CSV",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "f2b3e113-0f54-4458-b239-f65063951c40",
+      "id": "a8a3d0e5-aa44-43bf-84c0-c0c4e127dfaf",
       "language": [
         {
           "id": "DEU",
@@ -112,31 +112,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "CSV-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/0f939c0e-0f06-4731-99d2-596d1e96187b"
-      ],
-      "format": {
-        "id": "HTML",
-        "label": "HTML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-      },
-      "id": "7e26e9d9-1db7-45dc-b09d-5d4ec367c0c4",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "Metadaten-Katalog"
+        "de": "GPKG-Download"
       }
     },
     {
@@ -148,7 +124,7 @@
         "label": "Esri Shape",
         "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "9ad4d203-f0ea-4eaf-b916-310c68e407e5",
+      "id": "c359d439-8fb1-4c2c-adf4-f9201aa9ed44",
       "language": [
         {
           "id": "DEU",
@@ -165,6 +141,30 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ef2025_seamlines&outputFormat=csv"
+      ],
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "69450d3d-6b76-43b2-9f4e-a57e1f27acb1",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "CSV-Download"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:ef2025_seamlines&styles=&format=application/vnd.google-earth.kml+xml"
       ],
       "format": {
@@ -172,7 +172,7 @@
         "label": "KML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "959fd8b6-10a4-4ee9-a4de-9dc3a8787fec",
+      "id": "37c7f36c-d993-4a59-9f28-ffb30be8edeb",
       "language": [
         {
           "id": "DEU",
@@ -189,6 +189,54 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ef2025_seamlines&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "7e3b1a03-7652-4391-9535-c8165ce61769",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WFS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/0f939c0e-0f06-4731-99d2-596d1e96187b"
+      ],
+      "format": {
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+      },
+      "id": "d450ae8b-2a52-47f0-a5f5-bd93f654abf0",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Metadaten-Katalog"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ef2025_seamlines&outputFormat=application/json&maxFeatures=1000000"
       ],
       "format": {
@@ -196,7 +244,7 @@
         "label": "JSON",
         "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "127a2f36-d19a-4b65-9cc8-75eca7d1c44d",
+      "id": "3aba2c33-bf8f-41bb-9159-576f6f735a5d",
       "language": [
         {
           "id": "DEU",
@@ -220,7 +268,7 @@
         "label": "WMS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "0a541a85-d90d-43ef-8dbf-f19250b22e07",
+      "id": "ffd77b5d-e9f4-4a76-9845-9914041a5a3d",
       "language": [
         {
           "id": "DEU",
@@ -234,54 +282,6 @@
       "title": {
         "de": "WMS-GetCapabilities"
       }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ef2025_seamlines&outputFormat=gpkg"
-      ],
-      "format": {
-        "id": "WFS_SRVC",
-        "label": "WFS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
-      },
-      "id": "9bf81277-3d20-4a1f-9051-bb5883f8ff00",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "WFS-GetCapabilities"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:ef2025_seamlines&outputFormat=gpkg"
-      ],
-      "format": {
-        "id": "GPKG",
-        "label": "GeoPackage",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
-      },
-      "id": "ec3f2f92-c12f-4d5e-98d6-0ca5e9909542",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "GPKG-Download"
-      }
     }
   ],
   "id": "8ba5011f-ffd5-46af-ac40-2e5c45742df3",
@@ -291,13 +291,13 @@
   "is_hvd": false,
   "keywords": [
     {
-      "id": "orthofotos",
-      "label": "orthofotos",
+      "id": "luftbilder",
+      "label": "luftbilder",
       "language": "de"
     },
     {
-      "id": "luftbilder",
-      "label": "luftbilder",
+      "id": "orthofotos",
+      "label": "orthofotos",
       "language": "de"
     }
   ],

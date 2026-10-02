@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:06Z",
-    "modified": "2026-08-15T06:03:09Z"
+    "modified": "2026-09-26T06:03:38Z"
   },
   "categories": [
     {
@@ -93,14 +93,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/d5a0ac7f-7e73-4d64-923e-ab81a4ec1955"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:mountainbike_strecken&outputFormat=application/json&maxFeatures=1000000"
       ],
       "format": {
-        "id": "HTML",
-        "label": "HTML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "64ced987-c2cd-4322-bd49-8df593ddb844",
+      "id": "50fb1e90-eb29-4e69-9e32-ec837b44c575",
       "language": [
         {
           "id": "DEU",
@@ -112,7 +112,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "Metadaten-Katalog"
+        "de": "JSON-Download"
       }
     },
     {
@@ -124,7 +124,7 @@
         "label": "CSV",
         "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "47ecb61d-971f-4d7f-8b65-fd17085ba874",
+      "id": "cf664d67-8ff4-41be-8fa9-f43a5b85b791",
       "language": [
         {
           "id": "DEU",
@@ -141,6 +141,30 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:mountainbike_strecken&outputFormat=shape-zip"
+      ],
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "6cf00159-5c8d-449b-950f-5a16cab01b2f",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "SHP-Download"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:mountainbike_strecken&styles=&format=application/vnd.google-earth.kml+xml"
       ],
       "format": {
@@ -148,7 +172,7 @@
         "label": "KML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "52631e98-a160-4076-a3f2-46be6b6013c1",
+      "id": "25305d6b-3000-44e5-b45c-af8dda0ad8b5",
       "language": [
         {
           "id": "DEU",
@@ -172,7 +196,7 @@
         "label": "WFS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "a8f1d958-6c28-420f-92c1-0854e287ec25",
+      "id": "f5f76a03-5377-40d5-b5ff-1e64690ab9f3",
       "language": [
         {
           "id": "DEU",
@@ -189,30 +213,6 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:mountainbike_strecken&outputFormat=shape-zip"
-      ],
-      "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
-      },
-      "id": "f8a8cf54-5276-4012-8e99-d9d4df91bd3c",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "SHP-Download"
-      }
-    },
-    {
-      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:mountainbike_strecken&outputFormat=gpkg"
       ],
       "format": {
@@ -220,7 +220,7 @@
         "label": "GeoPackage",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "2b4a930b-1cb3-4c53-8db5-15a45cd2149e",
+      "id": "5f984c3c-1a8a-43a1-bc13-3bb4a8129b75",
       "language": [
         {
           "id": "DEU",
@@ -237,14 +237,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:mountainbike_strecken&outputFormat=application/json&maxFeatures=1000000"
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/d5a0ac7f-7e73-4d64-923e-ab81a4ec1955"
       ],
       "format": {
-        "id": "JSON",
-        "label": "JSON",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "8834325f-9ec8-466a-956f-2593f08f048b",
+      "id": "35c20c8f-875d-4621-8e0d-2fcca2b385a2",
       "language": [
         {
           "id": "DEU",
@@ -256,7 +256,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "JSON-Download"
+        "de": "Metadaten-Katalog"
       }
     },
     {
@@ -268,7 +268,7 @@
         "label": "WMS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "ff603177-4391-4496-b815-d8b3991da01f",
+      "id": "bea8f8c8-4938-4f75-bf71-fae9f21db5eb",
       "language": [
         {
           "id": "DEU",

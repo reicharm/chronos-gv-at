@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:31Z",
-    "modified": "2026-08-15T06:02:38Z"
+    "modified": "2026-09-26T06:02:24Z"
   },
   "categories": [
     {
@@ -93,6 +93,30 @@
   "distributions": [
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/vogis/siedlungsgebiet_1910/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+      ],
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "035fefe5-63c5-411b-a5f7-e445407c0cf3",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WMS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:siedlungsgebiet_1910&styles=&format=application/vnd.google-earth.kml+xml"
       ],
       "format": {
@@ -100,7 +124,7 @@
         "label": "KML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "e7bde7ec-c4e0-4f18-a2c5-37fdbb79e53c",
+      "id": "90b781d5-d3d8-41d4-986e-181156530cf7",
       "language": [
         {
           "id": "DEU",
@@ -124,7 +148,7 @@
         "label": "CSV",
         "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "3819b6f6-605d-48dc-b277-0f45879c33e4",
+      "id": "a74a0635-4456-4fef-ba4e-6e74afc3a152",
       "language": [
         {
           "id": "DEU",
@@ -141,14 +165,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:siedlungsgebiet_1910&outputFormat=gpkg"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:siedlungsgebiet_1910&outputFormat=shape-zip"
       ],
       "format": {
-        "id": "WFS_SRVC",
-        "label": "WFS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "9a869794-00a8-4bf2-aa94-002f9921ec02",
+      "id": "0c4ad62a-361c-437b-aecd-a4a6257a8086",
       "language": [
         {
           "id": "DEU",
@@ -160,7 +184,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "WFS-GetCapabilities"
+        "de": "SHP-Download"
       }
     },
     {
@@ -172,7 +196,7 @@
         "label": "GeoPackage",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "b02eea05-0565-4571-8122-30a63be5ca8d",
+      "id": "177fda9a-33b1-4a34-8252-4e1df3e5cff9",
       "language": [
         {
           "id": "DEU",
@@ -189,6 +213,30 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:siedlungsgebiet_1910&outputFormat=gpkg"
+      ],
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "e4a46416-f191-4a88-9932-ddb5077b1a6c",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "WFS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/00414af7-8d37-4605-9971-3c9137a6cefa"
       ],
       "format": {
@@ -196,7 +244,7 @@
         "label": "HTML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "03f0611f-a535-45ca-abdc-7122846d0650",
+      "id": "08c977d7-32c3-4b8d-aeca-924bec7a9ef8",
       "language": [
         {
           "id": "DEU",
@@ -220,7 +268,7 @@
         "label": "JSON",
         "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "6ea94bef-7306-4caa-a4de-a879b6231272",
+      "id": "dac37737-2d9c-4cdf-ab78-a33de8a17198",
       "language": [
         {
           "id": "DEU",
@@ -233,54 +281,6 @@
       },
       "title": {
         "de": "JSON-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/vogis/siedlungsgebiet_1910/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
-      ],
-      "format": {
-        "id": "WMS_SRVC",
-        "label": "WMS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
-      },
-      "id": "e85f4e2d-3780-4137-aa23-25dc29a2f00f",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "WMS-GetCapabilities"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:siedlungsgebiet_1910&outputFormat=shape-zip"
-      ],
-      "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
-      },
-      "id": "a854d962-2747-4f2d-9804-862dcafe38ad",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "SHP-Download"
       }
     }
   ],
