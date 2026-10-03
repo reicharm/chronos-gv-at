@@ -45,7 +45,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-16T15:28:12Z",
-    "modified": "2025-12-16T15:28:12Z"
+    "modified": "2026-10-02T10:00:28Z"
   },
   "categories": [
     {
@@ -82,7 +82,16 @@
       "resource": "http://publications.europa.eu/resource/authority/data-theme/REGI"
     }
   ],
-  "contact_point": [],
+  "contact_point": [
+    {
+      "email": "mailto:ogd@ma41.wien.gv.at",
+      "name": "Magistrat Wien - Magistratsabteilung 41 - Stadtvermessung und Geoinformation",
+      "type": "Organization",
+      "url": [
+        "https://www.wien.gv.at/kontakte/ma41/index.html"
+      ]
+    }
+  ],
   "country": null,
   "description": {
     "de": "Kappazunder ist eine innovative Datenquelle der Stadt Wien, die ein digitales Abbild des öffentlichen Raumes darstellt. Die Kappazunder Befahrungsdaten beinhalten geodätisch verortete Bilddaten, Punktwolken, die zugehörige Navigationsinformation (Trajektorie) und räumliche Orientierungen. Es ist das gesamte Straßennetz von Wien inklusive Donauinsel, ausgewählte Parks und Stadtautobahnen abgebildet. Die Geodaten wurden im Jahr 2020 erhoben und sind in einer Schnittstelle mit offenen Formaten verfügbar. \n\nWeitere Informationen: https://www.wien.gv.at/stadtentwicklung/stadtvermessung/geodaten/mobile-mapping/index.html"
@@ -90,7 +99,7 @@
   "distributions": [
     {
       "access_url": [
-        "https://www.wien.gv.at/geodatenviewer/portal/wien/"
+        "https://geoportal.wien.gv.at/map/main/geodaten/"
       ],
       "description": {},
       "format": {
@@ -103,7 +112,8 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
       },
       "title": {
-        "de": "Geodatenviewer der Stadtvermessung Wien NEU"
+        "de": "Geoportal",
+        "en": "Geoportal"
       }
     }
   ],
@@ -124,8 +134,13 @@
       "language": "de"
     },
     {
-      "id": "stadtvermessung",
-      "label": "Stadtvermessung",
+      "id": "geodaten",
+      "label": "Geodaten",
+      "language": "de"
+    },
+    {
+      "id": "laserscanning",
+      "label": "Laserscanning",
       "language": "de"
     },
     {
@@ -134,18 +149,13 @@
       "language": "de"
     },
     {
-      "id": "geodaten",
-      "label": "Geodaten",
+      "id": "stadtvermessung",
+      "label": "Stadtvermessung",
       "language": "de"
     },
     {
       "id": "bilddaten",
       "label": "Bilddaten",
-      "language": "de"
-    },
-    {
-      "id": "laserscanning",
-      "label": "Laserscanning",
       "language": "de"
     },
     {
@@ -174,13 +184,13 @@
       "language": "de"
     },
     {
-      "id": "punktwolke",
-      "label": "Punktwolke",
+      "id": "street-view",
+      "label": "Street View",
       "language": "de"
     },
     {
-      "id": "street-view",
-      "label": "Street View",
+      "id": "punktwolke",
+      "label": "Punktwolke",
       "language": "de"
     },
     {
@@ -206,17 +216,20 @@
   ],
   "landing_page": [
     {
+      "resource": "file:///usr/verticles/digitales.wien.gv.at/open-data/geowebservices/"
+    },
+    {
       "resource": "https://www.wien.gv.at/stadtentwicklung/stadtvermessung/geodaten/mobile-mapping/index.html"
     }
   ],
   "language": [
     {
-      "id": "de",
-      "label": "German",
+      "id": "DEU",
+      "label": "Deutsch",
       "resource": "http://publications.europa.eu/resource/authority/language/DEU"
     }
   ],
-  "modified": "2025-11-20",
+  "modified": "2025-12-16",
   "provenance": [
     {
       "label": "Die Daten wurden mit einem zugleich bildgebenden und scannenden Mobile Mapping System erfasst. Die Bilddaten (gesamte Cubemap) haben eine Auflösung von 250 Megapixel. Der Laserscanner hat eine Messgenauigkeit von +/- 2cm und tastet die Umgebung bis zu einer Entfernung von 50 m ab. Die Georeferenzierung der Daten hat weitgehend eine Abweichung zur Referenz von unter 10 Zentimetern.\n \nDie Bilddaten sind nach Stand der Technik anonymisiert. Das heißt Kennzeichen und Personen wurden verpixelt und unkenntlich gemacht. Sollte trotzdem ein direkter Personenbezug herstellbar sein, kann jederzeit eine nachträgliche Verpixelung über ein Online-Formularbeantragt werden.\n \nSollte eine nachträgliche Verpixelung erfolgt sein, wird der Datensatz für den Download aktualisiert und weiterführend die bearbeiteten Dateien in einer Tabelle aufgelistet.\n\nWeitere Informationen: https://www.wien.gv.at/stadtentwicklung/stadtvermessung/geodaten/mobile-mapping/produkt.html"
@@ -238,16 +251,21 @@
     }
   ],
   "title": {
-    "de": "Kappazunder Befahrungsdaten 2020 Wien"
+    "de": "Kappazunder Befahrungsdaten 2020 Wien",
+    "en": "**Kappazunder dataset 2020 Vienna**\n\nKappazunder is an innovative geodata source of the City of Vienna that provides a digital image of the public space. The Kappazunder data includes accurate located image data, point clouds, the associated navigation information (trajectory) and spatial orientations. The entire street network of Vienna including the Danube Island, selected parks and city highways are mapped. The geodata were collected in 2020 and are available in an interface with open dataformats. \n\nFurther information: https://www.wien.gv.at/stadtentwicklung/stadtvermessung/geodaten/mobile-mapping/index.html"
   },
   "translation_meta": {
     "details": {
       "de": {
         "machine_translated": false
+      },
+      "en": {
+        "machine_translated": false
       }
     },
     "full_available_languages": [
-      "de"
+      "de",
+      "en"
     ],
     "status": "unknown"
   }

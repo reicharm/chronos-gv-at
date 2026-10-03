@@ -1,0 +1,555 @@
+{
+  "accrual_periodicity": {
+    "label": "continuous",
+    "resource": "http://publications.europa.eu/resource/authority/frequency/CONT"
+  },
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": {
+      "de": "Open Government Data (OGD) in Wien bedeutet, dass die Stadt Zahlen, Daten und Dokumente der Verwaltung öffentlich für jegliche Nutzung zur Verfügung stellt. Dabei gelten die Leitprinzipien „open by default“ und „open by design“. \r\n&nbsp;\r\nMehrere hundert Datensätze liefern detaillierte Auskunft über Einbahnen, Echtzeitinformationen der Wiener Linien, historische Luftbildaufnahmen, Messdaten von Luftschadstoffen oder WLAN-Standorte, um nur einige wenige Bereiche zu nennen. \r\n&nbsp;\r\nMit diesen verifizierten Daten können Privatpersonen oder Unternehmen beispielsweise Apps programmieren, die das Leben einfacher machen. Die Wissenschaft und Forschung kann diese Daten einfach nutzen. \r\n\r\n\r\n&nbsp;\r\nNeue Daten werden zu folgenden Terminen publiziert:  \r\n\r\n\r\n&nbsp;\r\n* OGD-Phase 58: 7. März 2025 (Open Data MeetUp am 6.März 2025 Wien & Wein im Rahmen der Open Data Days 2025)\r\n* OGD-Phase 59: 27. Juni 2025\r\n* OGD-Phase 60: 26. September 2025 (Open Data MeetUp am 25. September 2025 Wien & Wien)\r\n* OGD-Phase 61: 19. Dezember 2025\r\n\r\n\r\n&nbsp;\r\nDetailinformationen dazu finden Sie jeweils im Changelog oder abonnieren Sie unseren Digitales Wien Newsletter.\r\n\r\n\r\n&nbsp;\r\nStudien, Gutachten und Umfragen, die die Stadt Wien seit dem 1. Jänner 2023 in Auftrag gibt, müssen nach Artikel 20 des Bundes-Verfassungsgesetzes samt Kosten veröffentlicht werden. Ausnahmen von der Veröffentlichung können sich etwa aus dem Datenschutz, der Amtsverschwiegenheit, dem Urheberrecht oder aus Geschäfts- und Betriebsgeheimnissen ergeben.\r\n\r\n\r\n&nbsp;\r\nOpen Data Beauftragter der Stadt Wien: Gerhard Hartmann gerhard.hartmann@wien.gv.at"
+    },
+    "has_part": null,
+    "homepage": null,
+    "id": "l9",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2026-02-12T07:58:10Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2026-02-12T07:58:10Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "Stadt Wien"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-12-17T14:28:05Z",
+    "modified": "2025-12-17T14:28:05Z"
+  },
+  "categories": [
+    {
+      "id": "TRAN",
+      "label": {
+        "bg": "Транспорт",
+        "cs": "Doprava",
+        "da": "Transport",
+        "de": "Verkehr",
+        "el": "Μεταφορές",
+        "en": "Transport",
+        "es": "Transporte",
+        "et": "Transport",
+        "fi": "Liikenne",
+        "fr": "Transports",
+        "ga": "Iompar",
+        "hr": "Promet",
+        "hu": "Közlekedés",
+        "it": "Trasporti",
+        "lt": "Transportas",
+        "lv": "Transports",
+        "mt": "Trasport",
+        "nb": "Transport",
+        "nl": "Vervoer",
+        "nn": "Transport",
+        "no": "Transport",
+        "pl": "Transport",
+        "pt": "Transportes",
+        "ro": "Transport",
+        "sk": "Doprava",
+        "sl": "Transport",
+        "sv": "Transport"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/TRAN"
+    }
+  ],
+  "contact_point": [],
+  "country": null,
+  "description": {
+    "de": "Darstellung der Einbahnen für den motorisierten Individualverkehr auf Basis des Straßengraphen Wien."
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:EINBAHNOGD&styles=&format=application/rss+xml"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "id": "fd685e63-49d8-41e3-8d95-527178ddb575",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GeoRSS)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?service=WMS&request=GetCapabilities&version=1.1.1"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "5098fca0-01a6-44d0-a370-6ce368cb66ad",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=EINBAHNOGD&styles=&format=image/gif&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "6fa4bc10-1679-4b92-a6b5-fee20ff18265",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (GIF)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:EINBAHNOGD&styles=&format=image/jpeg"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "3b4b378b-55ed-40b6-b160-eae608f108bd",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (JPEG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:EINBAHNOGD&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "aa1e36d4-5833-436d-9376-51ab328de79c",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:EINBAHNOGD&srsName=EPSG:4326&outputFormat=shape-zip"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "4fb6bdbc-37e0-435a-88d1-af5edb7d5035",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (SHP)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/katalog/images/einbahnogd.png"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "3a96563e-18b2-4b9e-8bcd-b6a4ec5d031d",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "Icon"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:EINBAHNOGD&styles=&format=image/svg"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "id": "fd2cc1e6-b6b3-4098-a74a-4e303efee0dd",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (SVG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:EINBAHNOGD&styles=&format=image/gif"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "189bb9ae-c55b-4f86-afa4-05c7b74120b3",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GIF)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:EINBAHNOGD&srsName=EPSG:4326&outputFormat=json"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "36c394ad-e630-450b-95ed-6edabda173e5",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (JSON)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:EINBAHNOGD&styles=&format=image/png8"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "3c080369-7bdc-401a-8304-54d322104075",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG/8bit)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:EINBAHNOGD&srsName=EPSG:4326&outputFormat=csv"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "321fdaf1-bf8a-4ac4-bbee-74df5dd8f00c",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (CSV)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=EINBAHNOGD&styles=&format=image/jpeg&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "ef236e91-3f4b-46ac-9f8a-bdde9b450c21",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (JPEG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:EINBAHNOGD&styles=&format=image/png"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "71c64453-d453-43f5-a5c7-feb5657f720f",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:EINBAHNOGD&srsName=EPSG:4326"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "GML",
+        "label": "GML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
+      },
+      "id": "0370260b-8787-4f55-b62d-5a6f21118067",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (GML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:EINBAHNOGD&styles=&format=application/vnd.google-earth.kmz"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "KMZ",
+        "label": "KMZ",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KMZ"
+      },
+      "id": "e65f491c-b8f3-4f8d-a2ea-74b04bda83a2",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KMZ)"
+      }
+    },
+    {
+      "access_url": [
+        "https://digitales.wien.gv.at/site/icons/"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+      },
+      "id": "c6cf8ed6-dd83-41e5-867f-11b686d712a9",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "Icons"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.1.0&service=WFS&request=GetCapabilities"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "c1b41cf0-c719-40b6-a3c4-8ccb6b25f5a5",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=EINBAHNOGD&styles=&format=image/png&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "c674d595-e6b8-48a1-b708-3dc1e1579384",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (PNG/8bit)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetCapabilities"
+      ],
+      "description": {
+        "de": "DIRECTION_NAME = Orientierung der Einbahn in bzw. entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung"
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "001c7b95-cbe3-4940-8579-74f83fef5d1a",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetCapabilities"
+      }
+    }
+  ],
+  "id": "00578525-f3ae-4124-81ed-a0515257a6c6",
+  "identifier": [
+    "00578525-f3ae-4124-81ed-a0515257a6c6"
+  ],
+  "is_hvd": false,
+  "keywords": [
+    {
+      "id": "viennagis",
+      "label": "ViennaGIS",
+      "language": "de"
+    },
+    {
+      "id": "einbahn",
+      "label": "Einbahn",
+      "language": "de"
+    },
+    {
+      "id": "richtungsfahrbahn",
+      "label": "Richtungsfahrbahn",
+      "language": "de"
+    },
+    {
+      "id": "verkehrsführung",
+      "label": "Verkehrsführung",
+      "language": "de"
+    }
+  ],
+  "landing_page": [
+    {
+      "resource": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/"
+    }
+  ],
+  "language": [
+    {
+      "id": "de",
+      "label": "German",
+      "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+    }
+  ],
+  "modified": "2025-11-20",
+  "provenance": [
+    {
+      "label": "Verortung auf Basis des Straßengraph der Stadt Wien"
+    }
+  ],
+  "publisher": {
+    "email": "mailto:open@post.wien.gv.at",
+    "homepage": "https://digitales.wien.gv.at",
+    "name": "Stadt Wien",
+    "type": "Agent"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/00578525-f3ae-4124-81ed-a0515257a6c6",
+  "spatial": [],
+  "temporal": [
+    {
+      "gte": "2014-03-28"
+    }
+  ],
+  "title": {
+    "de": "Intermodales Verkehrsreferenzsystem (GIP.at)  Verkehrsgraph Einbahnen Wien"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}

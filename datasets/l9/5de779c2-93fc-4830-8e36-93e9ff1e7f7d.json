@@ -1,0 +1,541 @@
+{
+  "accrual_periodicity": {
+    "label": "continuous",
+    "resource": "http://publications.europa.eu/resource/authority/frequency/CONT"
+  },
+  "catalog": {
+    "availability": null,
+    "catalog": null,
+    "catalogueBackground": null,
+    "catalogueFavIcon": null,
+    "catalogueInterestingDatasets": null,
+    "catalogueLogo": null,
+    "catalogueProfile": null,
+    "country": null,
+    "creator": null,
+    "description": {
+      "de": "Open Government Data (OGD) in Wien bedeutet, dass die Stadt Zahlen, Daten und Dokumente der Verwaltung öffentlich für jegliche Nutzung zur Verfügung stellt. Dabei gelten die Leitprinzipien „open by default“ und „open by design“. \r\n&nbsp;\r\nMehrere hundert Datensätze liefern detaillierte Auskunft über Einbahnen, Echtzeitinformationen der Wiener Linien, historische Luftbildaufnahmen, Messdaten von Luftschadstoffen oder WLAN-Standorte, um nur einige wenige Bereiche zu nennen. \r\n&nbsp;\r\nMit diesen verifizierten Daten können Privatpersonen oder Unternehmen beispielsweise Apps programmieren, die das Leben einfacher machen. Die Wissenschaft und Forschung kann diese Daten einfach nutzen. \r\n\r\n\r\n&nbsp;\r\nNeue Daten werden zu folgenden Terminen publiziert:  \r\n\r\n\r\n&nbsp;\r\n* OGD-Phase 58: 7. März 2025 (Open Data MeetUp am 6.März 2025 Wien & Wein im Rahmen der Open Data Days 2025)\r\n* OGD-Phase 59: 27. Juni 2025\r\n* OGD-Phase 60: 26. September 2025 (Open Data MeetUp am 25. September 2025 Wien & Wien)\r\n* OGD-Phase 61: 19. Dezember 2025\r\n\r\n\r\n&nbsp;\r\nDetailinformationen dazu finden Sie jeweils im Changelog oder abonnieren Sie unseren Digitales Wien Newsletter.\r\n\r\n\r\n&nbsp;\r\nStudien, Gutachten und Umfragen, die die Stadt Wien seit dem 1. Jänner 2023 in Auftrag gibt, müssen nach Artikel 20 des Bundes-Verfassungsgesetzes samt Kosten veröffentlicht werden. Ausnahmen von der Veröffentlichung können sich etwa aus dem Datenschutz, der Amtsverschwiegenheit, dem Urheberrecht oder aus Geschäfts- und Betriebsgeheimnissen ergeben.\r\n\r\n\r\n&nbsp;\r\nOpen Data Beauftragter der Stadt Wien: Gerhard Hartmann gerhard.hartmann@wien.gv.at"
+    },
+    "has_part": null,
+    "homepage": null,
+    "id": "l9",
+    "is_open_data_presence": null,
+    "is_part_of": "data-gv-at",
+    "issued": "2026-02-12T07:58:10Z",
+    "language": [
+      {
+        "id": "de",
+        "label": "German",
+        "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+      }
+    ],
+    "license": null,
+    "modified": "2026-02-12T07:58:10Z",
+    "organization_id": null,
+    "publisher": null,
+    "rights": null,
+    "spatial": null,
+    "spatial_resource": null,
+    "theme_taxonomy": null,
+    "title": {
+      "de": "Stadt Wien"
+    },
+    "visualisation_data": null,
+    "visualisation_selection": null
+  },
+  "catalog_record": {
+    "issued": "2025-12-17T15:17:22Z",
+    "modified": "2025-12-17T15:17:22Z"
+  },
+  "categories": [
+    {
+      "id": "TRAN",
+      "label": {
+        "bg": "Транспорт",
+        "cs": "Doprava",
+        "da": "Transport",
+        "de": "Verkehr",
+        "el": "Μεταφορές",
+        "en": "Transport",
+        "es": "Transporte",
+        "et": "Transport",
+        "fi": "Liikenne",
+        "fr": "Transports",
+        "ga": "Iompar",
+        "hr": "Promet",
+        "hu": "Közlekedés",
+        "it": "Trasporti",
+        "lt": "Transportas",
+        "lv": "Transports",
+        "mt": "Trasport",
+        "nb": "Transport",
+        "nl": "Vervoer",
+        "nn": "Transport",
+        "no": "Transport",
+        "pl": "Transport",
+        "pt": "Transportes",
+        "ro": "Transport",
+        "sk": "Doprava",
+        "sl": "Transport",
+        "sv": "Transport"
+      },
+      "resource": "http://publications.europa.eu/resource/authority/data-theme/TRAN"
+    }
+  ],
+  "contact_point": [],
+  "country": null,
+  "description": {
+    "de": "Darstellung aller behördlich verordneten Geschwindigkeitsbeschränkungen (exkl. I-GL und prov. verordnete Geschwindigkeitsbeschränkungen aufgrund Baustellen) sowie der Verkehrsführung (exkl. Ausnahmen) für den motorisierten Individualverkehr auf Basis des Straßengraph Wien. Die Geschwindigkeitsbeschränkungen für Fußgängerzonen und Wohnstraßen werden gemäß Straßenverkehrsordnung (StVO 1960 idgF) als Schrittgeschwindigkeit ausgegeben."
+  },
+  "distributions": [
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.1.0&service=WFS&request=GetCapabilities"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
+      },
+      "id": "dd908184-79e6-402f-9f2d-eb9b98922627",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetCapabilities"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "de9fe891-b7b6-42f7-8b81-6b7e02402c49",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=STRASSENSPEEDOGD&styles=&format=image/png&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "ca2055a3-7803-49e4-a53c-24115d318bb8",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (PNG/8bit)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:STRASSENSPEEDOGD&styles=&format=application/vnd.google-earth.kmz"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "KMZ",
+        "label": "KMZ",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KMZ"
+      },
+      "id": "b84b1f60-c3ac-4732-aa00-a0f4a98d1eef",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KMZ)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENSPEEDOGD&styles=&format=image/svg"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "id": "d0773b78-eadb-477a-a396-b89755176bd3",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (SVG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENSPEEDOGD&styles=&format=image/jpeg"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "d6838262-4407-4f44-b6b5-c67a93032dee",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (JPEG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=STRASSENSPEEDOGD&styles=&format=image/gif&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "acd13da8-abfb-4910-bb19-26c325a10c21",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (GIF)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENSPEEDOGD&styles=&format=image/png"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "171d1855-c658-4a4d-b63e-4d9328dd2318",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENSPEEDOGD&styles=&format=image/gif"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "GIF",
+        "label": "GIF",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GIF"
+      },
+      "id": "4f2b40d3-9477-41f6-a8a9-5a9bd7239600",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GIF)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?service=WMS&request=GetCapabilities&version=1.1.1"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+      },
+      "id": "14096b57-c379-47c4-91eb-bdbfea7580bd",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/wms?request=GetMap&version=1.1.1&width=640&height=480&layers=STRASSENSPEEDOGD&styles=&format=image/jpeg&bbox=-11179,331050,18258,353820&srs=EPSG:31256"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "JPEG",
+        "label": "JPEG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JPEG"
+      },
+      "id": "ae16c1b1-5459-4595-b91d-21f89adf4a95",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS GetMap (JPEG)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:STRASSENSPEEDOGD&styles=&format=application/rss+xml"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "id": "9e30cdf1-8e26-46d1-bec5-7d5d258ae99f",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (GeoRSS)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENSPEEDOGD&srsName=EPSG:4326&outputFormat=json"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "e9793eaf-5d46-4de6-8c3f-8d4eba06d3c1",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (JSON)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=640&height=480&layers=ogdwien:STRASSENSPEEDOGD&styles=&format=image/png8"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "PNG",
+        "label": "PNG",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/PNG"
+      },
+      "id": "8afd3f71-f243-4114-b6df-7835d67a8413",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (PNG/8bit)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENSPEEDOGD&srsName=EPSG:4326"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "GML",
+        "label": "GML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GML"
+      },
+      "id": "611e79be-75fe-4d6e-b588-eab88e10dc8d",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (GML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENSPEEDOGD&srsName=EPSG:4326&outputFormat=shape-zip"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "34141518-979c-415c-ba98-0b7e3b7d90f4",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (SHP)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=48.10,16.16,48.34,16.59&width=1&height=1&layers=ogdwien:STRASSENSPEEDOGD&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "d57e2dab-3c1e-4fd9-a21f-6dd9c4478a41",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WMS Geoserver GetMap (KML)"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENSPEEDOGD&srsName=EPSG:4326&outputFormat=csv"
+      ],
+      "description": {
+        "de": "GIP_OBJECTID = eindeutige Identifizierung des Objekts   FEATURENAME = Name der Erlaubnis/Beschränkung   LINEARUSE_NAME = Name des Querschnittselements, auf dem die Erlaubnis gilt   EDGE_NAME = Name des Abschnitts   EDGE_OBJECTID = Verweis auf den Abschnitt in der Abschnittstabelle   TYPE = Typ der Erlaubnis, s. TYPE_NAME  TYPE_NAME = entschlüsselter Typ der Erlaubnis   DEFAULTVALIDITY = Gültigkeit der Erlaubnis/Beschränkung   DEFVAL_NAME = entschlüsselte Gültigkeit der Erlaubnis/Beschränkung   DIRECTION = Richtung/Seite der Erlaubnis/Beschränkung  DIRECTION_NAME = entschlüsselte Richtung/Seite der Erlaubnis/Beschränkung   VALUE = Wert der Erlaubnis  MASURETYPE = Grundlage der Erlaubnis/Beschränkung   MEASURETYPE_NAME = entschlüsselte Grundlage der Erlaubnis/Beschränkung   BASETYPE = Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt   BASETYPE_NAME = entschlüsselte Art des Querschnittselements, auf dem die Erlaubnis/Beschränkung gilt  SHAPE = Geometrie"
+      },
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "9fc43c97-a826-45a0-9351-761c7cae5c88",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/deed.de"
+      },
+      "title": {
+        "de": "WFS GetFeature (CSV)"
+      }
+    }
+  ],
+  "id": "5de779c2-93fc-4830-8e36-93e9ff1e7f7d",
+  "identifier": [
+    "5de779c2-93fc-4830-8e36-93e9ff1e7f7d"
+  ],
+  "is_hvd": false,
+  "keywords": [
+    {
+      "id": "tempo-30-zonen",
+      "label": "Tempo 30-Zonen",
+      "language": "de"
+    },
+    {
+      "id": "tempo-30-beschränkung",
+      "label": "Tempo 30-Beschränkung",
+      "language": "de"
+    },
+    {
+      "id": "verkehrsführung",
+      "label": "Verkehrsführung",
+      "language": "de"
+    },
+    {
+      "id": "viennagis",
+      "label": "ViennaGIS",
+      "language": "de"
+    },
+    {
+      "id": "tempo-30",
+      "label": "Tempo 30",
+      "language": "de"
+    },
+    {
+      "id": "richtungsfahrbahn",
+      "label": "Richtungsfahrbahn",
+      "language": "de"
+    },
+    {
+      "id": "lineare-geschwindigkeitsbeschränkungen",
+      "label": "lineare Geschwindigkeitsbeschränkungen",
+      "language": "de"
+    },
+    {
+      "id": "einbahn",
+      "label": "Einbahn",
+      "language": "de"
+    },
+    {
+      "id": "zonale-geschwindigkeitsbeschränkungen",
+      "label": "zonale Geschwindigkeitsbeschränkungen",
+      "language": "de"
+    },
+    {
+      "id": "geschwindigkeitsbeschränkungen",
+      "label": "Geschwindigkeitsbeschränkungen",
+      "language": "de"
+    }
+  ],
+  "landing_page": [
+    {
+      "resource": "https://www.data.gv.at/infos/geowebservices-potenzial-besser-nutzen/"
+    }
+  ],
+  "language": [
+    {
+      "id": "de",
+      "label": "German",
+      "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+    }
+  ],
+  "modified": "2025-11-20",
+  "provenance": [],
+  "publisher": {
+    "email": "mailto:open@post.wien.gv.at",
+    "homepage": "https://digitales.wien.gv.at",
+    "name": "Stadt Wien",
+    "type": "Agent"
+  },
+  "quality_meas": null,
+  "resource": "https://www.data.gv.at/katalog/datasets/5de779c2-93fc-4830-8e36-93e9ff1e7f7d",
+  "spatial": [],
+  "temporal": [
+    {
+      "gte": "2013-12-13"
+    }
+  ],
+  "title": {
+    "de": "Intermodales Verkehrsreferenzsystem (GIP.at)  Verkehrsgraph Wien"
+  },
+  "translation_meta": {
+    "details": {
+      "de": {
+        "machine_translated": false
+      }
+    },
+    "full_available_languages": [
+      "de"
+    ],
+    "status": "unknown"
+  }
+}
