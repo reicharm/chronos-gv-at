@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:03Z",
-    "modified": "2026-10-03T06:03:07Z"
+    "modified": "2026-10-10T06:02:43Z"
   },
   "categories": [
     {
@@ -93,14 +93,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:bodensee_tiefenlinien_5m_2008&styles=&format=application/vnd.google-earth.kml+xml"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:bodensee_tiefenlinien_5m_2008&outputFormat=application/json&maxFeatures=1000000"
       ],
       "format": {
-        "id": "KML",
-        "label": "KML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "b645cddf-ad92-405b-9d70-a3f9fffccc8e",
+      "id": "0ab015cb-a853-4eb2-8840-ad3febffe6a0",
       "language": [
         {
           "id": "DEU",
@@ -112,19 +112,19 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "KML-Download"
+        "de": "JSON-Download"
       }
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/a532ea82-1777-4cf4-8fa7-9a40cf99f23a"
+        "https://vogis.cnv.at/geoserver/vogis/bodensee_tiefenlinien_5m_2008/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
       ],
       "format": {
-        "id": "HTML",
-        "label": "HTML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "825a362a-4eda-46b9-9f1b-4471cba93bf8",
+      "id": "f7c4c30d-cd69-4677-9cb5-a8b94cfda179",
       "language": [
         {
           "id": "DEU",
@@ -136,7 +136,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "Metadaten-Katalog"
+        "de": "WMS-GetCapabilities"
       }
     },
     {
@@ -148,7 +148,7 @@
         "label": "Esri Shape",
         "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "7f0744b1-e334-4a8c-9404-cbf85383fb52",
+      "id": "d15b595c-c230-4530-b5ac-8d9bb2c72e43",
       "language": [
         {
           "id": "DEU",
@@ -165,6 +165,30 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:bodensee_tiefenlinien_5m_2008&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "37d0959f-25ef-4605-9a06-df4202c0ae10",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "KML-Download"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:bodensee_tiefenlinien_5m_2008&outputFormat=csv"
       ],
       "format": {
@@ -172,7 +196,7 @@
         "label": "CSV",
         "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "41814aab-dd5a-4488-90d9-b14d80b017fb",
+      "id": "34949760-c8fc-4cd3-a4c4-a0675fe53ff8",
       "language": [
         {
           "id": "DEU",
@@ -196,7 +220,7 @@
         "label": "GeoPackage",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "a2c6922b-701e-4975-ab5e-0a7e743d1e03",
+      "id": "66ebba4c-aea3-4ec8-b29d-0de2951af765",
       "language": [
         {
           "id": "DEU",
@@ -213,30 +237,6 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:bodensee_tiefenlinien_5m_2008&outputFormat=application/json&maxFeatures=1000000"
-      ],
-      "format": {
-        "id": "JSON",
-        "label": "JSON",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
-      },
-      "id": "99ad8365-1bf8-433f-ac76-2db3369bda01",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "JSON-Download"
-      }
-    },
-    {
-      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:bodensee_tiefenlinien_5m_2008&outputFormat=gpkg"
       ],
       "format": {
@@ -244,7 +244,7 @@
         "label": "WFS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "5ace786a-7fdc-4b65-be3e-a3d79270ce64",
+      "id": "88228632-8191-4a3e-ba51-14847fa322d1",
       "language": [
         {
           "id": "DEU",
@@ -261,14 +261,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/vogis/bodensee_tiefenlinien_5m_2008/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/a532ea82-1777-4cf4-8fa7-9a40cf99f23a"
       ],
       "format": {
-        "id": "WMS_SRVC",
-        "label": "WMS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "f0b13a07-4a65-43e9-8561-e5d3f5cd7e47",
+      "id": "9e9337e1-f6a9-4423-a910-34c69bee35a6",
       "language": [
         {
           "id": "DEU",
@@ -280,7 +280,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "WMS-GetCapabilities"
+        "de": "Metadaten-Katalog"
       }
     }
   ],

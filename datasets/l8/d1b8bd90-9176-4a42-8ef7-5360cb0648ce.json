@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:36Z",
-    "modified": "2026-10-03T06:02:52Z"
+    "modified": "2026-10-10T06:02:29Z"
   },
   "categories": [
     {
@@ -100,7 +100,7 @@
         "label": "WFS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "dd489065-a160-49c4-937c-ccf36b8e099e",
+      "id": "a24d67d5-f56b-4b0e-8777-bad713abdf5a",
       "language": [
         {
           "id": "DEU",
@@ -124,7 +124,7 @@
         "label": "WMS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "fbfeaf4c-89b5-4246-9fec-80b79f22db3f",
+      "id": "e15ed186-6a0f-4210-a8c6-10c3fad97989",
       "language": [
         {
           "id": "DEU",
@@ -141,14 +141,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:vermessungsbezirk&styles=&format=application/vnd.google-earth.kml+xml"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:vermessungsbezirk&outputFormat=gpkg"
       ],
       "format": {
-        "id": "KML",
-        "label": "KML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "8bdc52ed-2967-46db-bf90-de0346ee6a51",
+      "id": "6371c31f-10a9-41a2-81ea-a411ff2b84c4",
       "language": [
         {
           "id": "DEU",
@@ -160,7 +160,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "KML-Download"
+        "de": "GPKG-Download"
       }
     },
     {
@@ -172,7 +172,7 @@
         "label": "JSON",
         "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "6adbb44c-a564-4913-bb6b-eb0e6d52e431",
+      "id": "3e766193-8816-402b-856a-f3e85bcd6757",
       "language": [
         {
           "id": "DEU",
@@ -189,30 +189,6 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:vermessungsbezirk&outputFormat=csv"
-      ],
-      "format": {
-        "id": "CSV",
-        "label": "CSV",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
-      },
-      "id": "647138ec-bdfc-4e46-8ea2-0ffd6691ce38",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "CSV-Download"
-      }
-    },
-    {
-      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:vermessungsbezirk&outputFormat=shape-zip"
       ],
       "format": {
@@ -220,7 +196,7 @@
         "label": "Esri Shape",
         "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "5fe4259a-d00e-4f10-8b0a-8d7816d6ce7c",
+      "id": "85f47509-09df-4725-b16a-72e671a7c465",
       "language": [
         {
           "id": "DEU",
@@ -237,6 +213,30 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:vermessungsbezirk&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "90dbd054-334d-436d-bdaa-6b1d0c8b2e43",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "KML-Download"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/076a5472-ceb3-4d22-9f39-79d26445b299"
       ],
       "format": {
@@ -244,7 +244,7 @@
         "label": "HTML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "8078b287-dd21-4d3f-9fa4-66217809e12c",
+      "id": "6b086b34-33d3-4812-b531-4358caf977fd",
       "language": [
         {
           "id": "DEU",
@@ -261,14 +261,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:vermessungsbezirk&outputFormat=gpkg"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:vermessungsbezirk&outputFormat=csv"
       ],
       "format": {
-        "id": "GPKG",
-        "label": "GeoPackage",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "dfabaf6f-1ffb-4477-b3e9-5a104e515d72",
+      "id": "a0edcfbd-4b1a-48b0-b246-429df9f3de99",
       "language": [
         {
           "id": "DEU",
@@ -280,7 +280,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "GPKG-Download"
+        "de": "CSV-Download"
       }
     }
   ],

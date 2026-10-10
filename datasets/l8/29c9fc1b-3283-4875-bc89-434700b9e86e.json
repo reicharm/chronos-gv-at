@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:06Z",
-    "modified": "2026-10-03T06:02:42Z"
+    "modified": "2026-10-10T06:02:25Z"
   },
   "categories": [
     {
@@ -93,14 +93,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:blattschnitt_schweiz_25000&outputFormat=application/json&maxFeatures=1000000"
+        "https://vogis.cnv.at/geoserver/vogis/blattschnitt_schweiz_25000/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
       ],
       "format": {
-        "id": "JSON",
-        "label": "JSON",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "a764ea78-683d-4f28-8244-6d5a47c23f3d",
+      "id": "7c928c4d-7ab2-4dcf-b65e-11d46de33071",
       "language": [
         {
           "id": "DEU",
@@ -112,7 +112,31 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "JSON-Download"
+        "de": "WMS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:blattschnitt_schweiz_25000&styles=&format=application/vnd.google-earth.kml+xml"
+      ],
+      "format": {
+        "id": "KML",
+        "label": "KML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+      },
+      "id": "ccf9d343-06fb-41fb-b1d9-2eba7c78d280",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "KML-Download"
       }
     },
     {
@@ -124,7 +148,7 @@
         "label": "GeoPackage",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "516644a8-b891-4d9f-bd83-6556d9482f9f",
+      "id": "e5d2c464-e12a-4547-b94b-1014d9a405f9",
       "language": [
         {
           "id": "DEU",
@@ -148,7 +172,7 @@
         "label": "HTML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "5eec3aad-d20c-404a-8188-9cd708862605",
+      "id": "12b03028-2c99-4f95-8e56-501a1b314255",
       "language": [
         {
           "id": "DEU",
@@ -165,14 +189,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/vogis/blattschnitt_schweiz_25000/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:blattschnitt_schweiz_25000&outputFormat=csv"
       ],
       "format": {
-        "id": "WMS_SRVC",
-        "label": "WMS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "3c0e5c5c-2065-4c51-b447-5df2b6ec7eb2",
+      "id": "4ae61083-7e28-418c-bc7f-e8934c7b9c8a",
       "language": [
         {
           "id": "DEU",
@@ -184,7 +208,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "WMS-GetCapabilities"
+        "de": "CSV-Download"
       }
     },
     {
@@ -196,7 +220,7 @@
         "label": "Esri Shape",
         "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
       },
-      "id": "783e328b-8258-4bbd-a1bb-d55f7e12841b",
+      "id": "1284814c-0bdd-4540-a451-e9486f14be01",
       "language": [
         {
           "id": "DEU",
@@ -220,7 +244,7 @@
         "label": "WFS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "9649e89c-b313-40ad-a92b-63e9346ae98b",
+      "id": "03ef954a-9a14-4a27-89e9-9859102d5cda",
       "language": [
         {
           "id": "DEU",
@@ -237,14 +261,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:blattschnitt_schweiz_25000&styles=&format=application/vnd.google-earth.kml+xml"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:blattschnitt_schweiz_25000&outputFormat=application/json&maxFeatures=1000000"
       ],
       "format": {
-        "id": "KML",
-        "label": "KML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "48ee5ea6-5503-4917-9385-5047f339b2da",
+      "id": "7ec7af46-3782-4064-9c0f-3f076a486301",
       "language": [
         {
           "id": "DEU",
@@ -256,31 +280,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "KML-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:blattschnitt_schweiz_25000&outputFormat=csv"
-      ],
-      "format": {
-        "id": "CSV",
-        "label": "CSV",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
-      },
-      "id": "e8063841-24d2-4a44-97fd-1b3f4a7989ef",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "CSV-Download"
+        "de": "JSON-Download"
       }
     }
   ],

@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T10:28:05Z",
-    "modified": "2026-10-03T06:02:49Z"
+    "modified": "2026-10-10T06:02:27Z"
   },
   "categories": [
     {
@@ -100,7 +100,7 @@
         "label": "JSON",
         "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "ee2c8220-2ab9-4b8e-8ae0-b54966f3893b",
+      "id": "f5387b29-6052-40ce-9b5a-6aec637a536f",
       "language": [
         {
           "id": "DEU",
@@ -117,6 +117,30 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/f57b483d-4684-4745-946a-b199e79f329e"
+      ],
+      "format": {
+        "id": "HTML",
+        "label": "HTML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
+      },
+      "id": "c5367751-0e83-4fa8-8479-c11322f36143",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "Metadaten-Katalog"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?version=1.3.0&service=WMS&request=GetMap&crs=EPSG:4326&bbox=47.14,9.52,47.59,10.13&width=1&height=1&layers=vogis:velotal_rheintal_routen&styles=&format=application/vnd.google-earth.kml+xml"
       ],
       "format": {
@@ -124,7 +148,7 @@
         "label": "KML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "7dde3ee3-bdbf-415f-9c26-3c67bf49be34",
+      "id": "03ee729e-2cec-4ab4-93bb-e9b515d455e0",
       "language": [
         {
           "id": "DEU",
@@ -141,14 +165,14 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:velotal_rheintal_routen&outputFormat=shape-zip"
+        "https://vogis.cnv.at/geoserver/vogis/velotal_rheintal_routen/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
       ],
       "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+        "id": "WMS_SRVC",
+        "label": "WMS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "3bf97469-31c8-4973-baf0-7b8709e77f1d",
+      "id": "370db5d0-4aef-4f8b-bcb6-44dd32b7aa5c",
       "language": [
         {
           "id": "DEU",
@@ -160,7 +184,7 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "SHP-Download"
+        "de": "WMS-GetCapabilities"
       }
     },
     {
@@ -172,7 +196,7 @@
         "label": "GeoPackage",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "8786535c-700e-4e16-91cb-860c7eaaf69a",
+      "id": "1d79648c-7de7-4a2f-85e3-1b8d8a24f1b8",
       "language": [
         {
           "id": "DEU",
@@ -196,7 +220,7 @@
         "label": "WFS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "4370e5be-9779-4a38-84bb-6345f41c1d34",
+      "id": "b13fd47c-0727-4e1c-b0ad-f79d91af72f6",
       "language": [
         {
           "id": "DEU",
@@ -213,6 +237,30 @@
     },
     {
       "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:velotal_rheintal_routen&outputFormat=shape-zip"
+      ],
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "1a30406f-2c42-44ba-a34f-ca6e08883f77",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "SHP-Download"
+      }
+    },
+    {
+      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:velotal_rheintal_routen&outputFormat=csv"
       ],
       "format": {
@@ -220,7 +268,7 @@
         "label": "CSV",
         "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "9f0e72ce-cd2e-4737-806c-301fcb2c204a",
+      "id": "6f85b247-f6ce-4f59-99ba-290833855da0",
       "language": [
         {
           "id": "DEU",
@@ -233,54 +281,6 @@
       },
       "title": {
         "de": "CSV-Download"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geoserver/vogis/velotal_rheintal_routen/ows?service=WMS&version=1.3.0&request=GetCapabilities&outputFormat=application/xml"
-      ],
-      "format": {
-        "id": "WMS_SRVC",
-        "label": "WMS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
-      },
-      "id": "a1dbec03-6bd8-45a7-b31c-132c9730f107",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "WMS-GetCapabilities"
-      }
-    },
-    {
-      "access_url": [
-        "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/f57b483d-4684-4745-946a-b199e79f329e"
-      ],
-      "format": {
-        "id": "HTML",
-        "label": "HTML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
-      },
-      "id": "293f2b3a-5f5a-45d1-9166-7abd4120008a",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "Metadaten-Katalog"
       }
     }
   ],
