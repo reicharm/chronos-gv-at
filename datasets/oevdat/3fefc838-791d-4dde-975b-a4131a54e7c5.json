@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2026-03-20T12:59:57Z",
-    "modified": "2026-08-04T08:45:56Z"
+    "modified": "2026-10-13T10:32:27Z"
   },
   "categories": [
     {
@@ -86,39 +86,9 @@
   ],
   "country": null,
   "description": {
-    "de": "Die Graphenintegrations-Plattform Österreich (GIP.at) ist das intermodale, amtliche Verkehrsreferenzsystem Österreichs.\nDer Datensatz beinhaltet folgende Teildatensätze:\n\n* A - Routingexport: ein IDF Gesamtfile, ZIP Archiv mit den einzelnen IDF Tabellen aufgesplittet\n* B - GIP Network = Basisnetz: Abschnitte, Knoten, Links, Nutzungsstreifen, Abbiegerelationen\n* C - Geopackage GIP Reference: Objekte des Exports, die auf das GIP Basisnetz referenzieren: Layer \"Brunnel\", Layer \"Bezugspunkte\", Layer \"Bikeroutes\", Layer \"Geoname\", Layer \"Radvis\"\n* D - Lookuptabellen\n* E - Geopackage GIP Localdata: Layer \"Radverkehrsnetz_VBG\"\n\n\nZum Verständnis veröffentlichen wir:\n\n* Dokumentation zum Export als PDF\n* Datenerfassungsstandard für die GIP\n\n\nAm GIP Datensatz wird laufend gearbeitet, alle 2 Monate erfolgt eine Aktualisierung des OGD-Exportes.\n\nAktuelle Version: GIP 2026/04"
+    "de": "Die Graphenintegrations-Plattform Österreich (GIP.at) bildet das intermodale, amtliche Verkehrsreferenzsystem Österreichs.\n\nEnthaltene Datensätze:\n\nA – Routingexport: IDF-Gesamtfile\n\nA – Routingexport Splitfile: IDF-Tabellen als separate Dateien\n\nB – GIP Network: GIP-Basisnetz mit Abschnitten, Knoten, Links, Nutzungsstreifen und Abbiegerelationen\n\nC – GeoPackage GIP Reference: Referenzierte Objekte mit den Layern „Brunnel“, „Bezugspunkte“, „Bikeroutes“, „Geoname“ und „Radvis“\n\nD – Lookuptabellen\n\nE – GeoPackage GIP Localdata: Layer „Radverkehrsnetz_VBG“\n\nDokumentation:\n\nDatensatzbeschreibung GIP2.0 Export\nSpezifikation GIP2.0 Exportformat\n\nDie GIP wird laufend aktualisiert und weiterentwickelt. Der OGD-Export erfolgt grundsätzlich in einem zweimonatigen Aktualisierungszyklus.\n\nAktuelle Version: GIP 2026/04\n Für 2026 ist keine weitere Veröffentlichung des OGD-Exports vorgesehen."
   },
   "distributions": [
-    {
-      "access_url": [
-        "https://open.gip.gv.at/ogd/D_lookuptabellen.zip"
-      ],
-      "format": {
-        "id": "GPKG",
-        "label": "GeoPackage",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
-      },
-      "id": "97fae54b-01ab-4dd4-941f-ff6ec6d25379",
-      "issued": "2026-07-08T00:00:00Z",
-      "license": {
-        "resource": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
-      },
-      "modified": "2024-11-27T15:20:05.126700Z",
-      "title": {
-        "de": "D - Lookuptabellen"
-      }
-    },
-    {
-      "access_url": [
-        "https://open.gip.gv.at/ogd/C_gip_reference_ogd.zip"
-      ],
-      "id": "e915c369-ab4b-49c6-b112-08c74239a7b7",
-      "issued": "2026-07-08T11:54:00Z",
-      "modified": "2026-03-24T11:55:00Z",
-      "title": {
-        "en": "C_GIP Referenz OGD"
-      }
-    },
     {
       "access_url": [
         "https://open.gip.gv.at/ogd/A_routingexport_ogd.zip"
@@ -128,7 +98,7 @@
         "label": "Plain text",
         "resource": "http://publications.europa.eu/resource/authority/file-type/TXT"
       },
-      "id": "9a6682cc-755c-48c2-8f60-31244719777d",
+      "id": "754bd8ef-c8b3-4af6-951d-072d45979976",
       "issued": "2026-07-08T00:00:00Z",
       "license": {
         "resource": "https://creativecommons.org/licenses/by/4.0/"
@@ -136,39 +106,6 @@
       "modified": "2024-11-27T15:20:05.126438Z",
       "title": {
         "de": "A - Routingexport: IDF Gesamtfile"
-      }
-    },
-    {
-      "access_url": [
-        "https://open.gip.gv.at/ogd/0_dokumentation_gipat_ogd.pdf"
-      ],
-      "id": "b86b504a-6455-414a-8f5a-0a664f3ab053",
-      "issued": "2026-07-08T12:02:00Z",
-      "license": {
-        "resource": "http://publications.europa.eu/resource/authority/licence/CC0"
-      },
-      "modified": "2026-03-24T12:02:00Z",
-      "title": {
-        "de": "Spezifikation GIP2.0 Exportformat"
-      }
-    },
-    {
-      "access_url": [
-        "https://open.gip.gv.at/ogd/B_gip_network_ogd.zip"
-      ],
-      "format": {
-        "id": "GPKG",
-        "label": "GeoPackage",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
-      },
-      "id": "2fc33ed3-74e4-46d9-a62b-fc1552b4b8ff",
-      "issued": "2026-07-08T00:00:00Z",
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "modified": "2024-11-27T15:20:05.126594Z",
-      "title": {
-        "de": "B - GIP Network: Basisnetz"
       }
     },
     {
@@ -183,11 +120,95 @@
         "label": "Plain text",
         "resource": "http://publications.europa.eu/resource/authority/file-type/TXT"
       },
-      "id": "eaab6668-aa44-429e-95e0-71d7fbe0f494",
+      "id": "f1b8251b-0c28-48e1-9669-895fc18c96b4",
       "issued": "2026-07-08T09:51:00Z",
       "modified": "2024-11-27T15:20:05.126744Z",
       "title": {
         "de": "E - Localdata: GPKG"
+      }
+    },
+    {
+      "access_url": [
+        "https://open.gip.gv.at/ogd/C_gip_reference_ogd.zip"
+      ],
+      "id": "c12121e4-3ef7-4d3c-9a05-9c801876d08b",
+      "issued": "2026-07-08T11:54:00Z",
+      "modified": "2026-03-24T11:55:00Z",
+      "title": {
+        "en": "C_GIP Referenz OGD"
+      }
+    },
+    {
+      "access_url": [
+        "https://open.gip.gv.at/ogd/D_lookuptabellen.zip"
+      ],
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "86fcab9c-99ec-45ee-81ce-eb4609bb2ecf",
+      "issued": "2026-07-08T00:00:00Z",
+      "license": {
+        "resource": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "modified": "2024-11-27T15:20:05.126700Z",
+      "title": {
+        "de": "D - Lookuptabellen"
+      }
+    },
+    {
+      "access_url": [
+        "https://open.gip.gv.at/ogd/0_dokumentation_gipat_ogd.pdf"
+      ],
+      "id": "ab13c29b-2749-4d9c-b5ce-dd2ca7bb033f",
+      "issued": "2026-07-08T12:02:00Z",
+      "license": {
+        "resource": "http://publications.europa.eu/resource/authority/licence/CC0"
+      },
+      "modified": "2026-03-24T12:02:00Z",
+      "title": {
+        "de": "Spezifikation GIP2.0 Exportformat 2604"
+      }
+    },
+    {
+      "access_url": [
+        "https://open.gip.gv.at/ogd/A_routingexport_OGD_split.zip"
+      ],
+      "id": "83302f54-f78e-46ed-a81d-019a20c3dfb2",
+      "issued": "2026-10-13T11:05:00Z",
+      "modified": "2026-10-13T11:05:00Z",
+      "title": {
+        "de": "A - Routingexport: IDF split"
+      }
+    },
+    {
+      "access_url": [
+        "https://open.gip.gv.at/ogd/GIP_2.0_OGD_Datensatzbeschreibung.pdf"
+      ],
+      "id": "de34d282-cbba-4abd-9a18-c98ebd2f2a6b",
+      "issued": "2026-10-13T12:22:00Z",
+      "title": {
+        "de": "Dokumentation: Datensatzbeschreibung GIP2.0 Export"
+      }
+    },
+    {
+      "access_url": [
+        "https://open.gip.gv.at/ogd/B_gip_network_ogd.zip"
+      ],
+      "format": {
+        "id": "GPKG",
+        "label": "GeoPackage",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
+      },
+      "id": "7d2f14d4-cb53-498e-bb48-d9440c0aae39",
+      "issued": "2026-07-08T00:00:00Z",
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "modified": "2024-11-27T15:20:05.126594Z",
+      "title": {
+        "de": "B - GIP Network: Basisnetz"
       }
     }
   ],
@@ -199,28 +220,33 @@
   "issued": "2015-05-06T19:07:10.684623Z",
   "keywords": [
     {
-      "id": "auto",
-      "label": "Auto",
-      "language": "de"
-    },
-    {
-      "id": "graphenintegrations-plattform-österreich",
-      "label": "Graphenintegrations-Plattform Österreich",
-      "language": "de"
-    },
-    {
       "id": "pkw",
       "label": "PKW",
       "language": "de"
     },
     {
-      "id": "fahrrad",
-      "label": "Fahrrad",
+      "id": "fußweg",
+      "label": "Fußweg",
+      "language": "de"
+    },
+    {
+      "id": "verkehrsnetz",
+      "label": "Verkehrsnetz",
+      "language": "de"
+    },
+    {
+      "id": "gip.at",
+      "label": "GIP.at",
       "language": "de"
     },
     {
       "id": "routing",
       "label": "Routing",
+      "language": "de"
+    },
+    {
+      "id": "fahrrad",
+      "label": "Fahrrad",
       "language": "de"
     },
     {
@@ -231,11 +257,6 @@
     {
       "id": "graph",
       "label": "Graph",
-      "language": "de"
-    },
-    {
-      "id": "verkehrsnetz",
-      "label": "Verkehrsnetz",
       "language": "de"
     },
     {
@@ -254,18 +275,18 @@
       "language": "de"
     },
     {
-      "id": "fußweg",
-      "label": "Fußweg",
-      "language": "de"
-    },
-    {
       "id": "fußgänger",
       "label": "Fußgänger",
       "language": "de"
     },
     {
-      "id": "gip.at",
-      "label": "GIP.at",
+      "id": "graphenintegrations-plattform-österreich",
+      "label": "Graphenintegrations-Plattform Österreich",
+      "language": "de"
+    },
+    {
+      "id": "auto",
+      "label": "Auto",
       "language": "de"
     }
   ],
