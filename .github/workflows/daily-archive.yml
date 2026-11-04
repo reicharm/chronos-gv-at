@@ -69,14 +69,20 @@ jobs:
           echo "date=$DATE"   >> "$GITHUB_OUTPUT"
           echo "stats=$STATS" >> "$GITHUB_OUTPUT"
 
-          # Robust gegen zwischenzeitliche Remote-Aenderungen: rebase & retry
+          # Robust gegen zwischenzeitliche Remote-Aenderungen (auch Doppellaeufe am
+          # selben Tag): bei Ablehnung Remote mergen, wobei UNSERE frisch erzeugten
+          # Snapshot-Dateien Konflikte gewinnen (-X ours). Fremde Aenderungen an
+          # anderen Dateien (README, Workflows) bleiben dabei erhalten.
           for i in 1 2 3 4 5; do
             if git push origin HEAD:main; then
               echo "Push erfolgreich (Versuch $i)."; break
             fi
             if [ "$i" -eq 5 ]; then echo "Push nach 5 Versuchen fehlgeschlagen."; exit 1; fi
-            echo "Push abgelehnt - hole Remote-Stand (rebase) und wiederhole (Versuch $i)…"
-            git pull --rebase --autostash origin main
+            echo "Push abgelehnt - merge Remote-Stand (ours bevorzugt), Versuch $i…"
+            git fetch origin main
+            if ! git merge -X ours --no-edit origin/main; then
+              echo "Merge nicht aufloesbar - breche ab."; git merge --abort || true; exit 1
+            fi
             sleep $((RANDOM % 4 + 2))
           done
 
