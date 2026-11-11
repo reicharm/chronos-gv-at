@@ -39,8 +39,8 @@
     "visualisation_selection": null
   },
   "catalog_record": {
-    "issued": "2026-06-23T11:24:45Z",
-    "modified": "2026-11-04T02:20:07Z"
+    "issued": "2026-11-05T07:26:00Z",
+    "modified": "2026-11-05T07:26:00Z"
   },
   "contact_point": [
     {
@@ -56,16 +56,30 @@
   "distributions": [
     {
       "access_url": [
-        "https://www.salzburg.gv.at/ogd/ac4d87cb-5517-4455-9014-5c6e8014cd6b/Ueberfuehrung.kmz"
+        "https://www.salzburg.gv.at/ogd/ac4d87cb-5517-4455-9014-5c6e8014cd6b/Ueberfuehrung_fGeoDb.zip"
       ],
       "format": {
-        "id": "KMZ",
-        "label": "KMZ",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/KMZ"
+        "id": "ZIP",
+        "label": "ZIP",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/ZIP"
       },
-      "id": "918e6f88-6978-4fc6-9d87-1bfd71a653ad",
+      "id": "c3e67671-6846-4cb1-be50-3d1ba53a743f",
       "title": {
-        "de": "Ueberfuehrung"
+        "de": "Ueberfuehrung_fGeoDb"
+      }
+    },
+    {
+      "access_url": [
+        "https://service.salzburg.gv.at/arcgis/services/OGD/OGD_Verkehr_Land_Salzburg/MapServer/WFSServer?request=GetCapabilities&service=WFS&version=2.0.0"
+      ],
+      "format": {
+        "id": "XML",
+        "label": "XML",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/XML"
+      },
+      "id": "90e932a4-0603-41b5-ab87-0b1bc5a03139",
+      "title": {
+        "de": "WFS Ueberfuehrung"
       }
     },
     {
@@ -77,7 +91,21 @@
         "label": "JSON",
         "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
       },
-      "id": "0bbb162b-a859-4c7d-bc63-4f6506789136",
+      "id": "108bf0b1-9879-4ffe-b965-e76c124cc9da",
+      "title": {
+        "de": "Ueberfuehrung"
+      }
+    },
+    {
+      "access_url": [
+        "https://www.salzburg.gv.at/ogd/ac4d87cb-5517-4455-9014-5c6e8014cd6b/Ueberfuehrung.kmz"
+      ],
+      "format": {
+        "id": "KMZ",
+        "label": "KMZ",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/KMZ"
+      },
+      "id": "2d0f625f-3fc3-4179-b1b9-20fed0c7f5b6",
       "title": {
         "de": "Ueberfuehrung"
       }
@@ -91,37 +119,9 @@
         "label": "ZIP",
         "resource": "http://publications.europa.eu/resource/authority/file-type/ZIP"
       },
-      "id": "748066b6-13ba-4e4a-8d9e-185cf4057e65",
+      "id": "13c4d539-5fbb-4a99-97f7-a92e413d276a",
       "title": {
         "de": "Ueberfuehrung_Shapefile"
-      }
-    },
-    {
-      "access_url": [
-        "https://service.salzburg.gv.at/arcgis/services/OGD/OGD_Verkehr_Land_Salzburg/MapServer/WFSServer?request=GetCapabilities&service=WFS&version=2.0.0"
-      ],
-      "format": {
-        "id": "XML",
-        "label": "XML",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/XML"
-      },
-      "id": "51e98f3f-6660-4c5e-96ad-cf85db6c5c8f",
-      "title": {
-        "de": "WFS Ueberfuehrung"
-      }
-    },
-    {
-      "access_url": [
-        "https://www.salzburg.gv.at/ogd/ac4d87cb-5517-4455-9014-5c6e8014cd6b/Ueberfuehrung_fGeoDb.zip"
-      ],
-      "format": {
-        "id": "ZIP",
-        "label": "ZIP",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/ZIP"
-      },
-      "id": "ed43f50e-daed-4584-86d2-19ba1119cc64",
-      "title": {
-        "de": "Ueberfuehrung_fGeoDb"
       }
     }
   ],
@@ -162,7 +162,6 @@
     "name": "Land Salzburg",
     "type": "Organization"
   },
-  "quality_meas": null,
   "resource": "https://www.data.gv.at/katalog/datasets/ac4d87cb-5517-4455-9014-5c6e8014cd6b",
   "source": [
     "https://service.salzburg.gv.at/ogdWebservice/get/ac4d87cb-5517-4455-9014-5c6e8014cd6b"
