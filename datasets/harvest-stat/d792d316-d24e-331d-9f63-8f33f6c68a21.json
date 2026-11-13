@@ -39,7 +39,7 @@
   },
   "catalog_record": {
     "issued": "2025-10-14T10:01:40Z",
-    "modified": "2026-05-24T01:50:19Z"
+    "modified": "2026-11-13T01:50:18Z"
   },
   "categories": [
     {
@@ -121,7 +121,7 @@
   ],
   "country": null,
   "description": {
-    "de": "Die Registerbasierten Erwerbsverläufe sind eine Vollerhebung von Erwerbskarrieren, die mittels Auswertung der für die Registerzählung bzw. Abgestimmte Erwerbsstatistik nutzbar gemachten Verwaltungs- und Registerdaten durchgeführt wird. Dabei entstehen nicht nur überschneidungsfreie, sondern auch lückenlose Erwerbskarrieren für alle Personen, die in einer der verwendeten Datenquellen irgendwann einmal vorgekommen sind – auch wenn sie niemals einen Hauptwohnsitz in Österreich hatten. Die Konzepte der Abgestimmten Erwerbsstatistik wurden dabei soweit wie möglich übernommen. In diesem Datensatz werden die Übergänge von einem Arbeitsmarktstatus zu einem anderen (Statuswechsel) von Personen ab 15 Jahren im Zeitraum von 2010 bis 2024 dargestellt. Hierbei werden Wechsel innerhalb einer Erwerbstätigkeit bei dem:der selben Dienstgeber:in – also beispielsweise um einen Wechsel von Lehrling zu Angestellte:r oder um einen Wechsel von Vollzeit auf Teilzeit – ausgeschlossen."
+    "de": "Die Registerbasierten Erwerbsverläufe sind eine Vollerhebung von Erwerbskarrieren, die mittels Auswertung der für die Registerzählung bzw. Abgestimmte Erwerbsstatistik nutzbar gemachten Verwaltungs- und Registerdaten durchgeführt wird. Dabei entstehen nicht nur überschneidungsfreie, sondern auch lückenlose Erwerbskarrieren für alle Personen, die in einer der verwendeten Datenquellen irgendwann einmal vorgekommen sind – auch wenn sie niemals einen Hauptwohnsitz in Österreich hatten. Die Konzepte der Abgestimmten Erwerbsstatistik wurden dabei soweit wie möglich übernommen. In diesem Datensatz werden die Übergänge von einem Arbeitsmarktstatus zu einem anderen (Statuswechsel) von Personen ab 15 Jahren im Zeitraum von 2010 bis 2025 dargestellt. Hierbei werden Wechsel innerhalb einer Erwerbstätigkeit bei dem:der selben Dienstgeber:in – also beispielsweise um einen Wechsel von Lehrling zu Angestellte:r oder um einen Wechsel von Vollzeit auf Teilzeit – ausgeschlossen."
   },
   "distributions": [
     {
@@ -198,30 +198,6 @@
     },
     {
       "access_url": [
-        "https://data.statistik.gv.at/data/OGD_aest_erv_statw_haupt_ERV_STATWECHSEL_1.csv"
-      ],
-      "description": {
-        "de": "C-ERVZEITPUNKT3-0:Jahr;C-ERVAMSTVORHER4-0:Arbeitsmarktstatus vor dem Statuswechsel (Ebene +3);C-ERVAMST4-0:Arbeitsmarktstatus nach dem Statuswechsel (Ebene +3);C-ERVAGE5-0:Alter (Ebene +4);C-ERVSEX1-0:Geschlecht;F-ERV_STAT_HAUPT:Anzahl Statuswechsel"
-      },
-      "format": {
-        "id": "CSV",
-        "label": "CSV",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
-      },
-      "id": "ffd5f53b-6ddf-4ffe-8832-284c62b8b06d",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "title": {
-        "de": "OGD_aest_erv_statw_haupt_ERV_STATWECHSEL_1"
-      }
-    },
-    {
-      "access_url": [
         "https://data.statistik.gv.at/data/OGD_aest_erv_statw_haupt_ERV_STATWECHSEL_1_HEADER.csv"
       ],
       "description": {
@@ -242,6 +218,30 @@
       ],
       "title": {
         "de": "OGD_aest_erv_statw_haupt_ERV_STATWECHSEL_1_HEADER"
+      }
+    },
+    {
+      "access_url": [
+        "https://data.statistik.gv.at/data/OGD_aest_erv_statw_haupt_ERV_STATWECHSEL_1.csv"
+      ],
+      "description": {
+        "de": "C-ERVZEITPUNKT3-0:Jahr;C-ERVAMSTVORHER4-0:Arbeitsmarktstatus vor dem Statuswechsel (Ebene +3);C-ERVAMST4-0:Arbeitsmarktstatus nach dem Statuswechsel (Ebene +3);C-ERVAGE5-0:Alter (Ebene +4);C-ERVSEX1-0:Geschlecht;F-ERV_STAT_HAUPT:Anzahl Statuswechsel"
+      },
+      "format": {
+        "id": "CSV",
+        "label": "CSV",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "id": "ffd5f53b-6ddf-4ffe-8832-284c62b8b06d",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "title": {
+        "de": "OGD_aest_erv_statw_haupt_ERV_STATWECHSEL_1"
       }
     },
     {
@@ -300,6 +300,26 @@
   "is_hvd": false,
   "keywords": [
     {
+      "id": "erwerbstätigkeit",
+      "label": "Erwerbstätigkeit",
+      "language": "de"
+    },
+    {
+      "id": "erwerbsverläufe",
+      "label": "Erwerbsverläufe",
+      "language": "de"
+    },
+    {
+      "id": "beschäftigungsbeendigungen",
+      "label": "Beschäftigungsbeendigungen",
+      "language": "de"
+    },
+    {
+      "id": "registerbasiert",
+      "label": "Registerbasiert",
+      "language": "de"
+    },
+    {
       "id": "erwerbskarriere",
       "label": "Erwerbskarriere",
       "language": "de"
@@ -312,26 +332,6 @@
     {
       "id": "beschäftigungsaufnahmen",
       "label": "Beschäftigungsaufnahmen",
-      "language": "de"
-    },
-    {
-      "id": "beschäftigungsbeendigungen",
-      "label": "Beschäftigungsbeendigungen",
-      "language": "de"
-    },
-    {
-      "id": "erwerbsverläufe",
-      "label": "Erwerbsverläufe",
-      "language": "de"
-    },
-    {
-      "id": "registerbasiert",
-      "label": "Registerbasiert",
-      "language": "de"
-    },
-    {
-      "id": "erwerbstätigkeit",
-      "label": "Erwerbstätigkeit",
       "language": "de"
     }
   ],
@@ -347,7 +347,7 @@
       "resource": "http://publications.europa.eu/resource/authority/language/DEU"
     }
   ],
-  "modified": "2025-11-13T09:17:51Z",
+  "modified": "2026-11-12T09:01:17Z",
   "publisher": {
     "name": "Statistik Austria",
     "type": "Agent"
@@ -360,7 +360,7 @@
     }
   ],
   "title": {
-    "de": "Registerbasierte Erwerbsverläufe – Statuswechsel 2010 bis 2024 nach Arbeitsmarkstatus vor und nach dem Statuswechsel"
+    "de": "Registerbasierte Erwerbsverläufe – Statuswechsel 2010 bis 2025 nach Arbeitsmarkstatus vor und nach dem Statuswechsel"
   },
   "translation_meta": {
     "details": {
