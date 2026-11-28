@@ -41,7 +41,7 @@
   },
   "catalog_record": {
     "issued": "2025-12-19T08:43:44Z",
-    "modified": "2026-11-21T07:02:27Z"
+    "modified": "2026-11-28T07:02:26Z"
   },
   "categories": [
     {
@@ -126,14 +126,14 @@
   "distributions": [
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:staedte_dreilaendereck&outputFormat=shape-zip"
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:staedte_dreilaendereck&outputFormat=gpkg"
       ],
       "format": {
-        "id": "SHP",
-        "label": "Esri Shape",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+        "id": "WFS_SRVC",
+        "label": "WFS",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
       },
-      "id": "55b3a70c-c603-4de1-bd2a-d0dff1245ea7",
+      "id": "c570d2b3-6c0b-4914-a1fa-bc06c5918bfc",
       "language": [
         {
           "id": "DEU",
@@ -145,7 +145,31 @@
         "resource": "https://creativecommons.org/licenses/by/4.0/"
       },
       "title": {
-        "de": "SHP-Download"
+        "de": "WFS-GetCapabilities"
+      }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:staedte_dreilaendereck&outputFormat=application/json&maxFeatures=1000000"
+      ],
+      "format": {
+        "id": "JSON",
+        "label": "JSON",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
+      },
+      "id": "e5a04ebb-9798-479e-9133-2492b775e3f8",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "JSON-Download"
       }
     },
     {
@@ -157,7 +181,7 @@
         "label": "KML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/KML"
       },
-      "id": "41ee95ec-9deb-4ced-999e-f5337c6803c3",
+      "id": "bd37f353-8a5d-4df0-a920-337de5c2199a",
       "language": [
         {
           "id": "DEU",
@@ -181,7 +205,7 @@
         "label": "WMS",
         "resource": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC"
       },
-      "id": "48864092-c101-4f3f-af8b-36af5cad7676",
+      "id": "38b3db80-8eb9-4ad2-96a7-90b6e8c9ee68",
       "language": [
         {
           "id": "DEU",
@@ -198,30 +222,6 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:staedte_dreilaendereck&outputFormat=gpkg"
-      ],
-      "format": {
-        "id": "WFS_SRVC",
-        "label": "WFS",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC"
-      },
-      "id": "5d8f952b-9e52-4360-8dda-dc1ed9b5f5e0",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "WFS-GetCapabilities"
-      }
-    },
-    {
-      "access_url": [
         "https://vogis.cnv.at/geonetwork/srv/ger/catalog.search#/metadata/511d91f9-e044-4873-ae84-50e396fa2eb4"
       ],
       "format": {
@@ -229,7 +229,7 @@
         "label": "HTML",
         "resource": "http://publications.europa.eu/resource/authority/file-type/HTML"
       },
-      "id": "b95d7dfd-39ca-4964-b39c-06a94afca3b8",
+      "id": "b99fb31b-163a-4c6a-86af-ab955eb345fb",
       "language": [
         {
           "id": "DEU",
@@ -246,30 +246,6 @@
     },
     {
       "access_url": [
-        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:staedte_dreilaendereck&outputFormat=application/json&maxFeatures=1000000"
-      ],
-      "format": {
-        "id": "JSON",
-        "label": "JSON",
-        "resource": "http://publications.europa.eu/resource/authority/file-type/JSON"
-      },
-      "id": "2aed8a93-7887-4808-b28a-a816ed5cbb63",
-      "language": [
-        {
-          "id": "DEU",
-          "label": "Deutsch",
-          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "license": {
-        "resource": "https://creativecommons.org/licenses/by/4.0/"
-      },
-      "title": {
-        "de": "JSON-Download"
-      }
-    },
-    {
-      "access_url": [
         "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:staedte_dreilaendereck&outputFormat=gpkg"
       ],
       "format": {
@@ -277,7 +253,7 @@
         "label": "GeoPackage",
         "resource": "http://publications.europa.eu/resource/authority/file-type/GPKG"
       },
-      "id": "0656626f-69c4-44e2-8e43-e885ebdd18e8",
+      "id": "c547cb3d-f5d4-4268-9a83-47740bae53d2",
       "language": [
         {
           "id": "DEU",
@@ -301,7 +277,7 @@
         "label": "CSV",
         "resource": "http://publications.europa.eu/resource/authority/file-type/CSV"
       },
-      "id": "1ce832c5-fda2-421d-99c0-539020604e29",
+      "id": "0b2a7f42-9805-4913-b54e-a63d21209afb",
       "language": [
         {
           "id": "DEU",
@@ -315,6 +291,30 @@
       "title": {
         "de": "CSV-Download"
       }
+    },
+    {
+      "access_url": [
+        "https://vogis.cnv.at/geoserver/ows?service=WFS&version=1.1.0&request=GetFeature&srsName=EPSG:31254&typeName=vogis:staedte_dreilaendereck&outputFormat=shape-zip"
+      ],
+      "format": {
+        "id": "SHP",
+        "label": "Esri Shape",
+        "resource": "http://publications.europa.eu/resource/authority/file-type/SHP"
+      },
+      "id": "523a55b5-08ac-4b99-ab68-9d9e06a62210",
+      "language": [
+        {
+          "id": "DEU",
+          "label": "Deutsch",
+          "resource": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "license": {
+        "resource": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "title": {
+        "de": "SHP-Download"
+      }
     }
   ],
   "id": "1008a509-fd56-4efc-90df-2c204c791e72",
@@ -324,13 +324,13 @@
   "is_hvd": false,
   "keywords": [
     {
-      "id": "staedte_gemeinden",
-      "label": "staedte_gemeinden",
+      "id": "points_of_interest",
+      "label": "points_of_interest",
       "language": "de"
     },
     {
-      "id": "points_of_interest",
-      "label": "points_of_interest",
+      "id": "staedte_gemeinden",
+      "label": "staedte_gemeinden",
       "language": "de"
     }
   ],
